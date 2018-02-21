@@ -34,7 +34,7 @@ gulp.task('clean', function () {
 gulp.task('nunjucks', () => {
     // Gets .html files in the app folder that don't start with underscore
     //gulp.src(config.app+'**/!(_)*.html')
-    gulp.src(config.app+'index.html')
+    gulp.src(config.app+'**.html')
 
     // // Adding data to Nunjucks
     // .pipe(data(file => JSON.parse(fs.readFileSync(`${file.path}.json`))))

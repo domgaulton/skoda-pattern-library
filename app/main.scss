@@ -7,6 +7,11 @@
 @import '_webparts/atoms/style.scss';
 @import '_webparts/molecules/style.scss';
 
+// Pattern Library
+@import '_webparts/html-footer/style.scss';
+@import '_webparts/html-head/style.scss';
+@import '_webparts/html-nav/style.scss';
+
 // Webparts
 @import '_webparts/deeplink-nav/style.scss';
 @import '_webparts/features/style.scss';

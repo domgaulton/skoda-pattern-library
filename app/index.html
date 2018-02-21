@@ -1,139 +1,133 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ŠKODA Webpart Library</title>
-	<link rel="stylesheet" href="dist/css/main.css">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
+{% include '_webparts/html-head/index.html' %}
 
-	<div class="content_zone">
-		<h1>ŠKODA Webpart Library</h1>
+{% include '_webparts/html-nav/index.html' %}
+	
+	<div class="pattern-library-page">
+
+		<div class="content_zone">
+			<h1>ŠKODA Webpart Library</h1>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/atoms/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/molecules/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/hero-image/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/section/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/sidebar-ctas/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/deeplink-nav/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/quote-image/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/text-image/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal" id="tabs">
+			<div class="paragraphContent">
+				{% include '_webparts/tabs/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/parallax/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/images/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/features/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal" id="slider">
+			<div class="paragraphContent">
+				{% include '_webparts/slider/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal" id="colour-picker">
+			<div class="paragraphContent">
+				{% include '_webparts/colour-picker/index.html' %}
+			</div>
+		</div>	
+
+		<div class="paragraphRowLocal" id="image-selector">
+			<div class="paragraphContent">
+				{% include '_webparts/image-selector/index.html' %}
+			</div>
+		</div>	
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/model-repeater/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/text/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/full-height-fixed/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal">
+			<div class="paragraphContent">
+				{% include '_webparts/stats/index.html' %}
+			</div>
+		</div>
+
+		<div class="paragraphRowLocal" id="footer">
+			<div class="paragraphContent">
+				{% include '_webparts/footer-ctas/index.html' %}
+			</div>
+		</div>
+
 	</div>
 
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/atoms/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/molecules/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/hero-image/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/section/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/sidebar-ctas/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/deeplink-nav/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/quote-image/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/text-image/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal" id="tabs">
-		<div class="paragraphContent">
-			{% include '_webparts/tabs/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/parallax/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/images/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/features/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal" id="slider">
-		<div class="paragraphContent">
-			{% include '_webparts/slider/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal" id="colour-picker">
-		<div class="paragraphContent">
-			{% include '_webparts/colour-picker/index.html' %}
-		</div>
-	</div>	
-
-	<div class="paragraphRowLocal" id="image-selector">
-		<div class="paragraphContent">
-			{% include '_webparts/image-selector/index.html' %}
-		</div>
-	</div>	
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/model-repeater/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/text/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/full-height-fixed/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal">
-		<div class="paragraphContent">
-			{% include '_webparts/stats/index.html' %}
-		</div>
-	</div>
-
-	<div class="paragraphRowLocal" id="footer">
-		<div class="paragraphContent">
-			{% include '_webparts/footer-ctas/index.html' %}
-		</div>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="dist/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
-</body>
-</html>
+{% include '_webparts/html-footer/index.html' %}
