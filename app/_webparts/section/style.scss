@@ -1,0 +1,19 @@
+.humanise-section {
+	display: block;
+	position: relative;
+	margin-bottom: $margin-bottom;
+
+	img {
+		width: 96%;
+		margin: 2%;
+	}
+
+	& .content_zone {
+		@include content_absolute;
+	}
+	
+	h2 {
+		@include hero-heading(3em);
+	}
+
+}

@@ -1,0 +1,293 @@
+// .page {
+//   margin-top: -40px;
+// }
+
+// .callToActionTopAllArea {
+//   bottom: 0;
+//   top: auto;
+// }
+
+.bMain {
+  //top: -50px;
+  margin-top: 65px;
+}
+
+// .mTop {
+//   margin-top: -51px;
+// }
+
+// .header_banner_2017 {
+//   top: 60px;
+// }
+
+.bmBody {
+  //padding: 0px 20px 20px 20px !important;
+  padding: 0 !important;
+}
+
+.header {
+  background: $skoda-white;
+  height: 60px;
+  font-family: $skoda-next;
+}
+
+.hMain {
+  width: $safe-zone-small;
+  @media (min-width: $screen-desktop) {
+    width: $safe-zone;
+  }
+}
+
+.hLeft {
+  float: none;
+  width: auto;
+}
+
+.hlTop {
+  width: 200px;
+  margin-left: 0px;
+  height: 31px;
+  margin-top: 15px;
+}
+
+.hlBottom {
+  float: right;
+  padding: 0;
+  margin-top: 18px;
+}
+
+.hlbMenuMainSelected {
+  background: none !important;
+  border: none !important;
+  &:visited, &:active, &:hover {
+    background: none !important;
+    border: none !important;
+  }
+}
+
+.hlbMenuMain {
+  
+  font-family: $skoda-next;
+  
+  > li {
+    
+    font-family: $skoda-next-bold;
+    
+    a {
+     
+      color: $skoda-grey-dark !important;
+      font-family: $skoda-next-bold;
+      background: none !important;
+      border: none !important;
+      margin-right: 15px;
+
+
+      &:hover {
+        background: none !important;
+        border: none !important;
+      }
+    }
+
+    &:last-child {
+
+      a {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.hlbMenu {
+  width: 800px;
+  float: right;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $skoda-next;
+  text-align: right;
+  .hlbMenuSecondLevel .hlbmslMain li a {
+    text-align: left;
+    font-family: $skoda-next;
+  }
+}
+
+.hRight {
+  display: none;
+}
+
+.bmMenu {
+  width: 100%;
+  background-color: $skoda-green;
+  height: $navGreenNav;
+}
+
+.bmmMenuMain {
+  $primary-nav-padding: 13px 19px 12px;
+  text-align: center;
+  margin: 0 auto;
+  position: static;
+  display: block;
+  float: none;
+  font-family: $skoda-next;
+  width: $safe-zone-small;
+  height: auto;
+  @media (min-width: $screen-desktop) {
+    width: $safe-zone;
+  }
+  li {
+    text-transform: uppercase;
+    float: none;
+    display: inline-block;
+    a {
+      padding: $primary-nav-padding;
+      font-size: 16px;
+      border: none !important;
+      border: 0 !important;
+      font-family: $skoda-next;
+      letter-spacing: -0.6px;
+      height: auto !important;
+      @media (min-width: $screen-desktop) {
+        letter-spacing: 0px;
+      }
+    }
+  }
+  > li > a {
+    &.bmmMenuMainSelected {
+      background: white !important;
+      padding: $primary-nav-padding !important;
+      font-size: 16px !important;
+      border: none !important;
+      border: 0 !important;
+      color: black !important;
+      &:active, &:visited, &:hover {
+        background: white !important;
+        padding: $primary-nav-padding !important;
+        font-size: 16px !important;
+        border: none !important;
+        border: 0 !important;
+        color: black !important;
+      }
+    }
+    &:hover span {
+      display: none !important;
+      background: none !important;
+    }
+    &.bmmMainMenuSelected {
+      span, &:active span, &:visited span, &:hover span {
+        display: none !important;
+        background: none !important;
+      }
+    }
+    &.bmmMenuMainSelected span,
+    &.bmmMenuMainSelectedNoArrow span,
+    &.bmmMenuMainSelected:active span,
+    &.bmmMenuMainSelectedNoArrow:active span,
+    &.bmmMenuMainSelected:visited span,
+    &.bmmMenuMainSelectedNoArrow:visited span,
+    &.bmmMenuMainSelected:hover span,
+    &.bmmMenuMainSelectedNoArrow:hover span {
+      display: none !important;
+      background: none !important;
+    }
+  }
+}
+
+.bmmmSecondLevel {
+  margin-left: -20px;
+  text-align: left;
+  .bmmslNewGroups {
+    li {
+    float: left;
+    display: block;
+    width: 100%;
+    text-transform: none;
+    }
+  }
+  .bmmmSecondLevelShadowBottom,
+  .bmmmSecondLevelShadowRight,
+  .bmmmSecondLevelShadowCorner {
+    display: none;
+  }
+
+  .bmmslNewModelDetailBoxHighlights {
+    list-style-type: disc;
+    li {
+      text-transform: none;
+      display: list-item;
+    }
+  }
+
+  .bmmslNewModelDetailBoxButtons {
+    text-transform: none;
+  }
+}
+
+.bmSubmenu {
+  width: 100%;
+  border: none;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+
+  .bmsTitle, .bmsMenu {
+    font-family: $skoda-next;
+  }
+
+  .bmsTitle {
+    display: none;
+    margin: 0 auto;
+    width: $safe-zone-small;
+    @media (min-width: $screen-desktop) {
+      width: $safe-zone;
+    }
+
+    h1 {
+      font-family: $skoda-next-bold;
+      letter-spacing: 0.2px;
+      font-size: 1.5em;
+    }
+  }
+
+  .bmsMenu {
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding-bottom: 0 !important;
+    top: 0px !important;
+
+    ul {
+      text-align: center;
+      margin: 0 auto;
+      width: $safe-zone-small;
+      @media (min-width: $screen-desktop) {
+        width: $safe-zone;
+      }
+
+      li {
+        padding-bottom: 0 !important;
+        a {
+          height: auto !important;
+          padding: 8px 9px;
+          //background: transparent url(/_layouts/Skoda.SharePoint/styles/color/menu_line.png) no-repeat right 11px;
+          background-position: right 11px;
+        }
+        span {
+          height: auto;
+          padding-bottom: 8px;
+        }
+
+        .selected {
+          background-position-y: 25px;
+        }
+      }
+
+    }
+  }
+}
+
+.stickyMenuContainerInner {
+  width: $safe-zone-small;
+  @media (min-width: $screen-desktop) {
+    width: $safe-zone;
+  }
+}

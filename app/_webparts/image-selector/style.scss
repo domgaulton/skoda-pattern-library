@@ -1,0 +1,131 @@
+.slider-image-selector {
+  .content_zone {
+    background-color: $skoda-white;
+    width: 1051px !important;
+
+    .unslider-wrap {
+      height: 447px;
+
+      & > li {
+        padding: 0;
+        height: 447px;
+
+        @media (min-width: $screen-desktop) {
+          padding: 0;
+        }
+
+        .colour__title {
+          position: absolute;
+          bottom: 0;
+          left: 1em;
+          padding: 0;
+          margin: 0 !important;
+        }
+      }   
+    }
+  }
+
+  & ~ .unslider-arrow {
+    display: none;
+  } 
+
+  & ~ .unslider-nav {
+    width: 1051px;
+    margin: auto;
+
+    ol {
+      text-align: center;
+      position: relative;
+      height: 90px;
+      margin-top: 30px;
+
+      li {
+        margin-top: 40px;
+        height: auto;
+        width: auto;
+        padding: 10px 40px;
+        border-radius: 20px;
+        text-indent: 0;
+        background-color: $skoda-grey-light !important;
+
+        h4.title--caption-title {
+          position: absolute;
+          left: 0;
+          top: 0;
+          margin: 0 !important;
+          display: none;
+          line-height: 20px;
+          width: 100%;
+          text-align: center;
+        }
+
+        &:hover {
+          background-color: $skoda-grey !important;
+        }
+
+        &:after {
+          content: "";
+          float: left;         
+          text-transform: uppercase;
+          color: $skoda-grey-dark;
+          font-size: 0.7em !important;
+          font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+          letter-spacing: 0.2em; 
+          padding-left: 10px;
+          line-height: 22px;        
+        }
+
+        &:before {
+          content: "";
+          float: left;
+          background-image: url(http://www.skoda.co.uk/SiteCollectionImages/design/icon-sprites/general/icons22px-darkgrey.png);
+          background-position: 0 0;        
+          width: 22px;
+          height: 22px;
+        }
+
+        &.unslider-active {
+          background-color: $skoda-grey-dark !important;
+
+          h4.title--caption-title {
+            display: block;
+          }
+          &:after {
+            color: $skoda-white;        
+          }
+          &:before {
+            background-image: url(http://www.skoda.co.uk/SiteCollectionImages/design/icon-sprites/general/icons22px-white.png);        
+          }          
+        }        
+
+        &.slider-image-selector__screen--weather { 
+          &:after {
+            content: "Weather";
+          }
+          &:before {
+            background-position: -176px -66px;
+          }          
+        }
+
+        &.slider-image-selector__screen--offroad {
+          &:after {
+            content: "Offroad Info";
+          }
+          &:before {
+            background-position: -44px -66px;
+          }          
+        }
+
+        &.slider-image-selector__screen--drivemode {
+          &:after {
+            content: "Drive Mode";
+          }
+          &:before {
+            background-position: 0 0;
+          }          
+        }                
+      }
+    }
+  }
+}
+
