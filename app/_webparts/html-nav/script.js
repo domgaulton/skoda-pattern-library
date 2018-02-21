@@ -1,3 +1,3 @@
 $('.nav-show-hide').click(function(){
-	$('.pattern-library-nav').toggle();
+	$('.pattern-library-nav').toggleClass('hide-nav');
 })
