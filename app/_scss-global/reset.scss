@@ -38,3 +38,11 @@ q {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+pre {
+  background-color: $skoda-black;
+  padding: 10px;
+  color: white;
+  font-family: monospace;
+  margin: 20px 0;
+}
