@@ -1,9 +1,12 @@
 .nav-show-hide {
 	position: fixed;
-	top: 10px;
+	top: 20px;
 	z-index:101;
-	background-image: url('dist/img/burger-menu.png');
-	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	left: 20px;
+	background-image: url('/dist/img/burger-menu.png');
+	cursor: pointer;
 }
 
 .pattern-library-nav {
@@ -16,7 +19,7 @@
 	height: 100vh;
 	left: 0;
 	top: 0;
-	box-shadow: 0px 0px 10px grey;
+	box-shadow: 0px 0px 30px grey;
 
 	ul {
 		padding-left: 25px;
