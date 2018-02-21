@@ -5,7 +5,13 @@
 @import '_scss-global/mixins.scss';
 @import '_scss-global/k2overwrite.scss';
 @import '_webparts/atoms/style.scss';
-@import '_webparts/molecules/style.scss';
+
+
+// Molecules
+@import '_webparts/molecules-intro/style.scss';
+@import '_webparts/molecules-ctas/style.scss';
+@import '_webparts/molecules-lists/style.scss';
+@import '_webparts/molecules-paragraphs/style.scss';
 
 // Pattern Library
 @import '_webparts/html-footer/style.scss';
