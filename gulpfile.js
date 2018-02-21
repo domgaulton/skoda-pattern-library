@@ -44,7 +44,8 @@ gulp.task('nunjucks', () => {
         path: config.app,
     }))
     // output files in dist folder
-    .pipe(gulp.dest(config.dist))
+    // .pipe(gulp.dest(config.dist))
+    .pipe(gulp.dest(config.root))
     .pipe(browserSync.stream());
 });
 
