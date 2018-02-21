@@ -16,7 +16,7 @@ var util = require('gulp-util');
 
 var config = {
     app: './app/',
-    dist: './docs/',
+    dist: './dist/',
     root: './',
     dev: !!util.env.dev,                            //check if the dev variable is passed from command line
     env: !!util.env.dev ? "dev" : "production"
