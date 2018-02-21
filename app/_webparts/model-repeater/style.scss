@@ -1,0 +1,71 @@
+.humanise-model-repeater {
+	margin-bottom: ($margin-bottom * 1.2);
+
+	&__image, &__intro {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	&__image, &__intro {
+		min-height: 240px;
+	}
+
+	&__image {
+		width: 54%;
+		margin-right: 5%;
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	&__intro {
+		width: 40%;
+		margin: 0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+		h3 {
+			font-family: $skoda-next-bold;
+			text-transform: uppercase;
+			margin: 1em 0 0 !important;
+			letter-spacing: 3px;
+		}
+
+		&--subheading {
+			margin: 0 0 1em !important;
+			color: $skoda-grey;
+			letter-spacing: 1px;
+			font-family: $skoda-next-bold;
+		}
+
+		.list {
+			margin-left: -13px;
+		}
+	}
+
+	&__detail {
+		clear: both;
+		width: 100%;
+		// margin-top: 1em;
+		text-align: center;
+		color: $skoda-grey-dark;
+		// border-top: 1px solid $skoda-grey-light;
+		// padding-top: 1.5em;
+		
+		p {
+			margin-top: 0 !important;
+			line-height: 2 !important;
+		}
+
+		p.smallPrint {
+			font-size: 0.8em !important;
+		}
+	}
+
+	&__ctas {
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid $skoda-grey-light;
+		padding-bottom: 1.5em;
+
+	}
+}

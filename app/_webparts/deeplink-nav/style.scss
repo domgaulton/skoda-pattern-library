@@ -1,0 +1,47 @@
+.humanise-deeplink-nav {
+	width: 100%;
+	margin-top: -6px;
+	background: $skoda-grey-transparent;
+	z-index: 99;
+	position: relative;
+	top: -10vh;
+
+	ul {
+		text-align: center;
+		
+		li {
+			position: relative;
+			font-size: 1.2em;
+			display: inline-block;
+			font-family: $skoda-next;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+
+			a {
+				display: inline-block;
+				padding: 20px 30px;
+				text-decoration: none;
+				color: $skoda-white;
+				font-size: 0.75em;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				right: 0px;
+				top: 35%;
+				height: 30%;
+				border-right: 1px solid $skoda-grey;
+			}
+
+			&:last-of-type:after {
+				border-right: none;
+			}
+		}
+	}
+
+	&.sticky {
+		position: fixed;
+		top: 61px;
+	}
+}

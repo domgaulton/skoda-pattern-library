@@ -1,0 +1,36 @@
+.humanise-hero {
+	
+	display: block;
+	position: relative;
+	max-height: 100vh;
+	margin-bottom: $margin-bottom;
+
+	&__background {
+		height: calc(100vh - #{$navTopNav + $navGreenNav + $navThirdNav});
+		background-position: center center;
+		background-repeat: no-repeat;
+		@include background-size(cover);
+	}
+
+	&__video {
+		height: calc(100vh - 159px);
+	}
+	// img {
+	// 	width: 100%;
+	// }	
+
+	& .content_zone {
+		@include content_absolute;
+	}
+	
+	h1 {
+		@include hero-heading(3.2em);
+	}
+
+	a {
+		position: absolute;
+		left: 50%;
+		bottom: 2%;
+		@include transform(-50%, -50%);
+	}
+}

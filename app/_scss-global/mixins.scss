@@ -1,0 +1,62 @@
+@mixin transition($transition) {
+	-moz-transition:    $transition;
+	-o-transition:      $transition;
+	-webkit-transition: $transition;
+	transition:         $transition;
+}
+
+@mixin background($background) {
+	-moz-background:    $background;
+	-o-background:      $background;
+	-webkit-background: $background;
+	background:         $background;
+}
+
+@mixin transform($transformX, $tranformY) {
+	-moz-transform:    	translate($transformX, $tranformY);
+	-o-transform:      	translate($transformX, $tranformY);
+	-webkit-transform: 	translate($transformX, $tranformY);
+	transform:         	translate($transformX, $tranformY);
+}
+
+@mixin content_absolute {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+@mixin border_box {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+@mixin antialiasing($type) {
+	-webkit-font-smoothing: $type;
+	font-smoothing: $type;
+	font-smooth: always;
+}
+
+@mixin background-size($size){
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
+}
+
+@mixin hero-heading($size){
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	@include transform(-50%, -50%);
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	line-height: 2 !important;
+	font-size: $size !important;
+	width: 100%;
+	font-family: $skoda-next-bold;
+}
