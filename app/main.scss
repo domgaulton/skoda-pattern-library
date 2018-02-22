@@ -23,11 +23,13 @@
 @import '_webparts/html-nav/style.scss';
 
 // Webparts
+@import '_webparts/webparts/hero-image/style.scss';
+
+
 @import '_webparts/deeplink-nav/style.scss';
 @import '_webparts/features/style.scss';
 @import '_webparts/footer-ctas/style.scss';
 @import '_webparts/full-height-fixed/style.scss';
-@import '_webparts/hero-image/style.scss';
 @import '_webparts/images/style.scss';
 @import '_webparts/model-repeater/style.scss';
 //@import '_webparts/nav-sitewide/style.scss';
