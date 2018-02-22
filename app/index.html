@@ -2,24 +2,14 @@
 
 {% include '_webparts/html-nav/index.html' %}
 	
-	<div class="pattern-library-page">
 
-		<div class="content_zone">
-			<p class="heading-type-1">ŠKODA Webpart Library</p>
-		</div>
-
-		<div class="paragraphRowLocal">
-			<div class="paragraphContent">
-				{% include '_webparts/atoms/intro/index.html' %}
-			</div>
-		</div>
-
-		<div class="paragraphRowLocal">
-			<div class="paragraphContent">
-				{% include '_webparts/molecules/intro/index.html' %}
-			</div>
-		</div>
-
+	<div class="content_zone">
+		<p class="heading-type-1">ŠKODA Webpart Library</p>
+		
+		{% include '_webparts/atoms/intro/index.html' %}
+		{% include '_webparts/molecules/intro/index.html' %}
+		{% include '_webparts/webparts/intro/index.html' %}
 	</div>
+
 
 {% include '_webparts/html-footer/index.html' %}
