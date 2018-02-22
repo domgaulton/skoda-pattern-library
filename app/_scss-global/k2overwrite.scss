@@ -28,10 +28,13 @@ body {
 }
 
 .content_zone {
-	width: 90%;
+	width: 87.5%;
 	margin: 0 auto;
 	position: relative;
-	@media (min-width: $screen-desktop) {
+	@media (min-width: $screen-md) {
+		width: 90%;
+	}
+	@media (min-width: $screen-lg) {
 		width: $safe-zone;
 	}
 }

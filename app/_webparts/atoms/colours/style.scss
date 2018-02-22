@@ -68,6 +68,7 @@
 	}
 
 	&--cta-footer {
+		border: 1px solid $skoda-grey;
 		background-color: $cta-footer;
 
 		&::before { 
