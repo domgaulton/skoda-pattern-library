@@ -4,14 +4,18 @@
 @import '_scss-global/reset.scss';
 @import '_scss-global/mixins.scss';
 @import '_scss-global/k2overwrite.scss';
-@import '_webparts/atoms/style.scss';
+
+// Atoms
+@import '_webparts/atoms/atoms-colours/style.scss';
+@import '_webparts/atoms/atoms-fonts/style.scss';
+@import '_webparts/atoms/atoms-intro/style.scss';
 
 
 // Molecules
-@import '_webparts/molecules-intro/style.scss';
-@import '_webparts/molecules-ctas/style.scss';
-@import '_webparts/molecules-lists/style.scss';
-@import '_webparts/molecules-paragraphs/style.scss';
+@import '_webparts/molecules/molecules-intro/style.scss';
+@import '_webparts/molecules/molecules-ctas/style.scss';
+@import '_webparts/molecules/molecules-lists/style.scss';
+@import '_webparts/molecules/molecules-paragraphs/style.scss';
 
 // Pattern Library
 @import '_webparts/html-footer/style.scss';
