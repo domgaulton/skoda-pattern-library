@@ -1,3 +1,19 @@
+p {
+	line-height: 1.6em !important;
+	margin-bottom: 2em !important;
+	font-family: $skoda-next-light;
+	letter-spacing: 0.02em;
+}
+
+a {
+	text-decoration: none;
+	color: $skoda-green;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 .text-light {
 	font-family: $skoda-next-light;
 }

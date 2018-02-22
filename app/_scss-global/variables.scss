@@ -7,46 +7,58 @@ $skoda-next-bold-italic: 		"SKODA Next W01 Bold Italic ",arial,verdana,helvetica
 $skoda-next-extra-bold: 		"SKODA Next W01 Bold",arial,verdana,helvetica,sans-serif !important;
 $skoda-next-extra-bold-italic: 	"SKODA Next W01 Extra Bold Italic",arial,verdana,helvetica,sans-serif !important;			
 
-$skoda-green: #4ba82e;
-$skoda-green-dark: #3f7d2c;
+// $skoda-green: #4ba82e;
+// $skoda-green-dark: #3f7d2c;
 
-$skoda-grey-light: #e0dede;
-$skoda-grey: #9B9B9B;;
-$skoda-grey-dark: #4A4A4A;
-$skoda-grey-transparent: rgba(74, 74, 74, 0.9);
+// $skoda-grey-light: #e0dede;
+// $skoda-grey: #9B9B9B;;
+// $skoda-grey-dark: #4A4A4A;
+// $skoda-grey-transparent: rgba(74, 74, 74, 0.9);
 
-$skoda-black: #000;
+// $skoda-black: #000;
 
-$skoda-white: #fff;
-$skoda-white-transparent: rgba(255, 255, 255, 0.9);
+// $skoda-white: #fff;
+// $skoda-white-transparent: rgba(255, 255, 255, 0.9);
 
-$skoda-transparent: transparent;
-$cta-footer: #F1F8F9;
+// $skoda-transparent: transparent;
+// $cta-footer: #F1F8F9;
 
-$cta-font: 0.75em !important;
+$skoda-green: #4BA82E;
+$grey-heavy: #212428;
+$grey-dark: #4A4A4A;
+$grey-mid: #888888;
+$grey-light: #E2DFDE;
+$grey-feint: #F7F7F7;
+$white: #FFFFFF;
+
+$ui-red: red;
+$ui-orange: orange;
+$ui-yellow: yellow;
+$ui-blue: blue;
+
+
+// $cta-font: 0.75em !important;
 
 $safe-zone: 1100px;
 
-$margin-bottom: 10vh;
+// $margin-bottom: 10vh;
 
 $screen-md: 768px;
 $screen-lg: 1200px;
 
-$screen-desktop: 1400px;
+// $screen-desktop: 1400px;
 
-$skoda-model-colour-velvet-red: #B5201A;
-$skoda-model-colour-lava-blue: #164f6d;
-$skoda-model-colour-black-magic: #212429;
-$skoda-model-colour-business-grey: #908893;
-$skoda-model-colour-quartz-grey: #3E4E5B;
-$skoda-model-colour-steel-grey: #9C9C9C;
-$skoda-model-colour-moon-white: #EEF5FF;
-$skoda-model-colour-brilliant-silver: #E4E4E4;
+// $skoda-model-colour-velvet-red: #B5201A;
+// $skoda-model-colour-lava-blue: #164f6d;
+// $skoda-model-colour-black-magic: #212429;
+// $skoda-model-colour-business-grey: #908893;
+// $skoda-model-colour-quartz-grey: #3E4E5B;
+// $skoda-model-colour-steel-grey: #9C9C9C;
+// $skoda-model-colour-moon-white: #EEF5FF;
+// $skoda-model-colour-brilliant-silver: #E4E4E4;
 
 // Navigation heights 
 
-$navTopNav: 60px;
-$navGreenNav: 42px;
-$navThirdNav: 54px;
-
-.hidden {display: none;}
+// $navTopNav: 60px;
+// $navGreenNav: 42px;
+// $navThirdNav: 54px;
