@@ -28,7 +28,7 @@ body {
 }
 
 .content_zone {
-	width: $safe-zone-small;
+	width: 90%;
 	margin: 0 auto;
 	position: relative;
 	@media (min-width: $screen-desktop) {

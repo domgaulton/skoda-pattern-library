@@ -51,3 +51,9 @@ pre {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
+
+body {
+  font-family: $skoda-next;
+  font-size: 18px;
+  @include antialiasing(antialiased)
+}

@@ -1,0 +1,77 @@
+.colors {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin-bottom: 10px;
+	&::before { 
+		display: inline-block;
+		position: relative;
+		left: 120px;
+		top: 40%;
+		width: 200px;
+	}
+
+	&--green {
+		background-color: $skoda-green;
+
+		&::before { 
+			content: "$skoda-green: "+ $skoda-green + "";
+		}
+	}
+
+	&--green-dark {
+		background-color: $skoda-green-dark;
+
+		&::before { 
+			content: "$skoda-green-dark: "+ $skoda-green-dark + "";
+		}
+	}
+
+	&--grey-light {
+		background-color: $skoda-grey-light;
+
+		&::before { 
+			content: "$skoda-grey-light: "+ $skoda-grey-light + "";
+		}
+	}
+
+	&--grey {
+		background-color: $skoda-grey;
+
+		&::before { 
+			content: "$skoda-grey: "+ $skoda-grey + "";
+		}
+	}
+
+	&--grey-dark {
+		background-color: $skoda-grey-dark;
+
+		&::before { 
+			content: "$skoda-grey-dark: "+ $skoda-grey-dark + "";
+		}
+	}
+
+	&--grey-transparent {
+		background-color: $skoda-grey-transparent;
+
+		&::before { 
+			content: "$skoda-grey-transparent: "+ $skoda-grey-transparent + "";
+		}
+	}
+
+	&--black {
+		background-color: $skoda-black;
+
+		&::before { 
+			content: "$skoda-black: "+ $skoda-black + "";
+		}
+	}
+
+	&--cta-footer {
+		background-color: $cta-footer;
+
+		&::before { 
+			content: "$cta-footer: "+ $cta-footer + "";
+		}
+	}
+}
