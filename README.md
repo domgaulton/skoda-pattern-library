@@ -5,9 +5,10 @@
 2. gulp 
 
 ## Gulp Tasks
-1. gulp - builds the updated subnav and the webparts (style and javascript)
-2. gulp nav - builds the sitewide nav (note that the new 3rd level thicker nav is made in the main.css)
-3. gulp dev - building locally with style sourcemaps
+1. `gulp` - builds the updated subnav and the webparts (style and javascript)
+2. `gulp deploy` - builds css for webparts (excluding pattern library styling)
+3. `gulp nav` - builds the sitewide nav (note that the new 3rd level thicker nav is made in the main.css)
+4. `gulp dev` - building locally with style sourcemaps
 
 ## Modular Build
 1. all webparts are split so you know where to find relative code

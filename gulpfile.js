@@ -81,6 +81,12 @@ gulp.task('nav', function () {
         .pipe(gulp.dest(config.dist+'css'));
 });
 
+gulp.task('deploy', function () {  
+    gulp.src(config.app+'dbsd-style.scss')
+        .pipe(sass({includePaths: ['scss']}))
+        .pipe(gulp.dest(config.dist+'css'));
+});
+
 // Browser Sync //
 
 gulp.task('browser-sync', ['clean'],function() {  
