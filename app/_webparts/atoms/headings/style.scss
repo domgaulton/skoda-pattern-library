@@ -13,7 +13,7 @@ h6,.heading-type-6 {
 }
 
 .heading-type-1 {
-	font-size: 2em !important;
+	font-size: 2.1em !important;
 	@media (min-width: $screen-md) {
 		font-size: 2.5em !important;
 	}
@@ -23,12 +23,12 @@ h6,.heading-type-6 {
 }
 
 .heading-type-2 {
-	font-size: 2em !important;
+	font-size: 1.9em !important;
 	@media (min-width: $screen-md) {
 		font-size: 2.2em !important;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 2.8em !important;
+		font-size: 2.5em !important;
 	}
 }
 
