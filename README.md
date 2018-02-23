@@ -4,18 +4,19 @@
 1. npm install
 2. gulp 
 
-## Gulp Tasks
-1. `gulp` - builds the updated subnav and the webparts (style and javascript)
-2. `gulp deploy` - builds css for webparts (excluding pattern library styling)
-3. `gulp nav` - builds the sitewide nav (note that the new 3rd level thicker nav is made in the main.css)
-4. `gulp dev` - building locally with style sourcemaps
-
 ## Modular Build
 1. all webparts are split so you know where to find relative code
 2. app/webparts/xxx contains folders with html, js and scss in
-3. the index.html file from each webpart folder gets brought into index.html using nunjacks '{% include '_webparts/webpart/index.html' %}'
+3. the index.html file from each webpart folder gets brought into index.html using nunjacks '{% include '_webparts/webparts/webpart-name/index.html' %}'
 4. remember to incude the sass into the main.scss style sheet
 5. the scss and js get concatinated and put straight into the dist folder
+
+## Gulp Tasks
+1. `gulp dev` - building locally with style sourcemaps
+2. `gulp` - builds pattern library and webparts (style and javascript) for `https://skodauk.github.io/`
+3. `gulp deploy-desktop` - builds css for webparts with desktop CMS overwrites (excluding pattern library style / js)
+4. `gulp deploy-mobile` - builds css for webparts (excluding pattern library style / js)
+5. `gulp nav-mobile` - builds the primary and secondary sitewide nav for k2 (note that the new third level thicker nav is made in the `gulp deploy-desktop` build)
 
 ## K2 CMS Details
 1. Set up new pages with a single paragraph repeater in
