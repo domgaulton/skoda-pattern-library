@@ -45,3 +45,7 @@ a {
 .text-extra-bold-italic {
 	font-family: $skoda-next-extra-bold-italic;
 }
+
+strong {
+	@extend .text-bold;
+}
