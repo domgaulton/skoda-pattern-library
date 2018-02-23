@@ -45,16 +45,11 @@ gulp.task('nunjucks', () => {
     }))
     // output files in dist folder
     // .pipe(gulp.dest(config.dist))
-    .pipe(gulp.dest(config.root))
+    .pipe(gulp.dest(config.dist))
     .pipe(browserSync.stream());
 });
 
 // Copy Folders to Dist //
-
-// gulp.task('copy-files', function () {
-//     gulp.src([config.app+'**/**/*.*', '!'+config.app+'**/*.html', '!'+config.app+'**/*.scss','!'+config.app+'js-global/*.js', '!'+config.app+'scss-global/*.scss', '!'+config.app+'webparts/**/*'])
-//         .pipe(gulp.dest(config.dist));
-// });
 
 gulp.task('copy-files', function () {
     gulp.src([config.app+'**/**/*.*', '!'+config.app+'**/*.{html,scss}', '!'+config.app+'_**/**/*.*'])
@@ -75,14 +70,16 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(config.dist+'css'));
 });
 
-gulp.task('nav', function () {  
-    gulp.src(config.app+'dbsd-nav.scss')
+// Gulp Tasks //
+
+gulp.task('nav-desktop', function () {  
+    gulp.src(config.app+'desktop-dbsd-nav.scss')
         .pipe(sass({includePaths: ['scss']}))
         .pipe(gulp.dest(config.dist+'css'));
 });
 
-gulp.task('deploy', function () {  
-    gulp.src(config.app+'dbsd-style.scss')
+gulp.task('deploy-desktop', function () {  
+    gulp.src(config.app+'desktop-dbsd.scss')
         .pipe(sass({includePaths: ['scss']}))
         .pipe(gulp.dest(config.dist+'css'));
 });
@@ -92,7 +89,7 @@ gulp.task('deploy', function () {
 gulp.task('browser-sync', ['clean'],function() {  
     browserSync.init([config.app+'**/*.scss', config.app+'**/*.js', config.app+'*.html'], {
         server: {
-            baseDir: config.root
+            baseDir: config.dist
         }
     });
 });

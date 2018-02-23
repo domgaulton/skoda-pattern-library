@@ -1,0 +1,21 @@
+// Setup Styles
+@import '_scss-global/variables.scss';
+@import '_scss-global/mixins.scss';
+@import '_scss-global/reset.scss';
+@import '_scss-global/fonts.scss';
+
+// Atoms
+@import '_webparts/atoms/colours/style.scss';
+@import '_webparts/atoms/fonts/style.scss';
+@import '_webparts/atoms/headings/style.scss';
+@import '_webparts/atoms/intro/style.scss';
+
+// Molecules
+@import '_webparts/molecules/intro/style.scss';
+@import '_webparts/molecules/ctas/style.scss';
+@import '_webparts/molecules/lists/style.scss';
+@import '_webparts/molecules/paragraphs/style.scss';
+
+// Webparts
+@import '_webparts/webparts/intro/style.scss';
+@import '_webparts/webparts/hero-image/style.scss';
