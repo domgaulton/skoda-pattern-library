@@ -25,5 +25,4 @@
 4. This allows you to add / move webparts with ease
 
 ## Mixins / Classes
-1. Use `class="content_zone"` to keep content within the 1100px 'safe zone'
-2. Use `@include content_absolute;` when content sits on top of background image
+1. Use `class="content_zone"` to keep content within the `safe zone`
