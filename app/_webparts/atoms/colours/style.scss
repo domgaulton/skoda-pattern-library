@@ -19,15 +19,27 @@
 
 	&--skoda-green {
 		background-color: $skoda-green;
+		p {
+			color: $white;
+		}
 	}
 	&--grey-heavy {
 		background-color: $grey-heavy;
+		p {
+			color: $white;
+		}
 	}
 	&--grey-dark {
 		background-color: $grey-dark;
+		p {
+			color: $white;
+		}
 	}
 	&--grey-mid {
 		background-color: $grey-mid;
+		p {
+			color: $white;
+		}
 	}
 	&--grey-light {
 		background-color: $grey-light;
@@ -41,6 +53,9 @@
 	}
 	&--ui-red {
 		background-color: $ui-red;
+		p {
+			color: $white;
+		}
 	}
 	&--ui-orange {
 		background-color: $ui-orange;
@@ -50,5 +65,8 @@
 	}
 	&--ui-blue {
 		background-color: $ui-blue;
+		p {
+			color: $white;
+		}
 	}
 }

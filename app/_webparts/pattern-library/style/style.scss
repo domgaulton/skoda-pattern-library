@@ -1,0 +1,12 @@
+pre {
+  background-color: $grey-heavy;
+  padding: 10px;
+  color: white;
+  font-family: monospace;
+  margin: 20px 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
