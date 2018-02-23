@@ -7,12 +7,12 @@
 @font-face {
   font-family: "SKODA Next W01 Light Italic";
   src: url("/fonts/SKODANext-LightItalic.ttf") format("truetype"),
-  url("./fonts/SKODANext-LightItalic.otf") format("opentype");
+  url("/fonts/SKODANext-LightItalic.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SKODA Next W01 Regular";
-  src: url("./fonts/SKODANext-Regular.ttf") format("truetype"),
+  src: url("/fonts//SKODANext-Regular.ttf") format("truetype"),
   url("/fonts/SKODANext-Regular.otf") format("opentype");
 }
 
@@ -30,8 +30,8 @@
 
 @font-face {
   font-family: "SKODA Next W01 Bold Italic";
-  src: url("/dist/fonts/SKODANext-BoldItalic.ttf") format("truetype"),
-  url("/dist/fonts/SKODANext-BoldItalic.otf") format("opentype");
+  src: url("/fonts/SKODANext-BoldItalic.ttf") format("truetype"),
+  url("/fonts/SKODANext-BoldItalic.otf") format("opentype");
 }
 
 @font-face {

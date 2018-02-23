@@ -89,7 +89,7 @@ gulp.task('deploy-desktop', function () {
 gulp.task('browser-sync', ['clean'],function() {  
     browserSync.init([config.app+'**/*.scss', config.app+'**/*.js', config.app+'*.html'], {
         server: {
-            baseDir: config.dist
+            baseDir: config.root
         }
     });
 });
