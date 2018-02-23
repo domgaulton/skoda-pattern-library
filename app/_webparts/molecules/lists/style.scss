@@ -1,34 +1,19 @@
 .list {
-	margin: 30px 15px 30px 10px;
-	list-style-type: none;
+	margin: 30px 15px;
 	line-height: 1.8;
 	font-family: $skoda-next;
 	font-size: 1em;
+	padding-left: 10px;
 
 	li {
-		padding-left: 28px;
-		list-style-type: none !important;
+		padding-left: 10px;
+		margin-bottom: 20px;
+		list-style-type: disc;
 	}
+}
 
-	&.list-style-chevron {
-	
-		li {
-			padding-left: 20px;
-			&:before {
-				position: relative;
-				left: -18px;
-				width: 0px;
-				display: inline-block;
-				content: ">";
-				font-family: $skoda-next-bold;
-			}
-		}
-	}
-
-	&.list-style-tick {
-	
-		li {
-			background: url(http://www.skoda.co.uk/SiteCollectionImages/design/arrow-tick-2.png) no-repeat 0 7px;
-		}
+ol.list {
+	li {
+		list-style-type: decimal;
 	}
 }
