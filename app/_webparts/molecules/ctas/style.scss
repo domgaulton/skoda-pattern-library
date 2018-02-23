@@ -1,81 +1,88 @@
-a.cta-block {
-	letter-spacing: 2.5px;
-	text-transform: uppercase;
-	display: inline-block;
-	text-decoration: none;
-	@include transition(0.5s);
-	position: relative;
-	padding: 13px 40px;
-	margin-right: 13px;
-	margin-bottom: 13px;
-	color: white;
+.cta-container {
+	display: flex; 
+	flex-wrap: wrap;
 
-	&:last-of-type {
-		margin-right: 0;
-	}
+	a.cta-block {
+		letter-spacing: 2.5px;
+		text-transform: uppercase;
+		text-decoration: none;
+		@include transition(0.5s);
+		position: relative;
+		padding: 13px 40px;
+		margin-right: 13px;
+		margin-bottom: 13px;
+		color: white;
 
-	&__primary {
-		
-		background-color: $skoda-green;
-		&:hover {
-			background-color: $grey-heavy;
-		}
-	}
-
-	&__secondary {
-		background-color: $grey-dark;
-		&:hover {
-			background-color: $grey-heavy;
+		&:last-of-type {
+			margin-right: 0;
 		}
 
-		&--white {
-			color: $grey-heavy;
-			border: 2px solid $grey-heavy;
-			background-color: $white;
+		&__primary {
+			
+			background-color: $skoda-green;
 			&:hover {
-				color: $white;
 				background-color: $grey-heavy;
 			}
 		}
 
-		&--no-bg {
-			color: $grey-heavy;
-			border: 2px solid $grey-heavy;
-			background-color: none;
+		&__secondary {
+			background-color: $grey-dark;
 			&:hover {
-				color: $white;
 				background-color: $grey-heavy;
+			}
+
+			&--white {
+				color: $grey-heavy;
+				padding: 13px 36px;
+				border: 2px solid $grey-heavy;
+				background-color: $white;
+				&:hover {
+					color: $white;
+					background-color: $grey-heavy;
+				}
+			}
+
+			&--no-bg {
+				color: $grey-heavy;
+				padding: 13px 36px;
+				border: 2px solid $grey-heavy;
+				background-color: none;
+				&:hover {
+					color: $white;
+					background-color: $grey-heavy;
+				}
 			}
 		}
 	}
-}
 
-a.cta-minimal {
-	text-decoration: none;
-	letter-spacing: 2.5px;
-	font-family: $skoda-next-bold;
-	text-transform: uppercase;
-	padding: 5px 5px 10px 5px;
-	border-bottom: 2px solid $grey-heavy;
-	margin-bottom: 5px;
-	color: $grey-heavy;
-	margin-right: 13px;
-	display: inline-block;
+	a.cta-minimal {
+		text-decoration: none;
+		letter-spacing: 2.5px;
+		font-family: $skoda-next-bold;
+		text-transform: uppercase;
+		padding: 5px 5px 10px 5px;
+		border-bottom: 2px solid $grey-heavy;
+		margin-bottom: 5px;
+		color: $grey-heavy;
+		margin-right: 13px;
+		display: inline-block;
 
-	&:last-of-type {
-		margin-right: 0;
-	}
-
-	&:hover {
-		border-bottom: 2px solid $skoda-green;
-	}
-
-	&--white {
-		color: $white;
-		border-bottom: 2px solid $white;
+		&:last-of-type {
+			margin-right: 0;
+		}
 
 		&:hover {
 			border-bottom: 2px solid $skoda-green;
 		}
+
+		&--white {
+			color: $white;
+			border-bottom: 2px solid $white;
+
+			&:hover {
+				border-bottom: 2px solid $skoda-green;
+			}
+		}
 	}
 }
+
