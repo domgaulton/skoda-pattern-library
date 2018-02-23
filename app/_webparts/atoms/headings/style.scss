@@ -9,6 +9,7 @@ h6,.heading-type-6 {
 	font-family: $skoda-next-bold;
 	color: black;
 	text-transform: uppercase;
+	letter-spacing: 0.07em;
 }
 
 .heading-type-1 {
@@ -17,7 +18,7 @@ h6,.heading-type-6 {
 		font-size: 2.5em !important;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 2.94em !important;
+		font-size: 2.9411em !important;
 	}
 }
 
