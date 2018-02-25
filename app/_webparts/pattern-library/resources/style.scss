@@ -1,0 +1,36 @@
+.nav-show-hide {
+	position: fixed;
+	top: 20px;
+	z-index:101;
+	width: 40px;
+	height: 40px;
+	left: 40px;
+	background-image: url('/dist/img/burger-menu.png');
+	cursor: pointer;
+}
+
+.pattern-library-nav {
+	@include transition(1s ease-in-out);
+	padding-top: 100px;
+	position: fixed;
+	width: 180px;
+	background: white;
+	z-index:100;
+	height: 100vh;
+	left: 0px;
+	top: 0;
+	box-shadow: 0px 0px 30px $grey-heavy;
+
+	ul {
+		padding-left: 30px;
+		list-style-type: disc;
+
+		li {
+			margin: 10px 0;
+		}
+	}
+
+	&.hide-nav {
+		left: -200px;
+	}
+}

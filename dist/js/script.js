@@ -1,1 +1,1 @@
-$(document).ready(function(){}),$(".nav-show-hide").click(function(){$(".pattern-library-nav").toggleClass("hide-nav")});
+$(document).ready(function(){}),$(".nav-show-hide").click(function(){$(".pattern-library-nav").toggleClass("hide-nav")}),$(".nav-show-hide").click(function(){$(".pattern-library-nav").toggleClass("hide-nav")});
