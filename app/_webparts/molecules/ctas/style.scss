@@ -2,20 +2,25 @@
 	display: flex; 
 	flex-wrap: wrap;
 
-	a.cta-block {
+	a {
+		position: relative;
 		letter-spacing: 2.5px;
 		text-transform: uppercase;
 		text-decoration: none;
 		@include transition(0.5s);
-		position: relative;
-		padding: 13px 40px;
-		margin-right: 13px;
+		margin-right: 40px;
 		margin-bottom: 13px;
-		color: white;
+		font-family: $skoda-next-bold;
+		display: inline-block;
 
 		&:last-of-type {
 			margin-right: 0;
 		}
+	}
+
+	a.cta-block {
+		color: white;
+		padding: 13px 40px;
 
 		&__primary {
 			
@@ -56,33 +61,37 @@
 	}
 
 	a.cta-minimal {
-		text-decoration: none;
-		letter-spacing: 2.5px;
-		font-family: $skoda-next-bold;
-		text-transform: uppercase;
 		padding: 5px 5px 10px 5px;
 		border-bottom: 2px solid $grey-heavy;
-		margin-bottom: 5px;
 		color: $grey-heavy;
-		margin-right: 40px;
-		display: inline-block;
 
-		&:last-of-type {
-			margin-right: 0;
+		&:before, :after {
+			content: "";
+			position: absolute;
+			bottom: -2px;
+			left: 0px;
+			width: 0px;
+			height: 2px;
+			transition: all 0.2s ease-in-out;
+			transition-duration: 0.75s;
+			opacity: 1;
+			background-color: $skoda-green;
 		}
 
 		&:hover {
-			border-bottom: 2px solid $skoda-green;
+			&:before, :after {
+				opacity: 1;
+				width: 100%;
+			}
 		}
 
 		&--white {
 			color: $white;
 			border-bottom: 2px solid $white;
-
-			&:hover {
-				border-bottom: 2px solid $skoda-green;
-			}
 		}
 	}
 }
+
+
+	
 
