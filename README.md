@@ -6,9 +6,9 @@
 
 ## Modular Build
 1. all webparts are split so you know where to find relative code
-2. app/webparts/xxx contains folders with html, js and scss in
+2. app/_webparts/webparts/xxx contains folders with html, javascript and scss in
 3. the index.html file from each webpart folder gets brought into index.html using nunjacks '{% include '_webparts/webparts/webpart-name/index.html' %}'
-4. remember to incude the sass into the main.scss style sheet
+4. remember to incude the sass into the main.scss style sheet (split into webparts and pattern library styles)
 5. the scss and js get concatinated and put straight into the dist folder
 
 ## Gulp Tasks
@@ -17,6 +17,12 @@
 3. `gulp deploy-desktop` - builds css for webparts with desktop CMS overwrites (excluding pattern library style / js)
 4. `gulp deploy-mobile` - builds css for webparts (excluding pattern library style / js)
 5. `gulp nav-desktop` - builds the primary and secondary sitewide nav for k2 (note that the new third level thicker nav is made in the `gulp deploy-desktop` build)
+
+## Process
+1. Use branch names from JIRA tickets e.g. `SKMW-0001 - Webpart Name`
+2. Commit changes and set up Pull Requests
+3. Changes will be seen on `https://skodauk.github.io/dist/index.html` where ŠKODA can review
+4. If happy we can update global scripts and css for desktop and mobile.
 
 ## K2 CMS Details
 1. Set up new pages with a single paragraph repeater in
