@@ -2,11 +2,18 @@
 	position: fixed;
 	top: 20px;
 	z-index:101;
-	width: 40px;
-	height: 40px;
 	left: 40px;
 	background-image: url('/dist/img/burger-menu.png');
 	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	background-size: 100px;
+
+	@media (min-width: $screen-lg) {
+		width: 40px;
+		height: 40px;
+		background-size: 40px;
+	}
 }
 
 .pattern-library-nav {

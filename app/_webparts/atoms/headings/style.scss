@@ -4,8 +4,8 @@ h3,.heading-type-3,
 h4,.heading-type-4,
 h5,.heading-type-5,
 h6,.heading-type-6 {
-	line-height: 1.2em !important;
-	margin: 1em 0 !important;
+	line-height: 1.2em;
+	margin: 1em 0;
 	font-family: $skoda-next-bold;
 	color: black;
 	text-transform: uppercase;
@@ -13,61 +13,61 @@ h6,.heading-type-6 {
 }
 
 .heading-type-1 {
-	font-size: 2.1em !important;
+	font-size: 2.1em;
 	@media (min-width: $screen-md) {
-		font-size: 2.5em !important;
+		font-size: 2.5em;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 2.9411em !important;
+		font-size: 2.9411em;
 	}
 }
 
 .heading-type-2 {
-	font-size: 1.9em !important;
+	font-size: 1.9em;
 	@media (min-width: $screen-md) {
-		font-size: 2.2em !important;
+		font-size: 2.2em;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 2.5em !important;
+		font-size: 2.5em;
 	}
 }
 
 .heading-type-3 {
-	font-size: 1.8em !important;
+	font-size: 1.8em;
 	@media (min-width: $screen-md) {
-		font-size: 2em !important;
+		font-size: 2em;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 2.2em !important;
+		font-size: 2.2em;
 	}
 }
 
 .heading-type-4 {
-	font-size: 1.6em !important;
+	font-size: 1.6em;
 	@media (min-width: $screen-md) {
-		font-size: 1.8em !important;
+		font-size: 1.8em;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 2em !important;
+		font-size: 2em;
 	}
 }
 
 .heading-type-5 {
-	font-size: 1.4em !important;
+	font-size: 1.4em;
 	@media (min-width: $screen-md) {
-		font-size: 1.6em !important;
+		font-size: 1.6em;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 1.8em !important;
+		font-size: 1.8em;
 	}
 }
 
 .heading-type-6 {
-	font-size: 1.1em !important;
+	font-size: 1.1em;
 	@media (min-width: $screen-md) {
-		font-size: 1.3em !important;
+		font-size: 1.3em;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 1.5em !important;
+		font-size: 1.5em;
 	}
 }

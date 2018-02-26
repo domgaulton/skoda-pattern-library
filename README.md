@@ -1,4 +1,4 @@
-# skoda human
+# ŠKODA Pattern Library and Webpart Repository
 
 ## Execution
 1. npm install

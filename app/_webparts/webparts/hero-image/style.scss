@@ -3,13 +3,13 @@
 	display: block;
 	position: relative;
 	max-height: 100vh;
-	//margin-bottom: $margin-bottom;
+	margin-bottom: $webpart-margin-bottom;
 
 	&__background {
-		//height: calc(100vh - #{$navTopNav + $navGreenNav + $navThirdNav});
 		background-position: center center;
 		background-repeat: no-repeat;
 		@include background-size(cover);
+		height: 100vh;
 	}
 
 	&__video {
@@ -28,16 +28,17 @@
 
 		&--top {
 			@include hero-heading(3.2em);
-			top: 30px;
-			line-height: 1.5 !important;
+			top: 80px;
+			line-height: 1.5;
+			margin: 0;
 		}
 
 		&--bottom {
 			@include hero-heading(3.2em);
 			top: auto;
 			bottom: 30px;
-			margin-bottom: 0 !important;
-			line-height: 1.5 !important;
+			margin-bottom: 0;
+			line-height: 1.5;
 		}
 	}
 
