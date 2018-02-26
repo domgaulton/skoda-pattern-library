@@ -1,6 +1,11 @@
 .field-element {
 
 	margin: 10px 0 40px;
+	width: 100%;
+
+	@media (min-width: $screen-md) {
+		width: 600px;
+	}
 
 	label {
 		display: block;
@@ -10,10 +15,12 @@
 	}
 
 	input, textarea, select {
+		width: 100%;
 		font-size: 1em;
 		padding: 10px;
 		font-family: $skoda-next-light;
 		color: $grey-heavy;
+		@include border_box;
 
 		&:focus {
 			border: 1px solid $ui-blue;
@@ -30,28 +37,14 @@
 	}
 
 	textarea {
-		width: 400px;
 		height: 200px;
 	}
 
 	select {
 		background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
-		height: 29px;
 		overflow: hidden;
-		width: 240px;
-		background: transparent;
-		border: none;
-		font-size: 14px;
-		height: 29px;
-		padding: 5px; /* If you add too much padding here, the options won't show in IE */
-		width: 268px;
-		background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
-		height: 34px;
-		width: 240px;
-		border: 1px solid #ccc;
-		font-size: 16px;
-		height: 34px;
-		width: 268px;
+		height: 44px;
+		border-radius: 0px;
 	}
 }
 
