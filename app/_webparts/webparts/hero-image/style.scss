@@ -25,19 +25,17 @@
 	
 	&__title {
 		@include hero-heading(3.2em);
+		margin: 0;
 
 		&--top {
-			@include hero-heading(3.2em);
-			top: 80px;
+			top: 20px;
 			line-height: 1.5;
-			margin: 0;
+			height: 0px;
 		}
 
 		&--bottom {
-			@include hero-heading(3.2em);
 			top: auto;
-			bottom: 30px;
-			margin-bottom: 0;
+			bottom: 10px;
 			line-height: 1.5;
 		}
 	}

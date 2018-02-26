@@ -1,4 +1,4 @@
-$('.form-element input, .form-element textarea').keyup(function(){
+$('.field-element input, .field-element textarea').keyup(function(){
 	var element = $(this);
 	var input = element.val();
 	if (input.length > 1) {

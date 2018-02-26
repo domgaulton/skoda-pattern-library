@@ -4,7 +4,7 @@
 
 	a {
 		position: relative;
-		letter-spacing: 2.5px;
+		letter-spacing: 3px;
 		text-transform: uppercase;
 		text-decoration: none;
 		@include transition(0.5s);
@@ -12,6 +12,7 @@
 		margin-bottom: 13px;
 		font-family: $skoda-next-bold;
 		display: inline-block;
+		cursor: pointer;
 
 		&:last-of-type {
 			margin-right: 0;
@@ -64,6 +65,7 @@
 		padding: 5px 5px 10px 5px;
 		border-bottom: 2px solid $grey-heavy;
 		color: $grey-heavy;
+		letter-spacing: 5px;
 
 		&:before, :after {
 			content: "";
