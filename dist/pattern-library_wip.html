@@ -80,62 +80,44 @@
 
 		<div class="content_zone">
 
-	<h3 class="heading-type-3">Colors</h3>
+	<h3 class="heading-type-3">Forms</h3>
 
-	<h6 class="heading-type-6">Core colors</h6>
-
-	<div class="colors-container">
-		<div class="colors colors--skoda-green">
-			<p>$skoda-green</p>
-			<p>#4BA82E</p>
-		</div>
-		<div class="colors colors--grey-heavy">
-			<p>$grey-heavy</p>
-			<p>#4BA82E</p>
-		</div>
-		<div class="colors colors--grey-dark">
-			<p>$grey-dark</p>
-			<p>#4212428</p>
-		</div>
-		<div class="colors colors--grey-mid">
-			<p>$grey-mid</p>
-			<p>#888888</p>
-		</div>
-		<div class="colors colors--grey-light">
-			<p>$grey-light</p>
-			<p>#E2DFDE</p>
-		</div>
-		<div class="colors colors--grey-feint">
-			<p>$grey-feint</p>
-			<p>#F7F7F7</p>
-		</div>
-		<div class="colors colors--white">
-			<p>$white</p>
-			<p>#FFFFFF</p>
-		</div>
+	<div class="field-element">
+		<label for="text-input">Label for input *</label>
+		<input type="text" id="text-input" placeholder="Field element" required>
 	</div>
 
-	<h6 class="heading-type-6">UI colors</h6>
-
-	<div class="colors-container">
-		<div class="colors colors--ui-red">
-			<p>$ui-red</p>
-			<p>#E60044</p>
-		</div>
-		<div class="colors colors--ui-orange">
-			<p>$ui-orange</p>
-			<p>#FE9226</p>
-		</div>
-		<div class="colors colors--ui-yellow">
-			<p>$ui-yellow</p>
-			<p>#FFC632</p>
-		</div>
-		<div class="colors colors--ui-blue">
-			<p>$ui-blue</p>
-			<p>#0077E9</p>
-		</div>
+	<div class="field-element">
+		<label for="text-input">Label for non-required input</label>
+		<input type="text" id="text-input" placeholder="Field element">
 	</div>
 
+	<div class="field-element">
+		<label for="text-area">Label for text area *</label>
+		<textarea id="text-area" placeholder="For long field text with lorem ipsum" required></textarea>
+	</div>
+
+	<!-- https://codepen.io/ericrasch/pen/zjDBx -->
+	
+	<div class="field-element">
+		<label for="dropdown">Dropdown select *</label>
+		<select id="dropdown" required>
+			<option value="" disabled selected>Select your option</option>
+			<option value="Lorem 1">Lorem 1</option>
+			<option value="Lorem 2">Lorem 2</option>
+			<option value="Lorem 3">Lorem 3</option>
+		</select>
+	</div>
+
+	<div class="field-element">
+		<label for="email">Email</label>
+		<input type="email" id="email" placeholder="Email" required>
+	</div>
+
+	<div class="field-element">
+		<label for="password">Password</label>
+		<input type="password" id="password" placeholder="Password" required>
+	</div>
 </div>
 	</div>
 

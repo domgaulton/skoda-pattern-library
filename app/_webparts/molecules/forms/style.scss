@@ -12,6 +12,11 @@
 		text-transform: uppercase;
 		font-family: $skoda-next-bold;
 		margin-bottom: 10px;
+
+		& .required:after  {
+			content: '*';
+			display: block;
+		}
 	}
 
 	input, textarea, select {
@@ -27,13 +32,22 @@
 			outline:0;
 		}
 
-		&.complete {
+		// &.complete {
+		// 	border: 1px solid $ui-green;
+		// }
+
+		// &.error {
+		// 	border: 1px solid $ui-red;
+		// }
+
+		&:required:valid {
 			border: 1px solid $ui-green;
 		}
 
-		&.error {
+		&:focus:invalid {
 			border: 1px solid $ui-red;
 		}
+
 	}
 
 	textarea {
@@ -45,6 +59,12 @@
 		overflow: hidden;
 		height: 44px;
 		border-radius: 0px;
+		-webkit-appearance: none;
+		-webkit-border-radius: 0px;
+
+		option:disabled {
+			color: red;
+		}
 	}
 }
 
