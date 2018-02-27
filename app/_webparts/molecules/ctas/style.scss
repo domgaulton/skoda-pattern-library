@@ -33,14 +33,15 @@
 
 		&__secondary {
 			background-color: $grey-dark;
+			padding: 13px 36px;
+			border: 2px solid $grey-heavy;
+
 			&:hover {
 				background-color: $grey-heavy;
 			}
 
-			&--white {
+			&--white {	
 				color: $grey-heavy;
-				padding: 13px 36px;
-				border: 2px solid $grey-heavy;
 				background-color: $white;
 				&:hover {
 					color: $white;
@@ -49,13 +50,26 @@
 			}
 
 			&--no-bg {
-				color: $grey-heavy;
-				padding: 13px 36px;
-				border: 2px solid $grey-heavy;
-				background-color: none;
+				
 				&:hover {
 					color: $white;
 					background-color: $grey-heavy;
+				}
+
+				&-white {
+					background-color: transparent;
+					color: $white;
+					border-color: $white;
+				}
+
+				&-black {
+					background-color: transparent;
+					color: $grey-heavy;
+					border-color: $grey-heavy;
+
+					&:hover {
+						color: $white;
+					}
 				}
 			}
 		}
