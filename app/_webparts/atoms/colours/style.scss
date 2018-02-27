@@ -9,6 +9,7 @@
 	width: 120px;
 	height: 200px;
 	margin: 10px;
+	@include border-box;
 
 	p {
 		font-weight: bold;

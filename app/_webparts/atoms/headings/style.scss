@@ -4,70 +4,49 @@ h3,.heading-type-3,
 h4,.heading-type-4,
 h5,.heading-type-5,
 h6,.heading-type-6 {
-	line-height: 1.2em;
+	line-height: 1.04166666em;
 	margin: 1em 0;
 	font-family: $skoda-next-bold;
-	color: black;
+	color: $grey-heavy;
 	text-transform: uppercase;
-	letter-spacing: 0.07em;
+	letter-spacing: 0.146em;
 }
 
 .heading-type-1 {
-	font-size: 2.1em;
+	font-size: 1.76470588235em;
 	@media (min-width: $screen-md) {
-		font-size: 2.5em;
+		font-size: 2.58823529412em;
 	}
 	@media (min-width: $screen-lg) {
-		font-size: 2.9411em;
+		font-size: 2.82352941176em;
 	}
 }
 
 .heading-type-2 {
-	font-size: 1.9em;
+	font-size: 1.41176470588em;
 	@media (min-width: $screen-md) {
-		font-size: 2.2em;
-	}
-	@media (min-width: $screen-lg) {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 }
 
 .heading-type-3 {
-	font-size: 1.8em;
+	font-size: 1.05882352941em;
 	@media (min-width: $screen-md) {
-		font-size: 2em;
-	}
-	@media (min-width: $screen-lg) {
-		font-size: 2.2em;
+		font-size: 1.41176470588em;
 	}
 }
 
 .heading-type-4 {
-	font-size: 1.6em;
+	font-size: 0.94117647058em;
 	@media (min-width: $screen-md) {
-		font-size: 1.8em;
-	}
-	@media (min-width: $screen-lg) {
-		font-size: 2em;
+		font-size: 1.05882352941em;
 	}
 }
 
 .heading-type-5 {
-	font-size: 1.4em;
-	@media (min-width: $screen-md) {
-		font-size: 1.6em;
-	}
-	@media (min-width: $screen-lg) {
-		font-size: 1.8em;
-	}
+	font-size: 0.82352941176em;
 }
 
 .heading-type-6 {
-	font-size: 1.1em;
-	@media (min-width: $screen-md) {
-		font-size: 1.3em;
-	}
-	@media (min-width: $screen-lg) {
-		font-size: 1.5em;
-	}
+	font-size: 0.70588235294em;
 }
