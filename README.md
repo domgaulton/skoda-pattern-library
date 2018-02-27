@@ -7,8 +7,9 @@
 ## Modular Build
 1. all webparts are split so you know where to find relative code
 2. app/_webparts/webparts/xxx contains folders with html, javascript and scss in
-3. the index.html file from each webpart folder gets brought into index.html using nunjacks '{% include '_webparts/webparts/webpart-name/index.html' %}'
-4. remember to incude the sass into the main.scss style sheet (split into webparts and pattern library styles)
+3. the index.html file from each webpart folder gets brought into index.html using nunjacks `{% include '_webparts/webparts/webpart-name/index.html' %}` on the `webpart_webpart-name.html` file
+4. add this to the `pattern-library/nav/index.html` file to display on the navigation
+5. incude the sass into the webpart.scss style sheet (split into webparts and pattern library styles)
 5. the scss and js get concatinated and put straight into the dist folder
 
 ## Gulp Tasks
