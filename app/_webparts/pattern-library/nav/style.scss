@@ -2,15 +2,16 @@
 	position: fixed;
 	top: 0px;
 	z-index:101;
-	left: 0px;
-	background-image: url('/dist/img/burger-menu.png');
+	left: 22px;
+	top: 10px;
+	background-image: url('/dist/img/menu-icon.png');
 	cursor: pointer;
-	width: 100px;
-	height: 100px;
-	background-size: 100px;
+	width: 80px;
+	height: 80px;
+	background-size: 80px;
 
 	@media (min-width: $screen-lg) {
-		top: 3	0px;
+		top: 30px;
 		left: 40px;
 		width: 40px;
 		height: 40px;
