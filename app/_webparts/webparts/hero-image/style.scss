@@ -23,19 +23,33 @@
 	}
 	
 	&__title {
-		@include hero-heading(3.2em);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		@include transform(-50%, -50%);
+		width: 100%;
 		margin: 0;
+
+		h1, h2, h3, h4, h5, h6, p {
+			@include hero-heading;
+		}
 
 		&--top {
 			top: 20px;
-			line-height: 1.5;
 			height: 0px;
+
+			h1, h2, h3, h4, h5, h6, p {
+				line-height: 1.5;
+			}
 		}
 
 		&--bottom {
 			top: auto;
 			bottom: 10px;
-			line-height: 1.5;
+			
+			h1, h2, h3, h4, h5, h6, p {
+				line-height: 1.5;
+			}
 		}
 	}
 

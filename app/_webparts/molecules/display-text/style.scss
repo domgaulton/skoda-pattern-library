@@ -1,13 +1,21 @@
-.display-text-bold {
-	font-size: 2em;
+.display-text {
+	font-size: 1.64705882353em;
 	color: $grey-heavy;
-	font-family: $skoda-next-extra-bold;
-	line-height: 1.1;
-}
+	line-height: 1.28571428571;
 
-.display-text-light {
-	font-size: 2em;
-	color: $grey-heavy;
-	font-family: $skoda-next-light;
-	line-height: 1.1;
+	&--bold {
+		font-family: $skoda-next-extra-bold;
+	}
+
+	&--light {
+		font-family: $skoda-next-light;
+	}
+
+	&--quote {
+		color: $grey-dark;
+		border-left: 1px solid $skoda-green;
+		margin-left: -20px;
+		padding-left: 20px;
+		font-family: $skoda-next-light-italic;
+	}
 }

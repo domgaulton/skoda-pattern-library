@@ -46,17 +46,12 @@
 	background-size: $size;
 }
 
-@mixin hero-heading($size){
-	font-family: $skoda-next-bold;
-	position: absolute;
-	left: 50%;
-	top: 40%;
-	@include transform(-50%, -50%);
+@mixin hero-heading {
+	@extend .heading-type-1;
 	text-align: center;
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.4em;
 	line-height: 2;
-	font-size: $size;
-	width: 100%;
+	margin: 0;
 }
