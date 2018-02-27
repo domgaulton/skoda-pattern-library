@@ -63,17 +63,17 @@
 
 	a.cta-minimal {
 		padding: 5px 5px 10px 5px;
-		border-bottom: 2px solid $grey-heavy;
+		border-bottom: 3px solid $grey-heavy;
 		color: $grey-heavy;
 		letter-spacing: 5px;
 
 		&:before, :after {
 			content: "";
 			position: absolute;
-			bottom: -2px;
+			bottom: -3px;
 			left: 0px;
 			width: 0px;
-			height: 2px;
+			height: 3px;
 			transition: all 0.2s ease-in-out;
 			transition-duration: 0.75s;
 			opacity: 1;
@@ -89,7 +89,7 @@
 
 		&--white {
 			color: $white;
-			border-bottom: 2px solid $white;
+			border-bottom: 3px solid $white;
 		}
 	}
 }
