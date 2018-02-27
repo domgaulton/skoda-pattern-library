@@ -1,7 +1,13 @@
 .humanise-tabs {
+
+
 	margin-bottom: $webpart-margin-bottom;
 
 	&__tab-select {
+
+		@media (max-width: $screen-md) {
+			display: none;
+		}
 
 		border-bottom: 1px solid $grey-light;
 		padding-bottom: 13px;
@@ -46,8 +52,14 @@
 	&__tab-content {
 		clear: both;
 
-		&[aria-hidden='true'] {
-			display: none;
+		@media (max-width: $screen-md) {
+			display: block;
+		}
+
+		@media (min-width: $screen-md) {
+			&[aria-hidden='true'] {
+				display: none;
+			}
 		}
 	}
 }
