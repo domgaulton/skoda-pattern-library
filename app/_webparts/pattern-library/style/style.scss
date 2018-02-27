@@ -15,5 +15,7 @@ pre {
   background-image: url('/dist/img/code-icon.png');
   width: 45px;
   height: 20px;
-  display: block;
+  display: inline-block;
+  position: relative;
+  top: -6px;
 }
