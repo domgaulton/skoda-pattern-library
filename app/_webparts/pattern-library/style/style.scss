@@ -10,3 +10,10 @@ pre {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
+
+.github-link {
+  background-image: url('/dist/img/code-icon.png');
+  width: 45px;
+  height: 20px;
+  display: block;
+}
