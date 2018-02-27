@@ -16,16 +16,17 @@
 	// }	
 
 	& .content_zone {
-		@include content_absolute;
+		@include content-absolute;
 	}
 	
 	&__title {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		@include transform(-50%, -50%);
-		width: 80%;
-		margin: 0;
+		@include content-center;
+		width: 100%;
+
+		@media (min-width: $screen-lg) {
+			margin: 0 auto;
+			width: 80%;
+		}
 
 		h1, h2, h3, h4, h5, h6, p {
 			@include hero-heading;

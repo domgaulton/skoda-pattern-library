@@ -19,6 +19,13 @@
 	transform:         	translate($transformX, $tranformY);
 }
 
+@mixin content-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	@include transform(-50%, -50%);
+}
+
 @mixin content-absolute {
 	position: absolute;
 	top: 0;
