@@ -20,6 +20,9 @@
 @import '_webparts/molecules/paragraphs/style.scss';
 @import '_webparts/molecules/terms-and-conditions/style.scss';
 
+// Organisms
+@import '_webparts/organisms/split-50-50/style.scss';
+
 // Webparts
 @import '_webparts/webparts/intro/style.scss';
 @import '_webparts/webparts/intro-text/style.scss';
