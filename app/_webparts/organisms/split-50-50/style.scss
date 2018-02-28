@@ -1,14 +1,16 @@
 .split-50-50 {
-	//clear: both;
 	margin-bottom: $webpart-margin-bottom;
+
+	@media (min-width: $screen-md) {
+		display: flex;
+		justify-content: space-evenly;
+	}
 
 	&__col {
 		width: 100%;
 
 		@media (min-width: $screen-md) {
-			width: 47%;
-			margin: 1%;
-			display: inline-block;
+			width: 49%;
 		}
 	}
 
