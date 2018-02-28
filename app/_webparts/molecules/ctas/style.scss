@@ -8,17 +8,13 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		@include transition(0.5s);
-		width: 100%;
 		margin-right: 0px;
 		margin-bottom: 13px;
-		font-family: $skoda-next-bold;
+		font-family: $skoda-next-light;
+		font-size: 0.70588235294em;
 		display: inline-block;
 		cursor: pointer;
-
-		@media (min-width: $screen-md) {
-			margin-right: 40px;
-			width: auto;
-		}
+		text-align: center;
 
 		&:last-of-type {
 			margin-right: 0;
@@ -26,8 +22,14 @@
 	}
 
 	a.cta-block {
+		width: 100%;
 		color: white;
 		padding: 13px 40px;
+
+		@media (min-width: $screen-md) {
+			margin-right: 40px;
+			width: auto;
+		}
 
 		&__primary {
 			
@@ -39,7 +41,7 @@
 
 		&__secondary {
 			background-color: $grey-dark;
-			padding: 13px 36px;
+			// padding: 13px 36px;
 			border: 2px solid $grey-heavy;
 
 			&:hover {
@@ -86,6 +88,8 @@
 		border-bottom: 3px solid $grey-heavy;
 		color: $grey-heavy;
 		letter-spacing: 5px;
+		font-family: $skoda-next-bold;
+		margin-right: 40px;
 
 		&:before, :after {
 			content: "";

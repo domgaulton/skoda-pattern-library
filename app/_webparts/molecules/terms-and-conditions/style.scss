@@ -1,12 +1,12 @@
 .terms-and-conditions {
 	padding-top: 40px;
-	font-size: 0.9em;
+	font-size: 0.88235294117em;
 	border-top: 1px solid $grey-light;
 
 	&:before {
 		content: 'Please Note:';
-		font-family: $skoda-next-bold;
-		text-transform: uppercase;
+		@extend .heading-type-6;
+		font-size: 0.8em;
 	}
 
 	p:first-of-type {
