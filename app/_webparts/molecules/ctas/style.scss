@@ -8,11 +8,17 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		@include transition(0.5s);
-		margin-right: 40px;
+		width: 100%;
+		margin-right: 0px;
 		margin-bottom: 13px;
 		font-family: $skoda-next-bold;
 		display: inline-block;
 		cursor: pointer;
+
+		@media (min-width: $screen-md) {
+			margin-right: 40px;
+			width: auto;
+		}
 
 		&:last-of-type {
 			margin-right: 0;

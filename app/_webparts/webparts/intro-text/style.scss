@@ -1,0 +1,15 @@
+.humanise-text {
+	width: 100%;
+	text-align: center;
+
+	&__heading {
+		#{$text} {
+			@extend .heading-type-3;
+		}
+	}
+
+	.cta-container {
+		justify-content: center;
+	}
+	
+}
