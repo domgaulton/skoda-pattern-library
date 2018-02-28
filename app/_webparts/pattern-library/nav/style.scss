@@ -27,8 +27,9 @@
 	z-index:100;
 	height: 100vh;
 	overflow: scroll;
-	left: 0px;
+	left: 0;
 	top: 0;
+
 	box-shadow: 0px 0px 30px $grey-heavy;
 	font-size: 0.7em;
 
@@ -70,6 +71,6 @@
 	}
 
 	&.hide-nav {
-		left: -200px;
+		left: -180px;
 	}
 }
