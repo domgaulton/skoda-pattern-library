@@ -98,13 +98,26 @@ gulp.task('browser-sync', ['clean'],function() {
 
 gulp.task('scripts', function(){
     return gulp.src([
-            config.root+'_config/js/_config.'+config.env+'.js',     //include environment config file for global variables
-            config.app+'**/*.js'   
+            //config.root+'_config/js/_config.'+config.env+'.js',     //include environment config file for global variables
+            config.app+'**/*.js',
+            "!"+config.app+'_webparts/pattern-library/**/*.js'
         ])
         .pipe(concat('script.js'))
         .pipe(gulp.dest(config.dist+'js'))
         .pipe(rename('script.js'))        
         .pipe(gulpif(!config.dev, uglify()))                        //minify JS when not in dev mode
+        .pipe(gulp.dest(config.dist+'js'));
+});
+
+// Concatinate and Uglify to Dist //
+
+gulp.task('scripts-pattern-library', function(){
+    return gulp.src([
+            config.app+'_webparts/pattern-library/**/*.js'
+        ])
+        .pipe(concat('script-pattern-library.js'))
+        .pipe(gulp.dest(config.dist+'js'))
+        .pipe(rename('script-pattern-library.js'))
         .pipe(gulp.dest(config.dist+'js'));
 });
 
@@ -119,5 +132,5 @@ gulp.task('watch', function(){
 // Gulp Task - Run in Sequence //
 
 gulp.task('default', function () {  
-    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts' ], 'watch');
+    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts' , 'scripts-pattern-library'], 'watch');
 });
