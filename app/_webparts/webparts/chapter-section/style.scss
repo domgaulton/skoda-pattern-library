@@ -4,12 +4,12 @@
 	margin-bottom: $webpart-margin-bottom;
 
 	&__background {
+		width: 94%;
+		height: 94vh;
+		margin: 3%;
 		background-position: center center;
 		background-repeat: no-repeat;
 		@include background-size(cover);
-		height: 96vh;
-		width: 96%;
-		margin: 2%;
 	}
 
 	& .content_zone {
