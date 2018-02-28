@@ -28,6 +28,8 @@
 			width: 80%;
 		}
 
+
+
 		h1, h2, h3, h4, h5, h6, p {
 			@include hero-heading;
 		}
@@ -36,7 +38,7 @@
 			top: 20px;
 			height: 0px;
 
-			h1, h2, h3, h4, h5, h6, p {
+			#{$text} {
 				line-height: 1.5;
 			}
 		}
@@ -45,8 +47,15 @@
 			top: auto;
 			bottom: 0px;
 			
-			h1, h2, h3, h4, h5, h6, p {
+			#{$text} {
 				line-height: 1.5;
+			}
+		}
+
+		&--tag {
+			#{$text} {
+				font-size: 1em;
+				letter-spacing: 2px;
 			}
 		}
 	}
