@@ -1,0 +1,23 @@
+.humanise-chapter-section {
+	display: block;
+	position: relative;
+	margin-bottom: $webpart-margin-bottom;
+
+	img {
+		height: 96vh;
+		width: 96%;
+		margin: 2%;
+	}
+
+	& .content_zone {
+		@include content_absolute;
+	}
+	
+	&__title {
+
+		#{$text} {
+			@include content-center;
+			@include hero-heading;
+		}	
+	}
+}
