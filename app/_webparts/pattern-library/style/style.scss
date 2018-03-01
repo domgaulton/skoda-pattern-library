@@ -12,7 +12,7 @@ pre {
 }
 
 .pattern-library-body {
-  width: 90%;
+  width: calc(100% - 200px);
   float: right;
   @include transition(1s ease-in-out);
 
