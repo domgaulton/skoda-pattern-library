@@ -1,0 +1,32 @@
+.humanise-parallax {
+	text-align: center;
+	display: flex;
+
+	&__item {
+		text-align: right;
+		width: 50%;
+		font-size: 1.5em;
+		font-family: $skoda-next-bold;
+		color: $grey-light;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		position: relative;
+		margin: 0;
+		line-height: 0;
+		opacity: 0.5;
+		z-index: 89;
+		pointer-events: none;
+
+		&:nth-of-type(2) {
+			text-align: left;
+		}
+
+		@media (min-width: $screen-md) {
+			font-size: 3em;
+		}
+
+		@media (min-width: $screen-lg) {
+			font-size: 6em;
+		}
+	}
+}
