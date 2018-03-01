@@ -12,12 +12,13 @@
 		margin-bottom: 13px;
 		font-family: $skoda-next;
 		font-size: 0.70588235294em;
+		text-align: center;
 	}
 
 	a.cta-block {
 		width: 100%;
 		color: white;
-		padding: 13px 40px;
+		padding: 15px 45px;
 
 		@media (min-width: $screen-md) {
 			margin-right: 40px;
@@ -38,8 +39,7 @@
 
 		&__secondary {
 			background-color: $grey-dark;
-			// padding: 13px 36px;
-			border: 2px solid $grey-heavy;
+			border: 1px solid $grey-heavy;
 
 			&:hover {
 				background-color: $grey-heavy;
@@ -86,21 +86,22 @@
 	}
 
 	a.cta-minimal {
-		padding: 5px 5px 10px 5px;
-		border-bottom: 3px solid $grey-heavy;
+		padding: 5px 0px 10px 5px;
+		border-bottom: 2px solid $grey-heavy;
 		color: $grey-heavy;
 		letter-spacing: 5px;
 		font-family: $skoda-next-bold;
 		margin: 0 20px;
 		cursor: pointer;
+		font-size: 0.76470588235em;
 
 		&:before, :after {
 			content: "";
 			position: absolute;
-			bottom: -3px;
+			bottom: -2px;
 			left: 0px;
 			width: 0px;
-			height: 3px;
+			height: 2px;
 			transition: all 0.2s ease-in-out;
 			transition-duration: 0.75s;
 			opacity: 1;
@@ -116,7 +117,7 @@
 
 		&--white {
 			color: $white;
-			border-bottom: 3px solid $white;
+			border-bottom: 2px solid $white;
 		}
 	}
 }
