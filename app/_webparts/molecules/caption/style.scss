@@ -1,10 +1,18 @@
-.caption-text {
+.caption {
 	width: 100%;
-	margin-top:10px;
-	padding-top: 15px;
-	text-transform: uppercase;
-	border-top: 1px solid $grey-light;
-	font-family: $skoda-next-bold;
-	font-size: 0.7em;
-	letter-spacing: 2px;
+
+	img {
+		width: 100%;
+	}
+
+	&__text {
+		width: 100%;
+		margin-top:10px;
+		padding-top: 15px;
+		text-transform: uppercase;
+		border-top: 1px solid $grey-light;
+		font-family: $skoda-next-bold;
+		font-size: 0.7em;
+		letter-spacing: 2px;		
+	}
 }
