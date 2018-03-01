@@ -1,27 +1,21 @@
 .nav-show-hide {
-	position: fixed;
-	top: 0px;
+	position: relative;
 	z-index:101;
-	left: 22px;
-	top: 10px;
-	background-image: url('/dist/img/menu-icon.png');
+	//background-image: url('/dist/img/icon-menu.svg');
+	-webkit-mask-image: url('/dist/img/icon-menu.svg');
+	mask-image: url('/dist/img/icon-menu.svg');
 	cursor: pointer;
-	width: 80px;
-	height: 80px;
-	background-size: 80px;
+	background-color:white;
+	top: 30px;
+	left: 30px;
+	width: 30px;
+	height: 30px;
+	background-size: 30px;
 
-	@media (min-width: $screen-lg) {
-		top: 30px;
-		left: 40px;
-		width: 40px;
-		height: 40px;
-		background-size: 40px;
-	}
 }
 
 .pattern-library-nav {
 	@include transition(1s ease-in-out);
-	padding-top: 100px;
 	position: fixed;
 	@include border-box;
 	width:200px;
@@ -40,6 +34,10 @@
 
 		li {
 			margin: 15px 0;
+
+			h5 {
+				margin-top: 40px;
+			}
 		}
 
 		a {
@@ -80,6 +78,7 @@
 	// }
 
 	&.hide-nav {
+		// @include transition(1s ease-in-out);
 		left: -200px;
 	}
 }
