@@ -23,6 +23,9 @@
 	@include transition(1s ease-in-out);
 	padding-top: 100px;
 	position: fixed;
+	@include border-box;
+	width:10%;
+	float: left;
 	background: #ffffffb3;
 	z-index:100;
 	height: 100vh;
@@ -76,6 +79,7 @@
 	}
 
 	&.hide-nav {
+		width: 0;
 		left: -180px;
 	}
 }
