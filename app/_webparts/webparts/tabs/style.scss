@@ -1,7 +1,7 @@
 .humanise-tabs {
 	margin-bottom: $webpart-margin-bottom;
 
-	&__border {
+	&__wrapper {
 		border-bottom: 1px solid $grey-light;
 
 		@media (max-width: $screen-md) {
@@ -10,19 +10,13 @@
 	}
 
 	&__tab-select {
-
-		@extend .content_zone;
-
-		@media (max-width: $screen-md) {
-			display: none;
-		}
+		display: flex;
 
 		padding-bottom: 13px;
 		text-align: center;
 
 		li {
-			width: 24.5%;
-			display: inline-block;
+			width: 25%;
 			color: $grey-mid;
 			text-transform: uppercase;
 			font-size: 0.65em;
@@ -31,7 +25,6 @@
 			margin: 0;
 			list-style-type: none;
 			@include border_box;
-			font-family: $skoda-next;
 
 			&:hover, &:active, &:focus {
 				border: none;
@@ -46,7 +39,6 @@
 	}
 
 	&__nav-wrapper {
-		@extend .content_zone;
 
 		&--nav {
 			height: 4px;
@@ -54,13 +46,7 @@
 			margin: 0 3%;
 			background-color: $skoda-green;
 			position: relative;
-			@include border-box;
 			@include transition(1s ease-in-out);
-		}
-
-
-		@media (max-width: $screen-md) {
-			display: none;
 		}
 	}
 
