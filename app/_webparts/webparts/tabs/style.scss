@@ -1,28 +1,24 @@
 .humanise-tabs {
-
-
 	margin-bottom: $webpart-margin-bottom;
 
+	&__border {
+		border-bottom: 1px solid $grey-light;
+
+		@media (max-width: $screen-md) {
+			display: none;
+		}
+	}
+
 	&__tab-select {
+
+		@extend .content_zone;
 
 		@media (max-width: $screen-md) {
 			display: none;
 		}
 
-		border-bottom: 1px solid $grey-light;
 		padding-bottom: 13px;
 		text-align: center;
-		margin-bottom: ($webpart-margin-bottom / 2);
-
-		&--nav {
-			height: 4px;
-			width: 16%;
-			margin: 0 4%;
-			background-color: $skoda-green;
-			position: relative;
-			top: 30px;
-			@include transition(1s ease-in-out);
-		}
 
 		li {
 			width: 24.5%;
@@ -49,6 +45,26 @@
 		}
 	}
 
+	&__nav-wrapper {
+		@extend .content_zone;
+
+		&--nav {
+			height: 4px;
+			width: 19%;
+			margin: 0 3%;
+			background-color: $skoda-green;
+			position: relative;
+			@include border-box;
+			@include transition(1s ease-in-out);
+		}
+
+
+		@media (max-width: $screen-md) {
+			display: none;
+		}
+	}
+
+	
 	&__tab-content {
 		clear: both;
 
