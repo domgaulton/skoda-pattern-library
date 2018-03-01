@@ -118,6 +118,7 @@ gulp.task('scripts-pattern-library', function(){
         .pipe(concat('script-pattern-library.js'))
         .pipe(gulp.dest(config.dist+'js'))
         .pipe(rename('script-pattern-library.js'))
+        .pipe(gulpif(!config.dev, uglify()))                        //minify JS when not in dev mode
         .pipe(gulp.dest(config.dist+'js'));
 });
 
@@ -126,8 +127,9 @@ gulp.task('scripts-pattern-library', function(){
 gulp.task('watch', function(){
     gulp.watch(config.app+'**/*.html', ['nunjucks']);
     gulp.watch(config.app+'**/*.scss', ['sass']);
-    gulp.watch(config.app+'**/*.js', ['scripts']);
-    //gulp.watch(config.app+'_webparts/pattern-library/**/*.js', ['scripts-pattern-library']);
+    //gulp.watch(config.app+'**/*.js', ['scripts']);
+    gulp.watch([config.app+'**/*.js', '!'+config.app+'_webparts/pattern-library/**/*.js'], ['scripts']);
+    gulp.watch(config.app+'_webparts/pattern-library/**/*.js', ['scripts-pattern-library']);
 })
 
 // Gulp Task - Run in Sequence //
