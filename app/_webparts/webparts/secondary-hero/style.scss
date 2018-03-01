@@ -1,19 +1,15 @@
-.humanise-hero {
+.humanise-secondary-hero {
 	display: block;
 	position: relative;
-	max-height: 100vh;
+	max-height: 600px;
 	margin-bottom: $webpart-margin-bottom;
 
 	&__background {
 		background-position: center center;
 		background-repeat: no-repeat;
 		@include background-size(cover);
-		height: 100vh;
+		height: 60vh;
 	}
-
-	// &__video {
-	// 	height: calc(100vh - 159px);
-	// }	
 
 	& .content_zone {
 		@include content-absolute;
@@ -28,28 +24,8 @@
 			width: 80%;
 		}
 
-
-
 		h1, h2, h3, h4, h5, h6, p {
 			@include hero-heading;
-		}
-
-		&--top {
-			top: 20px;
-			height: 0px;
-
-			#{$text} {
-				line-height: 1.5;
-			}
-		}
-
-		&--bottom {
-			top: auto;
-			bottom: 0px;
-			
-			#{$text} {
-				line-height: 1.5;
-			}
 		}
 
 		&--tag {
