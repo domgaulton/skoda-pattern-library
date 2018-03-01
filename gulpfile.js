@@ -131,7 +131,7 @@ gulp.task('watch', function(){
     gulp.watch(config.app+'**/*.scss', ['sass']);
     gulp.watch(config.app+'**/*.js', ['scripts']);
     // gulp.watch([config.app+'**/*.js', '!'+config.app+'_webparts/pattern-library/**/*.js'], ['scripts']);
-    // gulp.watch(config.app+'_webparts/pattern-library/**/*.js', ['scripts-pattern-library']);
+    gulp.watch(config.app+'_webparts/pattern-library/**/*.js', ['scripts-pattern-library']);
 })
 
 // Gulp Task - Run in Sequence //

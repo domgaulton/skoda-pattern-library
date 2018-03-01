@@ -21,6 +21,12 @@
 // 	}
 // }
 
+$('.pattern-library-hover').mouseover(function(){
+	console.log('hover2');
+	$('.pattern-library-nav').toggleClass('hide-nav');
+	$('.pattern-library-body').toggleClass('hide-nav');
+})
+
 $('.nav-show-hide').click(function(){
 
 	//navigationShowHide();
