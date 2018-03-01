@@ -70,13 +70,15 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(config.dist+'css'));
 });
 
-// Gulp Tasks //
+// Nav Desktop - build navigation for k2 desktop //
 
 gulp.task('nav-desktop', function () {  
     gulp.src(config.app+'desktop-dbsd-nav.scss')
         .pipe(sass({includePaths: ['scss']}))
         .pipe(gulp.dest(config.dist+'css'));
 });
+
+// Add k2 overwrites //
 
 gulp.task('deploy-desktop', function () {  
     gulp.src(config.app+'desktop-dbsd.scss')
@@ -109,7 +111,7 @@ gulp.task('scripts', function(){
         .pipe(gulp.dest(config.dist+'js'));
 });
 
-// Concatinate and Uglify to Dist //
+// Pattern Library Scripts (not for production) - Concatinate and Uglify to Dist //
 
 gulp.task('scripts-pattern-library', function(){
     return gulp.src([
@@ -127,13 +129,13 @@ gulp.task('scripts-pattern-library', function(){
 gulp.task('watch', function(){
     gulp.watch(config.app+'**/*.html', ['nunjucks']);
     gulp.watch(config.app+'**/*.scss', ['sass']);
-    //gulp.watch(config.app+'**/*.js', ['scripts']);
-    gulp.watch([config.app+'**/*.js', '!'+config.app+'_webparts/pattern-library/**/*.js'], ['scripts']);
-    gulp.watch(config.app+'_webparts/pattern-library/**/*.js', ['scripts-pattern-library']);
+    gulp.watch(config.app+'**/*.js', ['scripts']);
+    // gulp.watch([config.app+'**/*.js', '!'+config.app+'_webparts/pattern-library/**/*.js'], ['scripts']);
+    // gulp.watch(config.app+'_webparts/pattern-library/**/*.js', ['scripts-pattern-library']);
 })
 
 // Gulp Task - Run in Sequence //
 
 gulp.task('default', function () {  
-    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts' , 'scripts-pattern-library'], 'watch');
+    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts', 'scripts-pattern-library' ], 'watch');
 });
