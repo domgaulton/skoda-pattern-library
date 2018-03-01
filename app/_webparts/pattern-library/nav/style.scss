@@ -26,7 +26,7 @@
 	@include border-box;
 	width:200px;
 	float: left;
-	background: #ffffffb3;
+	background: $grey-feint;
 	z-index:100;
 	height: 100vh;
 	overflow: scroll;
@@ -39,7 +39,11 @@
 		margin-right: 8px;
 
 		li {
-			margin: 10px 0;
+			margin: 15px 0;
+		}
+
+		a {
+			color: $grey-heavy;
 		}
 
 		ul {
@@ -47,36 +51,35 @@
 		}
 	}
 
-	p {
-		text-align: center;
-		font-size: 1.7em;
-		text-transform: uppercase;
-		font-family: $skoda-next-bold;
-		margin: 0;
+	// p {
+	// 	text-align: center;
+	// 	font-size: 1.7em;
+	// 	text-transform: uppercase;
+	// 	font-family: $skoda-next-bold;
+	// 	margin: 0;
 
-		&:after {
-			content: 'mobile';
-			background-color: orange;
-			padding: 10px;
-		}
+	// 	&:after {
+	// 		content: 'mobile';
+	// 		background-color: orange;
+	// 		padding: 10px;
+	// 	}
 		
-		@media (min-width: $screen-md) {
-			&:after {
-				content: 'tablet';
-				background-color: yellow;
-			}
-		}
+	// 	@media (min-width: $screen-md) {
+	// 		&:after {
+	// 			content: 'tablet';
+	// 			background-color: yellow;
+	// 		}
+	// 	}
 		
-		@media (min-width: $screen-lg) {
-			&:after {
-				content: 'desktop';
-				background-color: cyan;
-			}
-		}
-	}
+	// 	@media (min-width: $screen-lg) {
+	// 		&:after {
+	// 			content: 'desktop';
+	// 			background-color: cyan;
+	// 		}
+	// 	}
+	// }
 
 	&.hide-nav {
-		width: 0;
-		left: -180px;
+		left: -200px;
 	}
 }
