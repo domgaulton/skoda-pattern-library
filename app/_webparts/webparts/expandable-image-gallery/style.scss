@@ -41,6 +41,10 @@
 		&:not(:first-child):not(:nth-of-type(2)) {
 			
 			@media (min-width: $screen-md) {
+				margin-top: 20px;
+			}
+
+			@media (min-width: $screen-lg) {
 				margin-top: 100px;
 			}
 		}
@@ -56,7 +60,8 @@
 		&:nth-of-type(even) {
 			
 			@media (min-width: $screen-md) {
-				top: 80px;
+				text-align: left;
+				top: 60px;
 				float: right;
 			}
 
