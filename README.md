@@ -27,6 +27,7 @@
 
 ## FE Build tips
 1. So we can use h1 through to H6 or even p / span tags in hero text (semantically we might want to do this) we have the following variable `#{$text}` which can be used to apply styles to all tags. In this case we need to put a wrapper on the container and a child text tag.
+2. Add video to webparts using `id="player"` and `data-ytID="zoRbe2Of9_Y"` where ID is YouTube ID.
 
 ## K2 CMS Details
 1. Set up new pages with a single paragraph repeater in
