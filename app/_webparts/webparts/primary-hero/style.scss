@@ -43,7 +43,8 @@
 
 		&--bottom {
 			top: auto;
-			bottom: 0px;
+			@include transform(-50%, 0%);
+			bottom: 10%;
 			
 			#{$text} {
 				line-height: 1.5;
