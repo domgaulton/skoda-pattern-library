@@ -2,15 +2,25 @@
 	width: 100%;
 	padding-top: 56.25%;
     position: relative;
+    margin-bottom: $webpart-margin-bottom;
 
-	&__poster {
-		width: 100%;
-		height: 100%;
-	}
+	// &__poster {
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
 
 	&__poster, &__video {
 		width: 100%;
 		height: 100%;
 		@include content-absolute;
 	}
+
+	// &__control {
+	// 	content: '';
+	// 	width: 70px;
+	// 	height: 50px;
+	// 	background-color: $ui-blue;
+	// 	@include content-center;
+	// 	//pointer-events: none;
+	// }
 }
