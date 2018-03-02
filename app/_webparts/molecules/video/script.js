@@ -25,6 +25,7 @@ if ( $('[data-ytID]').length ) {
         'rel':0,
         'fs':0,
         'modestbranding':1,
+        'loop':1,
       },
       events: {
         'onReady': onPlayerReady
