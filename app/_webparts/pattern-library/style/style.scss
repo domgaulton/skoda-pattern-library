@@ -30,12 +30,14 @@ pre {
 }
 
 .github-link {
-  background-image: url('/dist/img/code-icon.png');
-  width: 45px;
-  height: 20px;
+  -webkit-mask-image: url('/dist/img/icon-code.svg');
+  mask-image: url('/dist/img/icon-code.svg');
+  background-color: white;
+  width: 22.5px;
+  height: 10px;
+  background-size: 22.5px;
   display: inline-block;
   position: relative;
-  top: -3px;
 }
 
 .pattern-library-header {
@@ -51,8 +53,11 @@ pre {
       padding: 120px 0 0;
     }
 
-    #{$text} {
-      @extend .heading-type-5;
+    p {
+      font-size: 0.82352941176em;
+      font-family: $skoda-next-bold;
+      text-transform: uppercase;
+      letter-spacing: 0.146em;
       color: $grey-mid;
 
     }
@@ -61,15 +66,24 @@ pre {
   &__sub-title {
     margin: 0 0 30px;
     display: inline-block;
+    
     @media (min-width: $screen-lg) {
       margin: 0 0 80px;
     }
 
-    #{$text} {
+    h2 {
       @extend .heading-type-2;
       color: $white;
       margin: 0;
       text-align: left;
+    }
+
+    p {
+      font-size: 0.82352941176em;
+      font-family: $skoda-next-bold;
+      text-transform: uppercase;
+      letter-spacing: 0.146em;
+      color: $grey-mid;
     }
   }
 }
