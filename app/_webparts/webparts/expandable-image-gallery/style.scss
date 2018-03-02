@@ -1,7 +1,6 @@
 .humanise-images {
-	display: block;
+	// display: block;
 	position: relative;
-	min-height: 1100px;
 	margin-bottom: $webpart-margin-bottom;
 
 	// &__background {
@@ -23,11 +22,12 @@
 
 	&__image {
 		position: relative;
-		width: 85vw;
-		height: 85vw;
+		width: 87.5vw;
+		height: 87.5vw;
+		// min-width: 100%;
+		// height: auto;
 		text-align: center;
 		margin-top: 60px;
-
 
 		@media (min-width: $screen-md) {
 			width: 42vw;
