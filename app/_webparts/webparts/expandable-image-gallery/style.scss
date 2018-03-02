@@ -23,14 +23,15 @@
 
 	&__image {
 		position: relative;
-		width: 100%;
+		width: 85vw;
+		height: 85vw;
 		text-align: center;
+		margin-top: 60px;
 
 
 		@media (min-width: $screen-md) {
-			// width: 345px;
-			// height: 345px;
-			width: 45%;
+			width: 42vw;
+			height: 42vw;
 		}
 
 		@media (min-width: $screen-lg) {
@@ -40,9 +41,9 @@
 
 		&:not(:first-child):not(:nth-of-type(2)) {
 			
-			@media (min-width: $screen-md) {
-				margin-top: 20px;
-			}
+			// @media (min-width: $screen-md) {
+			// 	margin-top: 60px;
+			// }
 
 			@media (min-width: $screen-lg) {
 				margin-top: 100px;
@@ -89,26 +90,28 @@
 				
 				&::after {
 					position: absolute;
-					bottom: 20px;
-					left: -1px;
+					bottom: 0px;
+					left: 0px;
 					width: 74px;
 					height: 74px;
 					content:url('http://www.skoda.co.uk/models/kodiaq/PublishingImages/expand_light_bg.svg');
 					opacity: 0.7;
 
-					@media (min-width: $screen-md) {
-						bottom: 44px;
-					}
+					// @media (min-width: $screen-md) {
+					// 	bottom: 44px;
+					// }
 
-					@media (min-width: $screen-lg) {
-						bottom: 0;
-						left: 0;
-					}
+					// @media (min-width: $screen-lg) {
+					// 	bottom: 0;
+					// 	left: 0;
+					// }
 				}
 
 				img {
-					max-width: 100%;
-					max-height: 100%;
+					// width: 100%;
+					// height: 100%;
+					// max-width: 100%;
+					// max-height: 100%;
 					@include transition(0.8s ease-in-out);
 
 					&:hover {
