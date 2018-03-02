@@ -22,7 +22,7 @@
 ## Process
 1. Use branch names from JIRA tickets e.g. `SKMW-0001 - Webpart Name`
 2. Commit changes and set up Pull Requests
-3. Changes will be seen on `https://skodauk.github.io/dist/index.html` where ŠKODA can review
+3. Changes will be seen on `https://skodauk.github.io/dist/index.html` where ŠKODA can review (use `?hide-title` parameter at end of URL to hide title)
 4. If happy we can update global scripts and css for desktop and mobile.
 
 ## FE Build tips
