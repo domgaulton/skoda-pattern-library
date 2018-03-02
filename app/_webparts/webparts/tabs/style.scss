@@ -53,8 +53,8 @@
 	
 	&__tab-content {
 		clear: both;
-
-		@media (max-width: $screen-md) {
+		display: block;
+		&[aria-hidden='true'] {
 			display: block;
 		}
 
