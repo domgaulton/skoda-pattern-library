@@ -1,0 +1,10 @@
+.humanise-background-fixed {
+	margin-bottom: $webpart-margin-bottom;
+	
+	&__background {
+		background-repeat: no-repeat;
+		@include background-size(cover);
+		height: 60vh;
+		background-attachment: fixed;
+	}
+}
