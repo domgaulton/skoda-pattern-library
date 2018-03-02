@@ -59,23 +59,24 @@ pre {
       text-transform: uppercase;
       letter-spacing: 0.146em;
       color: $grey-mid;
+      margin: 0;
 
     }
   }
 
   &__sub-title {
-    margin: 0 0 30px;
+    margin: 0px 0 30px;
     display: inline-block;
     
     @media (min-width: $screen-lg) {
-      margin: 0 0 80px;
+      margin: 0px 0 80px;
     }
 
-    h2 {
+    h1 {
       @extend .heading-type-2;
       color: $white;
       margin: 0;
-      text-align: left;
+      //text-align: left;
     }
 
     p {
