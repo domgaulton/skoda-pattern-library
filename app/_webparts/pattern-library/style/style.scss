@@ -1,3 +1,4 @@
+
 pre {
   background-color: $grey-heavy;
   padding: 10px;
@@ -9,6 +10,10 @@ pre {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
+}
+
+.news-page {
+  max-width: $paragraph-width;
 }
 
 .pattern-library-hover {

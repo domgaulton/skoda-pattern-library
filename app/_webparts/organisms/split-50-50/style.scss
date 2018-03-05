@@ -1,5 +1,5 @@
 .split-50-50 {
-	margin-bottom: $webpart-margin-bottom;
+	margin-bottom: ($webpart-margin-bottom /2);
 
 	@media (min-width: $screen-md) {
 		display: flex;
@@ -12,6 +12,10 @@
 
 		@media (min-width: $screen-md) {
 			width: 50%;
+		}
+
+		* {
+			margin: 0;
 		}
 	}
 

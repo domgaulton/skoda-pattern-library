@@ -5,15 +5,13 @@
 
 	&__heading {
 		#{$text} {
-			@extend .heading-type-3;
+			@extend .heading-type-4;
 		}
 	}
 
-	&__content {
+	&__copy {
 		margin: 0 auto;
-		width: 90%;
-
-		
+		max-width: $paragraph-width;
 	}
 
 	.cta-container {
