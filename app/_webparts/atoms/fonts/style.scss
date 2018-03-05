@@ -1,5 +1,5 @@
 p {
-	line-height: 1.76470588235;
+	line-height: 1.5;
 	margin-bottom: 2em;
 	font-family: $skoda-next-light;
 	letter-spacing: 0.02em;
@@ -24,6 +24,15 @@ a {
 
 .text-regular {
 	font-family: $skoda-next;
+}
+
+.opening-paragraph {
+	font-size: 0.94444444em;
+	font-family: $skoda-next-bold;
+	
+	@media (min-width: $screen-md) {
+		font-size: 1.23529412em;
+	}
 }
 
 .text-regular-italic {

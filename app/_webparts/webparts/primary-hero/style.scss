@@ -9,11 +9,7 @@
 		background-repeat: no-repeat;
 		@include background-size(cover);
 		height: 100vh;
-	}
-
-	// &__video {
-	// 	height: calc(100vh - 159px);
-	// }	
+	}	
 
 	& .content_zone {
 		@include content-absolute;
@@ -69,6 +65,7 @@
 				font-size: 0.76470588235em;
 				font-family: $skoda-next-bold;
 				margin-bottom: 20px;
+				display: block;
 			}
 		}
 	}
