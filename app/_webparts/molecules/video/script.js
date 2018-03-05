@@ -9,7 +9,7 @@ if ( $('[data-ytID]').length ) {
   var videoIds = [];
   
   function onYouTubeIframeAPIReady() {
-	$('.humanise-video__video').each(function(index) {
+	$('[data-ytID]').each(function(index) {
 		videoIds[index] = $(this).attr('id');
 		var ytID = $('#' + videoIds[index] + '[data-ytID]').attr('data-ytID');
 		players[index] = new YT.Player(videoIds[index], {
