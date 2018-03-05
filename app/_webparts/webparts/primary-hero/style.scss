@@ -32,6 +32,12 @@
 			@include hero-heading;
 		}
 
+		&--small {
+			#{$text} {
+				@include hero-heading-small;
+			}
+		}
+
 		&--top {
 			width: 90%;
 			@media (min-width: $screen-md) {
