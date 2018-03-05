@@ -1,14 +1,14 @@
 .humanise-secondary-hero {
 	display: block;
 	position: relative;
-	max-height: 600px;
+	max-height: 560px;
 	margin-bottom: $webpart-margin-bottom;
 
 	&__background {
 		background-position: center center;
 		background-repeat: no-repeat;
 		@include background-size(cover);
-		height: 60vh;
+		height: 560px;
 	}
 
 	& .content_zone {
@@ -25,21 +25,26 @@
 		}
 
 		h1, h2, h3, h4, h5, h6, p {
-			@include hero-heading;
+			@include hero-heading-small;
 		}
 
 		&--tag {
 			#{$text} {
-				font-size: 1em;
-				letter-spacing: 2px;
+				letter-spacing: 5px;
+				font-size: 0.76470588235em;
+				font-family: $skoda-next-bold;
+				margin-bottom: 20px;
 			}
+		}
+
+		& .cta-container {
+			//position: absolute;
+			//left: 50%;
+			//@include transform(-50%, -50%);
+			justify-content: center;
+			margin-top: 60px;
 		}
 	}
 
-	.cta-container {
-		position: absolute;
-		left: 50%;
-		bottom: 2%;
-		@include transform(-50%, -50%);
-	}
+	
 }

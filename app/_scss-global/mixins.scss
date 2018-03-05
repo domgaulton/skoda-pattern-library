@@ -53,12 +53,20 @@
 	background-size: $size;
 }
 
-@mixin hero-heading {
+@mixin hero-heading() {
 	@extend .heading-type-1;
 	text-align: center;
 	color: white;
-	text-transform: uppercase;
 	letter-spacing: 0.4em;
 	line-height: 2;
+	margin: 0;
+}
+
+@mixin hero-heading-small() {
+	@extend .heading-type-2;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.4em;
+	line-height: 1.5;
 	margin: 0;
 }

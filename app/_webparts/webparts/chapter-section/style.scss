@@ -20,7 +20,7 @@
 
 		#{$text} {
 			@include content-center;
-			@include hero-heading;
+			@include hero-heading();
 		}	
 	}
 }
