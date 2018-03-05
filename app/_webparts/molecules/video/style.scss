@@ -14,13 +14,16 @@
 		height: 100%;
 		@include content-absolute;
 	}
-
-	// &__control {
-	// 	content: '';
-	// 	width: 70px;
-	// 	height: 50px;
-	// 	background-color: $ui-blue;
-	// 	@include content-center;
-	// 	//pointer-events: none;
-	// }
 }
+
+// [data-ytID] {
+// 	& [data-video-autoplay = "1"] {
+// 		&:after {
+// 			content: 'fint me';
+// 			display: block;
+// 			width: 100px;
+// 			height: 100px;
+// 			background-color: red;
+// 		}
+// 	}
+// }
