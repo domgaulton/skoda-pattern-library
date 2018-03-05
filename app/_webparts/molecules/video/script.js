@@ -42,4 +42,3 @@ if ( $('[data-ytID]').length ) {
 		});
 	}
 }
-
