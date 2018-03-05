@@ -25,6 +25,7 @@ if ( $('[data-ytID]').length ) {
 				},
 				events: {
 					'onReady': function(event) {
+						console.log(event);
 						var autoplay = $('#' + videoIds[index]).attr('data-video-autoplay');
 						if (autoplay == 1) {
 							event.target.mute();
@@ -32,13 +33,16 @@ if ( $('[data-ytID]').length ) {
 						}
 					},
 					onStateChange: function(event) {
-						var loop = $('#' + videoIds[index]).attr('data-video-loop')
-						if (event.data === YT.PlayerState.ENDED && loop == 1 ) {
-							players[index].playVideo(); 
-						}
+						loopVideo(event, videoIds[index], players[index]);
 					}
 				}
 			});
 		});
+	}
+	function loopVideo(event, videoIdsIndex, playersIndex){
+		var loop = $('#' + videoIdsIndex).attr('data-video-loop')
+		if (event.data === YT.PlayerState.ENDED && loop == 1 ) {
+			playersIndex.playVideo(); 
+		}
 	}
 }
