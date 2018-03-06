@@ -34,36 +34,7 @@
 
 	}
 
-	// p {
-	// 	text-align: center;
-	// 	font-size: 1.7em;
-	// 	text-transform: uppercase;
-	// 	font-family: $skoda-next-bold;
-	// 	margin: 0;
-
-	// 	&:after {
-	// 		content: 'mobile';
-	// 		background-color: orange;
-	// 		padding: 10px;
-	// 	}
-		
-	// 	@media (min-width: $screen-md) {
-	// 		&:after {
-	// 			content: 'tablet';
-	// 			background-color: yellow;
-	// 		}
-	// 	}
-		
-	// 	@media (min-width: $screen-lg) {
-	// 		&:after {
-	// 			content: 'desktop';
-	// 			background-color: cyan;
-	// 		}
-	// 	}
-	// }
-
 	&.hide-nav {
-		// @include transition(1s ease-in-out);
 		left: -200px;
 	}
 }
