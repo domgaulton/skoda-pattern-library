@@ -1,7 +1,8 @@
 .terms-and-conditions {
-	padding-top: 40px;
+	padding-top: 20px;
 	font-size: 0.88235294117em;
 	border-top: 1px solid $grey-light;
+	color: $grey-mid;
 
 	&:before {
 		content: 'Please Note:';
@@ -10,10 +11,14 @@
 	}
 
 	p:first-of-type {
-		margin-top: 30px;
+		margin-top:30px;
 	}
 
-	&_small-print {
+	&__bold {
+		font-family: $skoda-next-bold;
+	}
+
+	&__small-print {
 		font-size: 0.9em;
 	}
 }
