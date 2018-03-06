@@ -5,12 +5,13 @@
 
 	&__heading {
 		#{$text} {
-			@extend .heading-type-4;
+			@extend .heading-type-5;
+			letter-spacing: 0.25em;
 		}
 	}
 
 	&__copy {
-		margin: 0 auto;
+		margin: 35px auto;
 		max-width: $paragraph-width;
 	}
 
