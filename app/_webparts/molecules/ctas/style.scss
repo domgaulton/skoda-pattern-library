@@ -48,6 +48,7 @@
 			&--white {	
 				color: $grey-heavy;
 				background-color: $white;
+				border: none;
 				&:hover {
 					color: $white;
 					background-color: $grey-heavy;
@@ -55,11 +56,6 @@
 			}
 
 			&--no-bg {
-				
-				// &:hover {
-				// 	color: $white;
-				// 	background-color: $grey-heavy;
-				// }
 
 				&-white {
 					background-color: transparent;
