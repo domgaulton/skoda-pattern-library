@@ -7,27 +7,33 @@
 
 	&__image {
 		position: relative;
+		max-width: 100%;
+		height: auto;
 		width: 87.5vw;
-		height: 87.5vw;
+		height: 111vw;
 		// min-width: 100%;
 		// height: auto;
 		text-align: center;
-		margin-bottom: 60px;
+		margin-bottom: 10vw;
 
 		@media (min-width: $screen-md) {
+			max-width: 50%;
+			height: auto;
 			width: 42vw;
-			height: 42vw;
+			height: 52.2769vw;
+			margin-bottom: 8vw;
 		}
 
 		@media (min-width: $screen-lg) {
-			width: 473px;
-			height: 473px;
+			width: (($safe-zone / 2)-50);
+			height: (($safe-zone / 2)-50)*1.2684989;
+			margin-bottom: 100px;
 		}
 
 		&:nth-of-type(2) {
 			
 			@media (min-width: $screen-md) {
-				margin-top: 80px;
+				margin-top: 150px;
 			}
 		}
 
@@ -52,6 +58,9 @@
 			overflow: hidden;
 			width: 100%;
 			height: 100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			@include background-size(cover);
 
 			img {
 				width: 100%;
@@ -277,7 +286,7 @@
 .fancybox-close {
 	background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/icon-close.svg);
 	position: absolute;
-	top: 48vh;
+	top: 20px;
 	right: 5%;
 	width: 50px;
 	height: 50px;
