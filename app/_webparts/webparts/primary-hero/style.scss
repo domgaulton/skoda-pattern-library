@@ -1,8 +1,10 @@
 .humanise-primary-hero {
 	display: block;
 	position: relative;
+	max-height: 480px;
 	max-height: 100vh;
 	margin-bottom: $webpart-margin-bottom;
+	overflow: hidden;
 
 	&__background {
 		background-position: center center;
