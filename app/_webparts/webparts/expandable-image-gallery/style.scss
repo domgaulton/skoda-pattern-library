@@ -7,6 +7,8 @@
 
 	&__image {
 		position: relative;
+		max-width: 100%;
+		height: auto;
 		width: 87.5vw;
 		height: 111vw;
 		// min-width: 100%;
@@ -15,6 +17,8 @@
 		margin-bottom: 10vw;
 
 		@media (min-width: $screen-md) {
+			max-width: 50%;
+			height: auto;
 			width: 42vw;
 			height: 52.2769vw;
 			margin-bottom: 8vw;
