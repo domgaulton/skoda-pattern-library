@@ -110,12 +110,13 @@ pre {
 }
 
 .github-link {
-  background-image: url('/dist/img/icon-code-white.png');
-  width: 22.5px;
-  height: 10px;
-  background-size: 22.5px;
+  background-image: url('/dist/img/icon-github.png');
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
   display: inline-block;
   position: relative;
+  top: 8px;
 }
 
 .pattern-library-header {
