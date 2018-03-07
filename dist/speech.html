@@ -190,6 +190,7 @@
 			// These also have getters so they can be accessed like arrays.
 			// The [0] returns the SpeechRecognitionAlternative at position 0.
 			// We then return the transcript property of the SpeechRecognitionAlternative object
+			console.log(event);
 
 			var last = event.results.length - 1;
 			var color = event.results[last][0].transcript;
