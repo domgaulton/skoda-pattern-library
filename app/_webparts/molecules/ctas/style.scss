@@ -13,6 +13,7 @@
 		font-family: $skoda-next;
 		font-size: 0.70588235294em;
 		text-align: center;
+		@include border-box;
 	}
 
 	a.cta-block {
@@ -87,7 +88,7 @@
 		color: $grey-heavy;
 		letter-spacing: 5px;
 		font-family: $skoda-next-bold;
-		margin: 0 20px;
+		margin-right: 40px;
 		cursor: pointer;
 		font-size: 0.76470588235em;
 

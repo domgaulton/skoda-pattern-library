@@ -1,0 +1,21 @@
+.icon {
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	width: 35px;
+	height: 30px;	
+	margin: 0 auto 2em;
+
+	&.icon--heart {
+		background-image: url("/dist/img/icon-heart.svg");
+	}	
+
+	&.icon--signpost {
+		background-image: url("/dist/img/icon-simple.svg");
+	}	
+
+	&.icon--warning-sign {
+		background-image: url("/dist/img/icon-surprising.svg");
+	}			
+
+}
