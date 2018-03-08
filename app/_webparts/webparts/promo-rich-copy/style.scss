@@ -1,0 +1,57 @@
+.humanise-promo-rich-copy {
+	width: 100%;
+	height: 300px;
+
+	@media (min-width: $screen-md) {
+		height: 600px;
+	}
+
+  @media (min-width: $screen-lg) {
+    height: 80vh;
+  }
+
+	&__background {
+		width: 100%;
+		height: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		@include background-size(cover);
+
+    &--parallax {
+      @media (min-width: $screen-md) {
+        background-attachment: fixed;
+      }
+    }
+	}
+
+	&__text {
+		padding: 1% 5%;
+
+		@media (min-width: $screen-md) {
+			float: left;
+			background-color: $white;
+			width: 60%;
+			margin: -150px 0 0 0;
+		}
+
+    @media (min-width: $screen-lg) {
+      width: 500px;
+      margin: -250px 0 0 -100px;
+    }
+
+		&--header {
+			#{$text} {
+				@extend .heading-type-3;
+				margin: 50px 0;
+			}
+		}
+
+    &--right-aligned {
+      float: right;
+
+      @media (min-width: $screen-md) {
+        margin: -150px 0 0 -100px;
+      }
+    }
+	}
+}
