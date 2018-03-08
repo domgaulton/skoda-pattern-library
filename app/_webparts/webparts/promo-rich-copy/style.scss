@@ -16,6 +16,12 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		@include background-size(cover);
+
+    &--parallax {
+      @media (min-width: $screen-md) {
+        background-attachment: fixed;
+      }
+    }
 	}
 
 	&__text {
@@ -25,12 +31,12 @@
 			float: left;
 			background-color: $white;
 			width: 60%;
-			margin: -150px 0 0 50px;
+			margin: -150px 0 0 0;
 		}
 
     @media (min-width: $screen-lg) {
       width: 500px;
-      margin-top: -250px
+      margin: -250px 0 0 -100px;
     }
 
 		&--header {
@@ -39,5 +45,13 @@
 				margin: 50px 0;
 			}
 		}
+
+    &--right-aligned {
+      float: right;
+
+      @media (min-width: $screen-md) {
+        margin: -150px 0 0 -100px;
+      }
+    }
 	}
 }

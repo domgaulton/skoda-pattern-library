@@ -59,6 +59,10 @@ strong {
 	@extend .text-bold;
 }
 
+.small-print {
+	font-size: 0.7em;
+}
+
 .caption-text {
 	font-family: $skoda-next;
 	text-transform: uppercase;
