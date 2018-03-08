@@ -28,15 +28,14 @@
 		padding: 1% 5%;
 
 		@media (min-width: $screen-md) {
-			float: left;
 			background-color: $white;
 			width: 60%;
-			margin: -150px 0 0 0;
+			margin: -150px 5% 0 5%;
 		}
 
     @media (min-width: $screen-lg) {
       width: 500px;
-      margin: -250px 0 0 -100px;
+      margin: -250px 10% 0 10%;
     }
 
 		&--header {
@@ -49,9 +48,9 @@
     &--right-aligned {
       float: right;
 
-      @media (min-width: $screen-md) {
-        margin: -150px 0 0 -100px;
-      }
+      // @media (min-width: $screen-md) {
+      //   margin: -150px 0 0 -100px;
+      // }
     }
 	}
 }
