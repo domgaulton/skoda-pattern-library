@@ -1,0 +1,22 @@
+.dbsd-table {
+  border-collapse: collapse;
+  width: 100%;
+
+  td, th {
+    border: 1px solid $grey-light;
+    text-align: left;
+    padding: 8px;
+    font-family: $skoda-next-light;
+  }
+
+  th {
+    font-family: $skoda-next;
+  }
+
+
+  tr:nth-child(even) {
+    background-color: $grey-feint;
+  }
+}
+
+
