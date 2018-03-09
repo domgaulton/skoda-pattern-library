@@ -1,0 +1,18 @@
+.paragraph-type-1 {
+	font-size: 1.1764705882352942em;
+	line-height: 1.2;
+	margin-bottom: 1em;
+	@media (min-width: $screen-md) {
+		font-size: 1.41176470588em;
+	}
+}
+
+.paragraph-type-2 {
+	font-size: 1.0588235294117647em;
+	font-family: $skoda-next-bold;
+	margin-bottom: 1em;
+	line-height: 1.2;
+	@media (min-width: $screen-md) {
+		font-size: 1.1764705882352942em;
+	}
+}
