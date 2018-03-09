@@ -49,13 +49,15 @@ table {
   border-spacing: 0; }
 
 .content_zone {
-  width: 87.5%;
+  padding: 0 20px;
+  @include border-box;
   margin: 0 auto;
   position: relative;
   @media (min-width: $screen-md) {
-    width: 90%;
+    padding: 0 30px;
   }
   @media (min-width: $screen-lg) {
     width: $safe-zone;
+	padding: 0;
   }
 }

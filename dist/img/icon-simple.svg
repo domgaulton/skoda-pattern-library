@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="30px" viewBox="0 0 25 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_simple</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="FlexiGrid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Grid-M-(Tablet-Portrait)" transform="translate(-372.000000, -159.000000)" fill="#212428">
+            <path d="M380.823529,159 L380.823529,163.411765 L372,163.411765 L372,175.176471 L380.823529,175.176471 L380.823529,188.411765 L383.764706,188.411765 L383.764706,175.176471 L391.117647,175.176471 L397,169.293344 L391.117647,163.411765 L383.764706,163.411765 L383.764706,159 L380.823529,159 Z M374.941176,166.352167 L390.382353,166.352167 L393.323529,169.293344 L390.382353,172.235294 L374.941176,172.235294 L374.941176,166.352167 Z" id="icon_simple"></path>
+        </g>
+    </g>
+</svg>
