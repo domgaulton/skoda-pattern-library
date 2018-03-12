@@ -17,12 +17,12 @@ ul.list {
 		margin-bottom: 20px;
 		&:before {
 			content: "";
-			@include border-radius(6px);
+			@include border-radius(10px);
 			position: absolute;
-			top: 12px;
+			top: 11px;
 			left: 0;
-			width: 6px;
-			height: 6px;
+			width: 10px;
+			height: 10px;
 			background-color: $grey-light;
 		}
 	}
