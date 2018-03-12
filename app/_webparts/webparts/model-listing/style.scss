@@ -1,22 +1,5 @@
 .humanise-model-listing {
 
-	.heading-type-3 {
-		font-size: 1.41176470588em;
-		margin-bottom: 10px;
-		
-		@media (min-width: $screen-md) {
-			margin-bottom: 1em;
-		}
-		
-		h2 {
-			margin-bottom: 10px;
-			
-			@media (min-width: $screen-md) {
-				margin-bottom: 1em;
-			}		
-		}
-	}
-
 	.humanise-model-listing__list-item {
 		border-bottom: 1px solid $grey-light;
 		display: block;
@@ -51,26 +34,5 @@
 			width: 50%;				
 		}
 	}
-	
-	.humanise-model-listing__features {
-		margin: 0 0 2em 0;
-		padding: 0;
-		display: block;
-		
-		li {
-			position: relative;
-			padding-left: 20px;
-			font-family: $skoda-next-light;
-			&:before {
-				content: "";
-				@include border-radius(6px);
-				position: absolute;
-				top: 12px;
-				left: 0;
-				width: 6px;
-				height: 6px;
-				background-color: $grey-light;
-			}
-		}
-	}
+
 }
