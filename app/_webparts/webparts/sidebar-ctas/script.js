@@ -18,13 +18,13 @@ $(document).ready(function () {
 			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=66328';
 		}
 
-		$('.humanise-sidebar-ctas__icon--td').next().attr('href', td);
-		$('.humanise-sidebar-ctas__icon--cc').next().attr('href', cc);
-		$('.humanise-sidebar-ctas__icon--lt').next().attr('href', lt);
-		$('.humanise-sidebar-ctas__icon--br').next().attr('href', br);
-		$('.humanise-sidebar-ctas__icon--fr').next().attr('href', fr);
-		$('.humanise-sidebar-ctas__icon--fc').next().attr('href', fc);
-		$('.humanise-sidebar-ctas__icon--bs').next().attr('href', bs);
+		$('.humanise-sidebar-ctas__icon--test-drive').next().attr('href', td);
+		$('.humanise-sidebar-ctas__icon--car-configutator').next().attr('href', cc);
+		$('.humanise-sidebar-ctas__icon--live-tour').next().attr('href', lt);
+		$('.humanise-sidebar-ctas__icon--brochure-request').next().attr('href', br);
+		$('.humanise-sidebar-ctas__icon--find-retailer').next().attr('href', fr);
+		$('.humanise-sidebar-ctas__icon--finance-calcualtor').next().attr('href', fc);
+		$('.humanise-sidebar-ctas__icon--book-a-service').next().attr('href', bs);
 
 		$('.humanise-sidebar-ctas').mouseenter(function(){
 			$('.humanise-sidebar-ctas__link').addClass('active');
