@@ -1,0 +1,112 @@
+.humanise-sidebar-ctas {
+	$cta-size: 45px;
+	$link-size: 280px;
+	$cta-padding: 14px;
+
+	margin-bottom: $webpart-margin-bottom;
+	position: static;
+	
+	ul {
+		overflow: hidden;
+	}
+
+	@media (min-width: $screen-md) {
+		position: fixed;
+		right: 0;
+		top: 50%;
+		margin-top: -($cta-size*3);
+		z-index: 500;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	&__link {
+		text-align: center;
+		padding: $cta-padding 0;
+		width: 49%;
+		float: left;
+		background: $grey-heavy;
+		color: $white;
+		@include border-box;
+		margin: 0.5%;
+
+		@media (min-width: $screen-md) {
+			position: relative;
+			right: -$link-size;
+			margin: 0;
+			text-align: left;
+			padding-left: 25px;
+			width: $link-size;
+			@include transition(0.8s ease-in-out);
+		}
+
+		a {
+			vertical-align: middle;
+			color: $white;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 1.5px;
+			font-size: 0.6em;
+
+			&:hover {
+				font-family: $skoda-next-bold;
+				text-decoration: none;
+			}
+		}
+
+		&.active {
+
+			@media (min-width: $screen-md) {
+				right: 0;
+			}
+		}
+	}
+
+	&__icon {
+		width: ($cta-size/2);
+		height: ($cta-size/2);
+		margin: 0 auto;
+		display: block;
+		background-color: $grey-heavy;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		@media (min-width: $screen-md) {
+			width: $cta-size;
+			height: $cta-size;
+			position: fixed;
+			right: 0;
+			margin-top: -$cta-padding;
+		}
+
+		&--test-drive {
+			background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/testdrive.svg);
+		}
+
+		&--brochure-request {
+			background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/brochure.svg);
+		}
+
+		&--live-tour {
+			background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/eyecon.svg);
+		}
+
+		&--find-retailer {
+			background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/retailer.svg);
+		}
+
+		&--car-configutator {
+			background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/build.svg);
+		}
+
+		&--finance-calcualtor {
+			background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/finance.svg);
+		}
+
+		&--book-a-service {
+			background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/service.svg);
+		}
+	}
+}
