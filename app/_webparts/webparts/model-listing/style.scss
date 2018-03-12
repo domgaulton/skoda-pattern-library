@@ -1,0 +1,38 @@
+.humanise-model-listing {
+
+	.humanise-model-listing__list-item {
+		border-bottom: 1px solid $grey-light;
+		display: block;
+		overflow: hidden;
+		padding-bottom: 0;
+		margin-bottom: 1em;
+		
+		@media (min-width: $screen-md) {
+			padding-bottom: 1.5em;
+			margin-bottom: 1.5em;		
+		}
+	}
+	
+	.humanise-model-listing__info {
+		display: block;
+		overflow: hidden;
+	}
+
+	.humanise-model-listing__details {
+		
+		@media (min-width: $screen-md) {
+			float: left;
+			width: 50%;		
+		}
+	}
+	
+	.humanise-model-listing__image {
+		margin-bottom: 1em;
+		
+		@media (min-width: $screen-md) {
+			float: right;
+			width: 50%;				
+		}
+	}
+
+}

@@ -34,13 +34,23 @@ h6,.heading-type-6 {
 	@media (min-width: $screen-md) {
 		font-size: 2em;
 	}
+	span {
+		font-size: 0.5416666666666666em;
+		color: $grey-mid;
+		padding-left: 0;
+		display: block;
+		@media (min-width: $screen-md) {
+			padding-left: 10px;
+			display: inline;
+		}
+	}
 }
 
 .heading-type-3 {
 	font-size: 1.05882352941em;
 	@media (min-width: $screen-md) {
 		font-size: 1.41176470588em;
-	}
+	}	
 }
 
 .heading-type-4 {

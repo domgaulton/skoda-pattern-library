@@ -1,19 +1,37 @@
 .list {
-	margin: 30px 15px;
-	line-height: 1.8;
-	font-family: $skoda-next;
-	font-size: 1em;
-	padding-left: 10px;
 
+	line-height: 1.8;
+}
+
+ul.list {
+	margin: 0 0 2em 0;
+	padding: 0;
+	display: block;
+	font-size: 1em;
+	
 	li {
-		padding-left: 10px;
+		position: relative;
+		padding-left: 20px;
+		font-family: $skoda-next-light;
+		list-style-type: none;
 		margin-bottom: 20px;
-		list-style-type: disc;
+		&:before {
+			content: "";
+			@include border-radius(6px);
+			position: absolute;
+			top: 12px;
+			left: 0;
+			width: 6px;
+			height: 6px;
+			background-color: $grey-light;
+		}
 	}
 }
 
 ol.list {
+	margin-left: 20px;
 	li {
 		list-style-type: decimal;
+		margin-bottom: 20px;
 	}
 }
