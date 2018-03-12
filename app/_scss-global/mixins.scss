@@ -70,3 +70,9 @@
 	line-height: 1.5;
 	margin: 0;
 }
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;
+}
