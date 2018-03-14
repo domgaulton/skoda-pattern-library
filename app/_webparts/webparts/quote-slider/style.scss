@@ -1,0 +1,120 @@
+@import 'https://unpkg.com/flickity@2/dist/flickity.min.css';
+
+.humanise-quote-slider {
+	padding-bottom: 75px;
+
+	.humanise-quote-slider__list {
+		.humanise-quote-slider__list-item {
+			width: 100%;
+			text-align: center;
+			
+			p {
+				font-family: $skoda-next-bold;
+				font-size: 17px;
+				text-transform: uppercase;
+				color: #4a4a4a;
+				letter-spacing: 0.1em;
+				max-width: 280px;
+				margin: 0 auto 30px;
+				display: flex;
+				align-items: center;
+				
+				@media (min-width: $screen-md) {
+					font-size: 30px;
+					max-width: 708px;
+					margin-bottom: 20px;
+				}
+				
+				&.humanise-quote-slider__quote {
+					position: relative;
+					display: block;
+					
+					&:before {
+						content: "\201C";
+						top: 0;
+						left: 0;
+					}
+					
+					&:after {
+						content: "\201D";
+						right: 0;
+						bottom: 0;
+					}
+				}
+				
+				&.humanise-quote-slider__caption {
+					font-size: 12px;
+					background: none;
+					height: auto;
+					display: block;
+					margin: 20px auto 35px;
+					color: $grey-mid;
+					
+					@media (min-width: $screen-md) {
+						font-size: 15px;
+						margin: 30px auto 80px;
+					}
+				}
+			}
+		}
+		
+		.flickity-page-dots  {
+			
+			.dot {
+				background-color: $grey-mid;
+				height: 5px;
+				width: 45px;
+				-moz-border-radius: 0;
+				-webkit-border-radius: 0;
+				border-radius: 0;
+				
+				&.is-selected {
+					background-color: $skoda-green;
+				}
+			}
+			
+			@media (min-width: $screen-md) {
+				margin-bottom: 40px;
+			}
+		}
+		
+		&.humanise-quote-slider__list--left-aligned {
+			p {
+				text-align: left;
+			}
+			
+			.flickity-page-dots {
+				max-width: 280px;
+				text-align: left;
+				left: 50%;
+				@include transform(-50%, 0%);
+				margin-left: -8px;
+							
+				@media (min-width: $screen-md) {
+					max-width: 708px;
+				}
+				
+			}
+		}
+		
+		&.humanise-quote-slider__list--right-aligned {
+			p {
+				text-align: right;
+			}
+			
+			.flickity-page-dots {
+				max-width: 280px;
+				text-align: right;
+				left: 50%;
+				@include transform(-50%, 0%);
+				margin-right: -8px;
+							
+				@media (min-width: $screen-md) {
+					max-width: 708px;
+				}
+				
+			}
+		}
+		
+	}
+}
