@@ -32,5 +32,6 @@
     "run-sequence": "^2.2.0"
   },
   "dependencies": {
+      "flickity": "^2.0.11"
   }
 }
