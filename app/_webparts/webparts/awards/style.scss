@@ -22,22 +22,22 @@
 		
 		p {
 			font-family: $skoda-next-extra-bold;
-			font-size: 14px;
+			font-size: 0.8235294117647058em;
 			text-transform: uppercase;
 			color: $grey-dark;
 			letter-spacing: 0.2em;
 			margin: 0 auto 5px;
 			
 			@media (min-width: $screen-md) {
-				font-size: 20px;
+				font-size: 1.1764705882352942em
 			}
 			
 			&.humanise-awards__source {
 				font-family: $skoda-next;
-				font-size: 11px;
+				font-size: 0.6470588235294118em;
 				
 				@media (min-width: $screen-md) {
-					font-size: 16px;
+					font-size: 0.9411764705882353em;
 					margin-bottom: 60px;
 				}
 			
