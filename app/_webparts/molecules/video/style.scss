@@ -16,14 +16,19 @@
 	}
 }
 
-// [data-ytID] {
-// 	& [data-video-autoplay = "1"] {
-// 		&:after {
-// 			content: 'fint me';
-// 			display: block;
-// 			width: 100px;
-// 			height: 100px;
-// 			background-color: red;
-// 		}
-// 	}
-// }
+iframe {
+	&.controls {
+		background-color: red;
+		width: 200px;
+		height: 200px;
+		/* display: inline-block; */
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+	}
+
+	& .controls {
+		display: none;
+	}
+}
+
