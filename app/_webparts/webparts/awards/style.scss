@@ -1,0 +1,81 @@
+.humanise-awards {
+	padding-bottom: 75px;
+
+	.humanise-awards__list {
+		overflow: hidden;
+	
+	}
+		
+	.humanise-awards__list-item {
+		text-align: center;
+		float: left;
+		width: 100%;
+		padding: 30px;
+		@include border-box;
+		background: $grey-feint;
+		
+		@media (min-width: $screen-md) {
+			padding: 125px 30px 35px;
+			background: $grey-feint url("/dist/img/icon-award.svg") top 45px center no-repeat;
+			background-size: 40px;			
+		}
+		
+		p {
+			font-family: $skoda-next-extra-bold;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $grey-dark;
+			letter-spacing: 0.2em;
+			margin: 0 auto 5px;
+			
+			@media (min-width: $screen-md) {
+				font-size: 20px;
+			}
+			
+			&.humanise-awards__source {
+				font-family: $skoda-next;
+				font-size: 11px;
+				
+				@media (min-width: $screen-md) {
+					font-size: 16px;
+					margin-bottom: 60px;
+				}
+			
+			}
+			
+			span {
+				white-space: nowrap;
+				
+				@media (min-width: $screen-md) {
+					white-space: normal;
+				}
+			}
+			
+		}
+		
+		&:nth-child(2) {
+			background-color: $grey-light;
+		}
+		
+		&:first-child:nth-last-child(2),
+		&:first-child:nth-last-child(2) ~ li {
+			@media (min-width: $screen-md) {
+				width: 50%;
+			}
+		}
+
+		&:first-child:nth-last-child(3),
+		&:first-child:nth-last-child(3) ~ li {
+			@media (min-width: $screen-md) {
+				width: 33.3333%;
+			}
+		}
+
+	}
+	
+	.humanise-awards__logo {
+		max-width: 100px;
+		margin-top: 20px;
+	}
+
+}
