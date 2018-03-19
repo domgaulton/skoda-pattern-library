@@ -35,7 +35,7 @@
 .capitalise-text-bold {
 	font-family: $skoda-next-bold;
 	text-transform: uppercase;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	letter-spacing: 0.15em;
 
 	@media (min-width: $screen-md) {
@@ -45,8 +45,7 @@
 
 .capitalise-text {
 	text-transform: uppercase;
-	font-size: 0.94444444em;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	letter-spacing: 0.15em;
 
 	@media (min-width: $screen-md) {

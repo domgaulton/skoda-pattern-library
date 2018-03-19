@@ -8,7 +8,7 @@
 			width: 100%;
 			text-align: center;
 			
-			p {
+			.humanise-quote-slider__quote {
 				font-family: $skoda-next-bold;
 				font-size: 17px;
 				text-transform: uppercase;
@@ -18,42 +18,38 @@
 				margin: 0 auto 30px;
 				display: flex;
 				align-items: center;
+				position: relative;
+				display: block;
 				
 				@media (min-width: $screen-md) {
 					font-size: 30px;
 					max-width: 708px;
 					margin-bottom: 20px;
 				}
-				
-				&.humanise-quote-slider__quote {
-					position: relative;
-					display: block;
 					
-					&:before {
-						content: "\201C";
-						top: 0;
-						left: 0;
-					}
-					
-					&:after {
-						content: "\201D";
-						right: 0;
-						bottom: 0;
-					}
+				&:before {
+					content: "\201C";
+					top: 0;
+					left: 0;
 				}
 				
-				&.humanise-quote-slider__caption {
-					font-size: 12px;
-					background: none;
-					height: auto;
-					display: block;
-					margin: 20px auto 35px;
-					color: $grey-mid;
-					
-					@media (min-width: $screen-md) {
-						font-size: 15px;
-						margin: 30px auto 80px;
-					}
+				&:after {
+					content: "\201D";
+					right: 0;
+					bottom: 0;
+				}
+			}
+				
+			.humanise-quote-slider__caption {
+				display: block;
+				margin: 20px auto 35px;
+				color: $grey-mid;
+				max-width: 280px;
+				
+				@media (min-width: $screen-md) {
+					margin: 30px auto 80px;
+					max-width: 708px;
+					margin-bottom: 20px;
 				}
 			}
 		}
@@ -73,9 +69,6 @@
 				}
 			}
 			
-			@media (min-width: $screen-md) {
-				margin-bottom: 40px;
-			}
 		}
 		
 		&.humanise-quote-slider__list--left-aligned {
