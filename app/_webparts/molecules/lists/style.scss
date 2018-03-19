@@ -1,20 +1,22 @@
 .list {
-
 	line-height: 1.8;
-}
-
-ul.list {
 	margin: 0 0 2em 0;
 	padding: 0;
 	display: block;
-	font-size: 1em;
-	
+
 	li {
-		position: relative;
-		padding-left: 20px;
 		font-family: $skoda-next-light;
 		list-style-type: none;
 		margin-bottom: 20px;
+		position: relative;
+		padding-left: 20px;
+	}
+}
+
+ul.list {
+	
+	li {
+		
 		&:before {
 			content: "";
 			@include border-radius(10px);
@@ -29,9 +31,23 @@ ul.list {
 }
 
 ol.list {
-	margin-left: 20px;
+	counter-reset:li; /* Initiate a counter */
+	
 	li {
-		list-style-type: decimal;
-		margin-bottom: 20px;
+
+		&:before {
+			content:counter(li); /* Use the counter as content */
+			counter-increment:li; /* Increment the counter by 1 */
+			
+			/* Position and style the number */
+			font-family: $skoda-next-extra-bold;
+			position:absolute;
+			top: 0;
+			left: 0;
+			@include border-box;
+			width:10px;
+			height: 10px;
+			color: $grey-light;
+		}
 	}
 }
