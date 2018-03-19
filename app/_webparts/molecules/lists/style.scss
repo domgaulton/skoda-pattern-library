@@ -31,9 +31,7 @@ ul.list {
 }
 
 ol.list {
-	// margin-left: 20px;
 	counter-reset:li; /* Initiate a counter */
-	// padding-left:0; /* Remove the default left padding */
 	
 	li {
 
@@ -51,6 +49,5 @@ ol.list {
 			height: 10px;
 			color: $grey-light;
 		}
-
 	}
 }
