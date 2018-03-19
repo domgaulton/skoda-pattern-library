@@ -26,15 +26,6 @@ a {
 	font-family: $skoda-next;
 }
 
-.opening-paragraph {
-	font-size: 0.94444444em;
-	font-family: $skoda-next-bold;
-	
-	@media (min-width: $screen-md) {
-		font-size: 1.23529412em;
-	}
-}
-
 .text-regular-italic {
 	font-family: $skoda-next-italic;
 }
