@@ -22,3 +22,22 @@
 		font-family: $skoda-next-light-italic;
 	}
 }
+
+.opening-paragraph {
+	font-size: 0.94444444em;
+	font-family: $skoda-next-bold;
+	
+	@media (min-width: $screen-md) {
+		font-size: 1.23529412em;
+	}
+}
+
+.capitalise-text {
+	text-transform: uppercase;
+	font-size: 0.94444444em;
+	letter-spacing: 0.1em;
+
+	@media (min-width: $screen-md) {
+		font-size: 1.23529412em;
+	}
+}
