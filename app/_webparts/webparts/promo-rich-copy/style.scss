@@ -39,10 +39,7 @@
     }
 
 		&--header {
-			#{$text} {
-				@extend .heading-type-3;
-				margin: 50px 0;
-			}
+			margin: 50px 0;
 		}
 
     &--right-aligned {

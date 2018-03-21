@@ -3,13 +3,6 @@
 	text-align: center;
 	margin-bottom: $webpart-margin-bottom;
 
-	&__heading {
-		#{$text} {
-			@extend .heading-type-5;
-			letter-spacing: 0.25em;
-		}
-	}
-
 	&__copy {
 		margin: 35px auto;
 		max-width: $paragraph-width;
