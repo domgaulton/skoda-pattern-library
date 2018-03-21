@@ -1,19 +1,14 @@
 .humanise-video {
-	width: 100%;
-	padding-top: 56.25%;
-    position: relative;
-    margin-bottom: $webpart-margin-bottom;
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  margin-bottom: $webpart-margin-bottom;
 
-	// &__poster {
-	// 	width: 100%;
-	// 	height: 100%;
-	// }
-
-	&__poster, &__video {
-		width: 100%;
-		height: 100%;
-		@include content-absolute;
-	}
+  &__poster, &__video, video {
+    width: 100%;
+    height: 100%;
+    @include content-absolute;
+  }
 }
 
 // [data-ytID] {
