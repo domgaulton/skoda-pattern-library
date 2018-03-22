@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 if ( $('.humanise-parallax__item').length ) {
 	$(window).scroll(function(){
 		// This is then function used to detect if the element is scrolled into view
@@ -21,4 +23,5 @@ if ( $('.humanise-parallax__item').length ) {
 		}
 	});
 }
+
 

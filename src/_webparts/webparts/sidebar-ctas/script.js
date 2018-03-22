@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(document).ready(function () {
 	
 	if($('.humanise-sidebar-ctas').length){

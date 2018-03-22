@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 if ( $('.fancybox-thumb').length ) {
 	;(function (window, document, $, undefined) {
 		"use strict";
@@ -2027,3 +2029,6 @@ if ( $('.fancybox-thumb').length ) {
 // 		// }
 // 	});
 // });
+
+
+

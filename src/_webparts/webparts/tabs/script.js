@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 if ( $(".humanise-tabs__tab-select--tab").length ){
 	var startLeft = $(".humanise-tabs__tab-select--tab").first().position().left;
 	$('.humanise-tabs__nav-wrapper--nav').css('left',startLeft+'px');
