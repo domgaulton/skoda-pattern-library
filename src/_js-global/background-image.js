@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 if ( $('[data-bg-image]').length ) {
 	$('[data-bg-image]').each(function() {
 		var src = $(this).attr('data-bg-image');

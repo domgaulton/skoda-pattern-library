@@ -15,7 +15,7 @@ var util = require('gulp-util');
 // Variables //
 
 var config = {
-    app: './app/',
+    app: './src/',
     dist: './dist/',
     root: './',
     dev: !!util.env.dev,                            //check if the dev variable is passed from command line
@@ -70,72 +70,72 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(config.dist+'css'));
 });
 
-// Nav Desktop - build navigation for k2 desktop //
+// // Nav Desktop - build navigation for k2 desktop //
 
-gulp.task('nav-desktop', function () {  
-    gulp.src(config.app+'desktop-dbsd-nav.scss')
-        .pipe(sass({includePaths: ['scss']}))
-        .pipe(gulp.dest(config.dist+'css'));
-});
+// gulp.task('nav-desktop', function () {  
+//     gulp.src(config.app+'desktop-dbsd-nav.scss')
+//         .pipe(sass({includePaths: ['scss']}))
+//         .pipe(gulp.dest(config.dist+'css'));
+// });
 
-// Add k2 overwrites //
+// // Add k2 overwrites //
 
-gulp.task('deploy-desktop', function () {  
-    gulp.src(config.app+'desktop-dbsd.scss')
-        .pipe(sass({includePaths: ['scss']}))
-        .pipe(gulp.dest(config.dist+'css'));
-});
+// gulp.task('deploy-desktop', function () {  
+//     gulp.src(config.app+'desktop-dbsd.scss')
+//         .pipe(sass({includePaths: ['scss']}))
+//         .pipe(gulp.dest(config.dist+'css'));
+// });
 
-// Browser Sync //
+// // Browser Sync //
 
-gulp.task('browser-sync', ['clean'],function() {  
-    browserSync.init([config.app+'**/*.scss', config.app+'**/*.js', config.app+'*.html'], {
-        server: {
-            baseDir: config.root
-        }
-    });
-});
+// gulp.task('browser-sync', ['clean'],function() {  
+//     browserSync.init([config.app+'**/*.scss', config.app+'**/*.js', config.app+'*.html'], {
+//         server: {
+//             baseDir: config.root
+//         }
+//     });
+// });
 
-// Concatinate and Uglify to Dist //
+// // Concatinate and Uglify to Dist //
 
-gulp.task('scripts', function(){
-    return gulp.src([
-            //config.root+'_config/js/_config.'+config.env+'.js',     //include environment config file for global variables
-            config.app+'**/*.js',
-            "!"+config.app+'_webparts/pattern-library/**/*.js'
-        ])
-        .pipe(concat('script.js'))
-        .pipe(gulp.dest(config.dist+'js'))
-        .pipe(rename('script.js'))        
-        .pipe(gulpif(!config.dev, uglify()))                        //minify JS when not in dev mode
-        .pipe(gulp.dest(config.dist+'js'));
-});
+// gulp.task('scripts', function(){
+//     return gulp.src([
+//             //config.root+'_config/js/_config.'+config.env+'.js',     //include environment config file for global variables
+//             config.app+'**/*.js',
+//             "!"+config.app+'_webparts/pattern-library/**/*.js'
+//         ])
+//         .pipe(concat('script.js'))
+//         .pipe(gulp.dest(config.dist+'js'))
+//         .pipe(rename('script.js'))        
+//         .pipe(gulpif(!config.dev, uglify()))                        //minify JS when not in dev mode
+//         .pipe(gulp.dest(config.dist+'js'));
+// });
 
-// Pattern Library Scripts (not for production) - Concatinate and Uglify to Dist //
+// // Pattern Library Scripts (not for production) - Concatinate and Uglify to Dist //
 
-gulp.task('scripts-pattern-library', function(){
-    return gulp.src([
-            config.app+'_webparts/pattern-library/**/*.js'
-        ])
-        .pipe(concat('script-pattern-library.js'))
-        .pipe(gulp.dest(config.dist+'js'))
-        .pipe(rename('script-pattern-library.js'))
-        .pipe(gulpif(!config.dev, uglify()))                        //minify JS when not in dev mode
-        .pipe(gulp.dest(config.dist+'js'));
-});
+// gulp.task('scripts-pattern-library', function(){
+//     return gulp.src([
+//             config.app+'_webparts/pattern-library/**/*.js'
+//         ])
+//         .pipe(concat('script-pattern-library.js'))
+//         .pipe(gulp.dest(config.dist+'js'))
+//         .pipe(rename('script-pattern-library.js'))
+//         .pipe(gulpif(!config.dev, uglify()))                        //minify JS when not in dev mode
+//         .pipe(gulp.dest(config.dist+'js'));
+// });
 
-// Watch files for changes //
+// // Watch files for changes //
 
-gulp.task('watch', function(){
-    gulp.watch(config.app+'**/*.html', ['nunjucks']);
-    gulp.watch(config.app+'**/*.scss', ['sass']);
-    gulp.watch(config.app+'**/*.js', ['scripts']);
-    // gulp.watch([config.app+'**/*.js', '!'+config.app+'_webparts/pattern-library/**/*.js'], ['scripts']);
-    gulp.watch(config.app+'_webparts/pattern-library/**/*.js', ['scripts-pattern-library']);
-})
+// gulp.task('watch', function(){
+//     gulp.watch(config.app+'**/*.html', ['nunjucks']);
+//     gulp.watch(config.app+'**/*.scss', ['sass']);
+//     gulp.watch(config.app+'**/*.js', ['scripts']);
+//     // gulp.watch([config.app+'**/*.js', '!'+config.app+'_webparts/pattern-library/**/*.js'], ['scripts']);
+//     gulp.watch(config.app+'_webparts/pattern-library/**/*.js', ['scripts-pattern-library']);
+// })
 
 // Gulp Task - Run in Sequence //
 
 gulp.task('default', function () {  
-    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts', 'scripts-pattern-library' ], 'watch');
+    runSequence('clean', ['nunjucks', 'copy-files']);
 });

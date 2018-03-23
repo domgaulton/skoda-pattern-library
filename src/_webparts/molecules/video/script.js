@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 if ( $('[data-ytID]').length ) {
 	var tag = document.createElement('script');
 

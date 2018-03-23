@@ -38,3 +38,8 @@
 
 ## Mixins / Classes
 1. Use `class="content_zone"` to keep content within the `safe zone`
+
+## Webpack
+1. Run `gulp` to ensure pages are built out using nunjacks
+2. Run `npm run prod` to build out the main.js script file
+3. Run `npm run dev` to create the server and have script refresh working
