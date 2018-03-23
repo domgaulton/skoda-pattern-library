@@ -25,7 +25,7 @@ if ( $('[data-ytID]').length ) {
 				},
 				events: {
 					'onReady': function(event) {
-						console.log(event);
+						// console.log(event);
 						var autoplay = $('#' + videoIds[index]).attr('data-video-autoplay');
 						if (autoplay == 1) {
 							event.target.mute();
