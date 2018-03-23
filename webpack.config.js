@@ -6,13 +6,11 @@ const glob = require('glob');
 
 // const webpack = require('webpack');
 
+// module.exports = (mode) => {
+// module.exports = () => {
 module.exports = {
   entry: glob.sync('./src/**/**/*.js'),
-
-  // entry: [
-  //   glob.sync('./src/**/**/*.js'),
-  //   glob.sync('./src/**/**/*.sass')
-  // ],
+  // entry: glob.sync('./src/index.js'),
 
   output: {
     filename: 'main.js',  
