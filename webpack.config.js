@@ -1,49 +1,56 @@
 const path = require('path');
 const glob = require('glob');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+// const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-// const extractSass = new ExtractTextPlugin({
-//     filename: "[name].[contenthash].css",
-//     disable: process.env.NODE_ENV === "development"
-// });
-
-const extractSass = new ExtractTextPlugin('mainwp.css');
+// const extractSass = new ExtractTextPlugin('mainwp.css');
 
 // const webpack = require('webpack');
 
 module.exports = {
   entry: glob.sync('./src/**/**/*.js'),
+
+  // entry: [
+  //   glob.sync('./src/**/**/*.js'),
+  //   glob.sync('./src/**/**/*.sass')
+  // ],
+
   output: {
-    filename: 'main.js',
+    filename: 'main.js',  
     path: path.resolve(__dirname, 'dist')
   },
+
   module: {
-    rules: [
+    rules: [ // from 'loaders' to 'rules'
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        test: /\.(js|jsx|ts)$/,
+        use: [{
+          loader: 'babel-loader',
+          // options: {
+          //   sourceMap: (production) ? false : true
+          // }
+        }],
+        exclude: '/node_modules/',
+      },
+
+      {
+        test:/\.(s*)css$/,
+        use:['style-loader','css-loader', 'sass-loader']
       }
+
+      // {
+      //   test: /(\.css|\.scss)$/,
+      //     use: ExtractTextPlugin.extract({
+      //      fallback: 'style-loader',
+      //      loader: 'sass-loader',
+      //   })
+      // }
+
     ]
-  }
-  // },
-  // module: {
-  //   rules: [{
-  //     test: /\.scss$/,
-  //     use: extractSass.extract({
-  //       use: [{
-  //         loader: "css-loader"
-  //       }, {
-  //         loader: "sass-loader"
-  //         }],
-  //       // use style-loader in development
-  //       fallback: "style-loader"
-  //     })
-  //   }]
-  // },
+  },
+
   // plugins: [
   //   extractSass
   // ]
+
 }
+
