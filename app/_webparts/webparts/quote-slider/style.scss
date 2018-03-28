@@ -9,10 +9,6 @@
 			text-align: center;
 			
 			.humanise-quote-slider__quote {
-				font-family: $skoda-next-bold;
-				text-transform: uppercase;
-				color: $grey-dark;
-				letter-spacing: 0.1em;
 				max-width: 280px;
 				margin: 0 auto 30px;
 				display: flex;
@@ -21,7 +17,6 @@
 				display: block;
 				
 				@media (min-width: $screen-md) {
-					font-size: 2em;
 					max-width: 708px;
 					margin-bottom: 20px;
 				}
