@@ -5,8 +5,10 @@
 
 	&:before {
 		content: 'Please Note:';
-		@extend .heading-type-6;
-		font-size: 0.8em;
+		text-transform: uppercase;
+		font-family: $skoda-next-bold;
+		margin-bottom: 30px;
+		display: block;
 	}
 
 	p {
