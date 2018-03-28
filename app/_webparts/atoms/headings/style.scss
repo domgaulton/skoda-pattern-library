@@ -29,16 +29,6 @@ h6,.heading-type-6 {
 	@media (min-width: $screen-md) {
 		font-size: 2em;
 	}
-	span {
-		font-size: 0.5416666666666666em;
-		color: $grey-mid;
-		padding-left: 0;
-		display: block;
-		@media (min-width: $screen-md) {
-			padding-left: 10px;
-			display: inline;
-		}
-	}
 }
 
 .heading-type-3 {

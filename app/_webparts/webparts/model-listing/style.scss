@@ -1,6 +1,13 @@
 .humanise-model-listing {
 
-	.humanise-model-listing__list-item {
+	&__heading {
+		span {
+			font-size: 50%;
+			color: $grey-mid;
+		}
+	}
+
+	&__list-item {
 		border-bottom: 1px solid $grey-light;
 		display: block;
 		overflow: hidden;
@@ -13,12 +20,12 @@
 		}
 	}
 	
-	.humanise-model-listing__info {
+	&__info {
 		display: block;
 		overflow: hidden;
 	}
 
-	.humanise-model-listing__details {
+	&__details {
 		
 		@media (min-width: $screen-md) {
 			float: left;
@@ -26,7 +33,7 @@
 		}
 	}
 	
-	.humanise-model-listing__image {
+	&__image {
 		margin-bottom: 1em;
 		
 		@media (min-width: $screen-md) {
