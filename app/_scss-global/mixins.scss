@@ -54,7 +54,21 @@
 }
 
 @mixin hero-heading() {
-	@extend .heading-type-1;
+
+	// heading-type-1 start
+
+	letter-spacing: 0.1em;
+	font-size: 1.76470588235em;
+	@media (min-width: $screen-md) {
+		font-size: 2.58823529412em;
+	}
+	@media (min-width: $screen-lg) {
+		font-size: 2.82352941176em;
+	}
+
+	// heading-type-1 end
+
+
 	text-align: center;
 	color: $white;
 	letter-spacing: 0.4em;
@@ -63,7 +77,17 @@
 }
 
 @mixin hero-heading-small() {
-	@extend .heading-type-2;
+	
+	// heading-type-2 start
+
+	letter-spacing: 0.1em;
+	font-size: 1.41176470588em;
+	@media (min-width: $screen-md) {
+		font-size: 2em;
+	}
+
+	// heading-type-2 end
+	
 	text-align: center;
 	color: $white;
 	letter-spacing: 0.4em;
