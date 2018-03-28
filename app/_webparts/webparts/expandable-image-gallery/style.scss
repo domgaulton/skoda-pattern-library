@@ -213,7 +213,7 @@
   position: relative;
   //background: #f9f9f9;
   background: rgba(255, 255, 255, 0.99);
-  color: #444;
+  color: $grey-dark;
   // text-shadow: none;
   // -webkit-border-radius: 4px;
   //    -moz-border-radius: 4px;
@@ -243,8 +243,7 @@
 }
 
 .fancybox-error {
-  color: #444;
-  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: $grey-dark;
   margin: 0;
   padding: 15px;
   white-space: nowrap;
@@ -423,7 +422,6 @@
 
 .fancybox-title {
   visibility: hidden;
-  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
   position: relative;
   text-shadow: none;
   z-index: 8050;

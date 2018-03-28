@@ -10,7 +10,6 @@
 			
 			.humanise-quote-slider__quote {
 				font-family: $skoda-next-bold;
-				font-size: 17px;
 				text-transform: uppercase;
 				color: $grey-dark;
 				letter-spacing: 0.1em;
@@ -22,7 +21,7 @@
 				display: block;
 				
 				@media (min-width: $screen-md) {
-					font-size: 30px;
+					font-size: 2em;
 					max-width: 708px;
 					margin-bottom: 20px;
 				}
