@@ -1,4 +1,4 @@
-.split-50-50 {
+.split-2 {
 	margin-bottom: ($webpart-margin-bottom /2);
 
 	@media (min-width: $screen-md) {
@@ -16,6 +16,10 @@
 
 		* {
 			margin: 0;
+		}
+
+		.content_zone {
+			width: 100%;
 		}
 	}
 

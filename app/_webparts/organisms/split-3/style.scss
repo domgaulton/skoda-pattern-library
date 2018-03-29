@@ -1,0 +1,26 @@
+.split-3 {
+	margin-bottom: ($webpart-margin-bottom /2);
+
+	@media (min-width: $screen-md) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items:center;
+	}
+
+	&__col {
+		width: 100%;
+
+		@media (min-width: $screen-md) {
+			width: 33.3333333333%;
+		}
+
+		* {
+			margin: 0;
+		}
+
+		.content_zone {
+			width: 100%;
+		}
+	}
+
+}
