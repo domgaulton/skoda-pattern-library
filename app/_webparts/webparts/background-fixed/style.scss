@@ -3,6 +3,7 @@
 	
 	&__background {
 		background-repeat: no-repeat;
+    background-position: center;
 		@include background-size(cover);
 		height: 60vh;
 		background-attachment: fixed;
