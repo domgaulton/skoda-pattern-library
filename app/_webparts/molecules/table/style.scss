@@ -1,6 +1,12 @@
 .dbsd-table {
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
+  font-size: 0.75em;
+
+  @media (min-width: $screen-md) {
+    font-size: 1em;
+  }
 
   td, th {
     border: 1px solid $grey-light;
@@ -13,6 +19,13 @@
     font-family: $skoda-next;
   }
 
+  tr:first-child td {
+    font-family: $skoda-next-bold;
+  }
+
+  td:first-child {
+   width: 30%;
+  }
 
   tr:nth-child(even) {
     background-color: $grey-feint;
