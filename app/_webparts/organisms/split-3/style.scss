@@ -18,6 +18,10 @@
 			margin: 0;
 		}
 
+		[class*='humanise'] {
+			margin-bottom: 0 !important;
+		}
+
 		.content_zone {
 			width: 100%;
 		}
