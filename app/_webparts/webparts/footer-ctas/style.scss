@@ -1,0 +1,22 @@
+.humanise-footer-ctas {
+	background-color: #F1F8F9;;
+
+	&__intro {
+		text-align: center;
+		
+		img {
+			width: 100%;
+			margin-top: 50px;
+
+			@media (min-width: $screen-md) {
+				width: 500px;		
+			}
+		}
+
+		.cta-container {
+			display: inline-block;
+			margin-bottom: 80px;
+		}
+	}
+
+}
