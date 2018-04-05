@@ -1,10 +1,10 @@
-.humanise-flexi-grid {
+.flexi-grid {
 	display: block;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 60px;
 	
-	.humanise-flexi-grid__list {
+	.flexi-grid__list {
 		display: flex;
 		flex-wrap: wrap;
 		text-align: center;
@@ -17,11 +17,14 @@
 			width: 100%;
 			@include border-box;
 			margin-bottom: 60px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid $grey-light;
 			
 			@media (min-width: $screen-md) {
 				width: 33.33%;
 				float: left;
-				padding: 0 20px;			
+				padding: 0 20px;
+				border-bottom: none;		
 			}
 			
 			p {
