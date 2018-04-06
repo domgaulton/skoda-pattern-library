@@ -11,17 +11,15 @@
 
 	&__tab-select {
 		display: flex;
-
+		justify-content: center;
 		padding-bottom: 13px;
 		text-align: center;
 
 		li {
-			width: 25%;
+			// width: 25%;
+			width: 275px;
 			color: $grey-mid;
-			text-transform: uppercase;
-			font-size: 0.65em;
 			cursor: pointer;
-			letter-spacing: 0.28em;
 			margin: 0;
 			list-style-type: none;
 			@include border_box;
@@ -42,7 +40,8 @@
 
 		&--nav {
 			height: 4px;
-			width: 19%;
+			// width: 19%;
+			width: 200px;
 			margin: 0 3%;
 			background-color: $skoda-green;
 			position: relative;
@@ -63,5 +62,15 @@
 				display: none;
 			}
 		}
+	}
+}
+
+.mobile-tabs {
+
+	.humanise-tabs__wrapper {
+		display: block;
+	}
+	[aria-hidden='true'] {
+		display: none;
 	}
 }
