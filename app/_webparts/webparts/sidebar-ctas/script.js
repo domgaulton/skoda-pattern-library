@@ -16,12 +16,11 @@ $(document).ready(function () {
 		$('.humanise-sidebar-ctas__icon--test-drive').next().attr('href', td);
 		$('.humanise-sidebar-ctas__icon--car-configutator').next().attr('href', cc);
 
-		$('.humanise-sidebar-ctas').mouseenter(function(){
+		$('.humanise-sidebar-ctas__icon').mouseenter(function(){
 			$('.humanise-sidebar-ctas__link').addClass('active');
 		});
 
 		$('.humanise-sidebar-ctas__icon').click(function(){
-			console.log('hide');
 			$('.humanise-sidebar-ctas__link').toggleClass('active');
 		});
 
