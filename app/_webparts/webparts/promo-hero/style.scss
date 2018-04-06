@@ -9,7 +9,12 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		@include background-size(cover);
-		height: 560px;
+		height: 400px;
+
+		@media (min-width: $screen-md) {
+			height: 560px;
+		}
+
 
 		video {
 			overflow: hidden;
