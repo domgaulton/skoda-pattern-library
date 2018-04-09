@@ -4,11 +4,12 @@
 	margin-bottom: $webpart-margin-bottom;
 
 	&__copy {
-		margin: 35px auto;
+		margin: 35px auto 0;
 		max-width: $paragraph-width;
 	}
 
 	.cta-container {
+		margin: 0;
 		justify-content: center;
 	}
 	
