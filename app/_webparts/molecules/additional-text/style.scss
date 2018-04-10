@@ -1,0 +1,54 @@
+.display-text {
+  font-size: 1em;
+  color: $grey-heavy;
+  line-height: 1.28571428571;
+  letter-spacing: -0.02em;
+  @media (min-width: $screen-md) {
+    font-size: 1.64705882353em;
+  }
+
+  &--bold {
+    font-family: $skoda-next-bold;
+  }
+
+  &--light {
+    font-family: $skoda-next-light;
+  }
+
+  &--quote {
+    color: $grey-dark;
+    border-left: 1px solid $skoda-green;
+    padding-left: 20px;
+    font-family: $skoda-next-light-italic;
+  }
+}
+
+.opening-paragraph {
+  font-size: 0.94444444em;
+  font-family: $skoda-next-bold;
+  
+  @media (min-width: $screen-md) {
+    font-size: 1.23529412em;
+  }
+}
+
+.capitalise-text-bold {
+  font-family: $skoda-next-bold;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.15em;
+
+  @media (min-width: $screen-md) {
+    font-size: 1em;
+  }
+}
+
+.capitalise-text {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.15em;
+
+  @media (min-width: $screen-md) {
+    font-size: 1em;
+  }
+}
