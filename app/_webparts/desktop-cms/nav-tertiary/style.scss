@@ -2,7 +2,7 @@
   width: 100% !important;
 
   .bmSubmenu {
-    background-color: $skoda-white-transparent;
+    background-color: $white;
   }
 }
 
@@ -45,7 +45,7 @@
       border-bottom: 4px solid transparent;
       font-family: $skoda-next;
       margin: 0 7px;
-      @media (min-width: $screen-desktop) {
+      @media (min-width: $screen-lg) {
         margin: 0 10px;
       }
       
@@ -56,7 +56,7 @@
         border-bottom: 4px solid transparent;
         border-bottom: 4px solid $skoda-green !important;
         font-family: $skoda-next-bold;
-        color: $skoda-black;
+        color: $grey-heavy;
       }
     } 
     &.selected {
