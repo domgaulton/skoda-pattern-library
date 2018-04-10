@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "desktop-build": "gulp desktop && git add . && git commit -m 'Deploy Desktop Script' && git push origin master"
+    "desktop-overwrites": "gulp desktop-overwrites && cd dist/css && git add desktop-k2-overwrites.css && git commit -m 'Automatic Package.json Deploy' && git push origin master"
   },
   "repository": {
     "type": "git",

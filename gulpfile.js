@@ -79,12 +79,19 @@ gulp.task('desktop-nav', function () {
         .pipe(gulp.dest(config.dist+'css'));
 });
 
-// Add k2 overwrites //
+// Add desktop //
 
 gulp.task('desktop', function () {  
     gulp.src(config.app+'desktop-dbsd.scss')
         .pipe(sass({includePaths: ['scss']}))
-        .pipe(rename('desktop-dbsd.css'))
+        .pipe(gulp.dest(config.dist+'css'));
+});
+
+// Add k2 overwrites //
+
+gulp.task('desktop-overwrites', function () {  
+    gulp.src(config.app+'desktop-k2-overwrites.scss')
+        .pipe(sass({includePaths: ['scss']}))
         .pipe(gulp.dest(config.dist+'css'));
 });
 
