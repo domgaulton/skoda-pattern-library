@@ -2013,5 +2013,5 @@ body {
       font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
 
 .humanise-awards__list-item {
-  list-style-type: none;
-  margin-left: 0; }
+  list-style-type: none !important;
+  margin-left: 0 !important; }
