@@ -84,6 +84,7 @@ gulp.task('desktop-nav', function () {
 gulp.task('desktop', function () {  
     gulp.src(config.app+'desktop-dbsd.scss')
         .pipe(sass({includePaths: ['scss']}))
+        .pipe(rename('desktop-dbsd.css'))
         .pipe(gulp.dest(config.dist+'css'));
 });
 
