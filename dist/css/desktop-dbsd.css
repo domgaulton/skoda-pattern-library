@@ -2011,6 +2011,3 @@ body {
     .bmsMenu ul li.selected a, .bmsMenu ul li.selected span {
       border-bottom: 4px solid #4BA82E;
       font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
-
-.humanise-awards__list-item {
-  background: blue !important; }

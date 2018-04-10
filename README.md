@@ -19,6 +19,8 @@
 4. `gulp deploy-mobile` - builds css for webparts (excluding pattern library style / js)
 5. `gulp desktop-nav` - builds the primary and secondary sitewide nav for k2 (note that the new third level thicker nav is made in the `gulp desktop` build)
 
+* Use `npm run desktop-build` whilst testing to run the npm script found in package.json to automatically publish the desktop to github
+
 ## Process
 1. Use branch names from JIRA tickets e.g. `SKMW-0001 - Webpart Name`
 2. Commit changes and set up Pull Requests
