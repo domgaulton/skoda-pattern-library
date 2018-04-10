@@ -1,0 +1,214 @@
+.humanise-slider {
+	margin-bottom: $webpart-margin-bottom;
+
+	.content_zone {
+		@media (min-width: $screen-md) {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.humanise-slider__list {
+		.humanise-slider__list-item {
+			width: 100%;
+			@include border-box;
+			opacity: 0.3;
+			@include transition(opacity .25s ease-in-out);
+			
+			.humanise-slider__content {
+				opacity: 0;
+			}
+			
+			&.is-selected {
+				opacity: 1;
+				
+				.humanise-slider__content {
+					opacity: 1;
+				}
+			}			
+		}		
+	}
+	
+	.humanise-slide__img {
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	
+	.humanise-slider__heading  {
+		margin-bottom: 0.5em;
+	}
+	
+	.humanise-slider__list--two-items {
+		.humanise-slider__list-item {			
+			@media (min-width: $screen-md) {
+				width: 40%;
+				padding: 0 10px;
+				max-width: 550px;
+			}
+		
+		}
+	}
+	
+	.humanise-slider__list--one-item {
+		.humanise-slider__list-item {			
+			@media (min-width: $screen-md) {
+				padding: 0;
+				max-width: 1100px;
+			}
+		
+		}
+		
+		.humanise-slider__content {
+			@media (min-width: $screen-md) {
+				padding: 20px 50px;
+			}
+		}
+		
+		.cta-container {			
+			@media (min-width: $screen-md) {
+				width: 40%;
+				padding-left: 50px;
+				float: right;
+				text-align: right;
+				@include border-box;
+				display: block;
+				
+				.cta-block {
+					display: block;
+				}
+			}			
+		}
+		
+		.humanise-slider__copy {
+			
+			@media (min-width: $screen-md) {
+				float: left;
+				width: 50%;
+			}
+			
+		}
+	}
+	
+	.flickity-page-dots  {
+		
+		.dot {
+			background-color: $grey-mid;
+			height: 5px;
+			width: 45px;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			
+			&.is-selected {
+				background-color: $skoda-green;
+			}
+		}
+		
+	}
+	
+	.flickity-prev-next-button  {
+		border-radius: 0;
+		top: 50%;
+		@include transform(0, -50%);
+		width: 39px;
+		height: 61px;
+		padding: 0;
+		
+		&:after {
+			content: "";
+			width: 39px;
+			height: 61px;
+			display: block;
+		}
+		
+		svg {
+			display: none;
+		}
+		
+		&.next {	
+			right: 0px;
+			
+			@media (min-width: $screen-md) {
+				right: 10px;
+			}
+			
+			&:after {
+				background: url("/dist/img/chevron-right.svg") center center no-repeat;
+			}
+		}
+		
+		&.previous {
+			left: 0px;
+			
+			@media (min-width: $screen-md) {
+				left: 10px;
+			}
+			
+			&:after {
+				background: url("/dist/img/chevron-left.svg") center center no-repeat;
+			}
+		}
+		
+		&.hide {
+			opacity: 0;
+		}
+		
+		&.show {
+			opacity: 1;
+			@include transition(opacity .6s ease-in-out);
+		}
+	}
+	
+	.humanise-slider__list--one-item {
+		.flickity-prev-next-button  {			
+			&.next {					
+				@media (min-width: $screen-md) {
+					right: 0px;
+				}				
+			}
+			
+			&.previous {				
+				@media (min-width: $screen-md) {
+					left: 0px;
+				}
+			}
+		}	
+	}
+	
+	.flickity-buttons {
+		position: absolute;
+		width: 100%;
+		pointer-events: none;
+		top: 0;
+
+		@media (min-width: $screen-md) {
+			width: 80%;
+			left: 50%;
+			top: 0;
+			@include transform(-50%, 0);
+			max-width: 1100px;
+		}
+			
+	}
+	
+	.humanise-slider__list--one-item {
+		.flickity-buttons {
+			@media (min-width: $screen-md) {
+				width: 100%;
+			}
+				
+		}	
+	}
+	
+	.flickity-button {
+		background: transparent;
+		pointer-events: auto;
+		
+		&:disabled {
+			opacity: 0;
+		}
+	}
+	
+}
