@@ -1,11 +1,9 @@
 // Main Webparts CSS
 @import 'main.scss';
 
-// Desktop CMS Paragraph Repeater Update
-@import '_webparts/desktop-cms/desktop-overwrite/style.scss';
-
-// Desktop Third Level Nav
+// Desktop CMS Paragraph Repeater and Tertiary Nav
+@import '_webparts/desktop-cms/desktop-paragraph-repeater/style.scss';
 @import '_webparts/desktop-cms/nav-tertiary/style.scss';
 
 // Desktop Overwrites and Styles
-@import 'desktop-k2-overwrites.scss';
+@import '_webparts/webparts/awards/k2-style.scss';
