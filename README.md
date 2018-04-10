@@ -15,7 +15,7 @@
 ## Gulp Tasks
 1. `gulp dev` - building locally with style sourcemaps
 2. `gulp` - builds pattern library and webparts (style and javascript) for `https://skodauk.github.io/dist/index.html`
-3. `gulp desktop` - builds css for webparts with desktop CMS overwrites (excluding pattern library style / js)
+3. `gulp desktop` - builds css for webparts with desktop CMS overwrites, paragraph repeater overwrites and tertiary level navigation. Excludes pattern library style / js
 4. `gulp deploy-mobile` - builds css for webparts (excluding pattern library style / js)
 5. `gulp desktop-nav` - builds the primary and secondary sitewide nav for k2 (note that the new third level thicker nav is made in the `gulp desktop` build)
 
