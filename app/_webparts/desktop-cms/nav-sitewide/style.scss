@@ -38,9 +38,9 @@ $navThirdNav: 54px;
 }
 
 .hMain {
-  width: $safe-zone-small;
-  @media (min-width: $screen-desktop) {
-    width: $safe-zone;
+  width: 970px;
+  @media (min-width: $screen-lg) {
+    width: 1050px;
   }
 }
 
@@ -81,7 +81,7 @@ $navThirdNav: 54px;
     
     a {
      
-      color: $skoda-grey-dark !important;
+      color: $grey-heavy !important;
       font-family: $skoda-next-bold;
       background: none !important;
       border: none !important;
@@ -135,10 +135,10 @@ $navThirdNav: 54px;
   display: block;
   float: none;
   font-family: $skoda-next;
-  width: $safe-zone-small;
   height: auto;
-  @media (min-width: $screen-desktop) {
-    width: $safe-zone;
+  width: 970px;
+  @media (min-width: $screen-lg) {
+    width: 1050px;
   }
   li {
     text-transform: uppercase;
@@ -152,7 +152,7 @@ $navThirdNav: 54px;
       font-family: $skoda-next;
       letter-spacing: -0.6px;
       height: auto !important;
-      @media (min-width: $screen-desktop) {
+      @media (min-width: $screen-lg) {
         letter-spacing: 0px;
       }
     }
@@ -243,9 +243,9 @@ $navThirdNav: 54px;
   .bmsTitle {
     display: none;
     margin: 0 auto;
-    width: $safe-zone-small;
-    @media (min-width: $screen-desktop) {
-      width: $safe-zone;
+    width: 970px;
+    @media (min-width: $screen-lg) {
+      width: 1050px;
     }
 
     h1 {
@@ -264,9 +264,9 @@ $navThirdNav: 54px;
     ul {
       text-align: center;
       margin: 0 auto;
-      width: $safe-zone-small;
-      @media (min-width: $screen-desktop) {
-        width: $safe-zone;
+      width: 970px;
+      @media (min-width: $screen-lg) {
+        width: 1050px;
       }
 
       li {
@@ -292,8 +292,8 @@ $navThirdNav: 54px;
 }
 
 .stickyMenuContainerInner {
-  width: $safe-zone-small;
-  @media (min-width: $screen-desktop) {
-    width: $safe-zone;
+  width: 970px;
+  @media (min-width: $screen-lg) {
+    width: 1050px;
   }
 }

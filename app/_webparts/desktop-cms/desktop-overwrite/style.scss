@@ -15,7 +15,7 @@ body {
 
 				.ms-WPBody {
 					a {
-						color: $skoda-white !important;
+						color: $white !important;
 
 						&:hover {
 							text-decoration: none !important;
@@ -27,17 +27,17 @@ body {
 	}
 }
 
-.content_zone {
-	width: 87.5%;
-	margin: 0 auto;
-	position: relative;
-	@media (min-width: $screen-md) {
-		width: 90%;
-	}
-	@media (min-width: $screen-lg) {
-		width: $safe-zone;
-	}
-}
+// .content_zone {
+// 	width: 87.5%;
+// 	margin: 0 auto;
+// 	position: relative;
+// 	@media (min-width: $screen-md) {
+// 		width: 90%;
+// 	}
+// 	@media (min-width: $screen-lg) {
+// 		width: $safe-zone;
+// 	}
+// }
 
 .paragraphRowLocal {
 	display: inline-block;
