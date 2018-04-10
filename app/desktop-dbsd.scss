@@ -1,7 +1,8 @@
-// @import 'webparts';
-@import '_scss-global/variables.scss';
-@import '_scss-global/mixins.scss';
+// Main Webparts CSS
+@import 'main.scss';
 
-// Desktop CMS 
-// @import '_webparts/desktop-cms/nav-tertiary/style.scss';
+// Desktop CMS Paragraph Repeater Update
 @import '_webparts/desktop-cms/desktop-overwrite/style.scss';
+
+// Desktop Overwrites and Styles
+@import 'desktop-k2-overwrites.scss';

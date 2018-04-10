@@ -31,19 +31,18 @@
 @import '_webparts/organisms/split-3/style.scss';
 
 // Webparts
+@import '_webparts/webparts/awards/style.scss';
 @import '_webparts/webparts/background-fixed/style.scss';
 @import '_webparts/webparts/chapter-section/style.scss';
 @import '_webparts/webparts/expandable-image-gallery/style.scss';
 @import '_webparts/webparts/footer-ctas/style.scss';
 @import '_webparts/webparts/intro/style.scss';
 @import '_webparts/webparts/intro-text/style.scss';
+@import '_webparts/webparts/model-listing/style.scss';
 @import '_webparts/webparts/primary-hero/style.scss';
 @import '_webparts/webparts/promo-hero/style.scss';
 @import '_webparts/webparts/promo-info/style.scss';
 @import '_webparts/webparts/parallax/style.scss';
+@import '_webparts/webparts/quote/style.scss';
 @import '_webparts/webparts/sidebar-ctas/style.scss';
 @import '_webparts/webparts/tabs/style.scss';
-
-@import '_webparts/webparts/model-listing/style.scss';
-@import '_webparts/webparts/quote/style.scss';
-@import '_webparts/webparts/awards/style.scss';
