@@ -4,7 +4,8 @@
   "description": "## Getting Started 1. Install node.js 2. Launch Terminal",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "desktop-build": "gulp desktop && git add . && git commit -m 'Deploy Desktop Script' && git push origin master"
   },
   "repository": {
     "type": "git",
