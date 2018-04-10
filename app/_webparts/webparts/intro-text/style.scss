@@ -1,7 +1,15 @@
 .humanise-intro-text {
 	width: 100%;
 	text-align: center;
-	margin-bottom: $webpart-margin-bottom;
+	// margin-bottom: $webpart-margin-bottom;
+
+	&.padding-top {
+		padding-top: $webpart-margin-bottom;
+	}
+
+	&.padding-bottom {
+		padding-bottom: $webpart-margin-bottom;
+	}
 
 	&__copy {
 		margin: 35px auto 0;
