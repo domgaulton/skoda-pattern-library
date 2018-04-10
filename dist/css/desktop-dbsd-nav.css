@@ -1,0 +1,207 @@
+.webpart-margin-bottom {
+  margin-bottom: 10vh; }
+
+.text-right {
+  text-align: right; }
+
+.bMain {
+  margin-top: 65px; }
+
+.bmBody {
+  padding: 0 !important; }
+
+.header {
+  background: #FFFFFF;
+  height: 60px;
+  font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
+
+.hMain {
+  width: 970px; }
+  @media (min-width: 1200px) {
+    .hMain {
+      width: 1050px; } }
+
+.hLeft {
+  float: none;
+  width: auto; }
+
+.hlTop {
+  width: 200px;
+  margin-left: 0px;
+  height: 31px;
+  margin-top: 15px; }
+
+.hlBottom {
+  float: right;
+  padding: 0;
+  margin-top: 18px; }
+
+.hlbMenuMainSelected {
+  background: none !important;
+  border: none !important; }
+  .hlbMenuMainSelected:visited, .hlbMenuMainSelected:active, .hlbMenuMainSelected:hover {
+    background: none !important;
+    border: none !important; }
+
+.hlbMenuMain {
+  font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
+  .hlbMenuMain > li {
+    font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
+    .hlbMenuMain > li a {
+      color: #212428 !important;
+      font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+      background: none !important;
+      border: none !important;
+      margin-right: 15px; }
+      .hlbMenuMain > li a:hover {
+        background: none !important;
+        border: none !important; }
+    .hlbMenuMain > li:last-child a {
+      margin-right: 0px; }
+
+.hlbMenu {
+  width: 800px;
+  float: right;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
+  text-align: right; }
+  .hlbMenu .hlbMenuSecondLevel .hlbmslMain li a {
+    text-align: left;
+    font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
+
+.hRight {
+  display: none; }
+
+.bmMenu {
+  width: 100%;
+  background-color: #4BA82E;
+  height: 42px; }
+
+.bmmMenuMain {
+  text-align: center;
+  margin: 0 auto;
+  position: static;
+  display: block;
+  float: none;
+  font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
+  height: auto;
+  width: 970px; }
+  @media (min-width: 1200px) {
+    .bmmMenuMain {
+      width: 1050px; } }
+  .bmmMenuMain li {
+    text-transform: uppercase;
+    float: none;
+    display: inline-block; }
+    .bmmMenuMain li a {
+      padding: 13px 19px 12px;
+      font-size: 16px;
+      border: none !important;
+      border: 0 !important;
+      font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
+      letter-spacing: -0.6px;
+      height: auto !important; }
+      @media (min-width: 1200px) {
+        .bmmMenuMain li a {
+          letter-spacing: 0px; } }
+  .bmmMenuMain > li > a.bmmMenuMainSelected {
+    background: white !important;
+    padding: 13px 19px 12px !important;
+    font-size: 16px !important;
+    border: none !important;
+    border: 0 !important;
+    color: black !important; }
+    .bmmMenuMain > li > a.bmmMenuMainSelected:active, .bmmMenuMain > li > a.bmmMenuMainSelected:visited, .bmmMenuMain > li > a.bmmMenuMainSelected:hover {
+      background: white !important;
+      padding: 13px 19px 12px !important;
+      font-size: 16px !important;
+      border: none !important;
+      border: 0 !important;
+      color: black !important; }
+  .bmmMenuMain > li > a:hover span {
+    display: none !important;
+    background: none !important; }
+  .bmmMenuMain > li > a.bmmMainMenuSelected span, .bmmMenuMain > li > a.bmmMainMenuSelected:active span, .bmmMenuMain > li > a.bmmMainMenuSelected:visited span, .bmmMenuMain > li > a.bmmMainMenuSelected:hover span {
+    display: none !important;
+    background: none !important; }
+  .bmmMenuMain > li > a.bmmMenuMainSelected span,
+  .bmmMenuMain > li > a.bmmMenuMainSelectedNoArrow span,
+  .bmmMenuMain > li > a.bmmMenuMainSelected:active span,
+  .bmmMenuMain > li > a.bmmMenuMainSelectedNoArrow:active span,
+  .bmmMenuMain > li > a.bmmMenuMainSelected:visited span,
+  .bmmMenuMain > li > a.bmmMenuMainSelectedNoArrow:visited span,
+  .bmmMenuMain > li > a.bmmMenuMainSelected:hover span,
+  .bmmMenuMain > li > a.bmmMenuMainSelectedNoArrow:hover span {
+    display: none !important;
+    background: none !important; }
+
+.bmmmSecondLevel {
+  margin-left: -20px;
+  text-align: left; }
+  .bmmmSecondLevel .bmmslNewGroups li {
+    float: left;
+    display: block;
+    width: 100%;
+    text-transform: none; }
+  .bmmmSecondLevel .bmmmSecondLevelShadowBottom,
+  .bmmmSecondLevel .bmmmSecondLevelShadowRight,
+  .bmmmSecondLevel .bmmmSecondLevelShadowCorner {
+    display: none; }
+  .bmmmSecondLevel .bmmslNewModelDetailBoxHighlights {
+    list-style-type: disc; }
+    .bmmmSecondLevel .bmmslNewModelDetailBoxHighlights li {
+      text-transform: none;
+      display: list-item; }
+  .bmmmSecondLevel .bmmslNewModelDetailBoxButtons {
+    text-transform: none; }
+
+.bmSubmenu {
+  width: 100%;
+  border: none;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+  .bmSubmenu .bmsTitle, .bmSubmenu .bmsMenu {
+    font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
+  .bmSubmenu .bmsTitle {
+    display: none;
+    margin: 0 auto;
+    width: 970px; }
+    @media (min-width: 1200px) {
+      .bmSubmenu .bmsTitle {
+        width: 1050px; } }
+    .bmSubmenu .bmsTitle h1 {
+      font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+      letter-spacing: 0.2px;
+      font-size: 1.5em; }
+  .bmSubmenu .bmsMenu {
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding-bottom: 0 !important;
+    top: 0px !important; }
+    .bmSubmenu .bmsMenu ul {
+      text-align: center;
+      margin: 0 auto;
+      width: 970px; }
+      @media (min-width: 1200px) {
+        .bmSubmenu .bmsMenu ul {
+          width: 1050px; } }
+      .bmSubmenu .bmsMenu ul li {
+        padding-bottom: 0 !important; }
+        .bmSubmenu .bmsMenu ul li a {
+          height: auto !important;
+          padding: 8px 9px;
+          background-position: right 11px; }
+        .bmSubmenu .bmsMenu ul li span {
+          height: auto;
+          padding-bottom: 8px; }
+        .bmSubmenu .bmsMenu ul li .selected {
+          background-position-y: 25px; }
+
+.stickyMenuContainerInner {
+  width: 970px; }
+  @media (min-width: 1200px) {
+    .stickyMenuContainerInner {
+      width: 1050px; } }

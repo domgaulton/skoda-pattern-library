@@ -72,15 +72,16 @@ gulp.task('sass', function () {
 
 // Nav Desktop - build navigation for k2 desktop //
 
-gulp.task('nav-desktop', function () {  
+gulp.task('desktop-nav', function () {  
     gulp.src(config.app+'desktop-dbsd-nav.scss')
         .pipe(sass({includePaths: ['scss']}))
+        .pipe(rename('dbsd-nav.css'))  
         .pipe(gulp.dest(config.dist+'css'));
 });
 
 // Add k2 overwrites //
 
-gulp.task('deploy-desktop', function () {  
+gulp.task('desktop', function () {  
     gulp.src(config.app+'desktop-dbsd.scss')
         .pipe(sass({includePaths: ['scss']}))
         .pipe(gulp.dest(config.dist+'css'));
