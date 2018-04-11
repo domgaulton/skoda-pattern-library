@@ -97,7 +97,6 @@ gulp.task('desktop-overwrites', ['clean-k2-overwrites'], function () {
     
     gulp.src(config.app+'desktop-k2-overwrites.scss')
         .pipe(sass({includePaths: ['scss']}))
-        .pipe(rename('desktop-k2-overwrites.css'))
         // .pipe(rename('desktop-k2-overwrites.css?v_'+random))
         .pipe(gulp.dest(config.dist+'css/desktop-k2-overwrites'));
 });
