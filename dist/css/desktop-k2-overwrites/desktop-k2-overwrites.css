@@ -1829,6 +1829,29 @@ body .ms-core-overlay {
               text-transform: uppercase;
               letter-spacing: 0.146em;
               color: #888888; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a {
+          font-size: 0.7058823529em !important; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--white {
+          color: #212428 !important; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--white:hover {
+            color: #FFFFFF !important; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-white:hover {
+          color: #212428 !important; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-black {
+          color: #212428 !important; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-black:hover {
+            color: #FFFFFF !important; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-minimal {
+          color: #212428 !important; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-minimal--white {
+            color: #FFFFFF !important; }
+        @media (min-width: 768px) {
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__link {
+            margin-top: -3px; } }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__link a {
+          font-size: 0.6em !important; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__icon {
+          margin-top: -11px !important; }
 
 .paragraphRowLocal {
   display: inline-block;
