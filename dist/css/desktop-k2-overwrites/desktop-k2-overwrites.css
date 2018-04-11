@@ -86,6 +86,9 @@ body .page .bMain .bmBody .cta-container a.cta-minimal {
   body .page .bMain .bmBody .cta-container a.cta-minimal--white {
     color: #FFFFFF !important; }
 
+.terms-and-conditions p {
+  margin-bottom: 1em; }
+
 .humanise-awards__list-item p {
   padding: 0 !important; }
 
