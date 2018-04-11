@@ -47,7 +47,7 @@ a {
 }
 
 strong {
-	@extend .text-bold;
+	font-family: $skoda-next-bold;
 }
 
 .small-print {

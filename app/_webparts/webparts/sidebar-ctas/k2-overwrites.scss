@@ -3,5 +3,13 @@
     @media (min-width: $screen-md) {
       margin-top: -3px;
     }
+
+    a {
+      font-size: 0.6em !important;
+    }
+  }
+
+  &__icon {
+    margin-top: -11px !important;
   }
 }

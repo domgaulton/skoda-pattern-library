@@ -128,7 +128,7 @@ a {
 .text-regular-italic {
   font-family: "SKODA Next W01 Italic", arial, verdana, helvetica, sans-serif !important; }
 
-.text-bold, strong {
+.text-bold {
   font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
 
 .text-bold-italic {
@@ -139,6 +139,9 @@ a {
 
 .text-extra-bold-italic {
   font-family: "SKODA Next W01 Extra Bold Italic", arial, verdana, helvetica, sans-serif !important; }
+
+strong {
+  font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
 
 .small-print {
   font-size: 0.7em; }
@@ -1643,6 +1646,7 @@ ol.list {
         -webkit-transition: 0.8s ease-in-out;
         transition: 0.8s ease-in-out; } }
     .humanise-sidebar-ctas__link a {
+      font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
       vertical-align: middle;
       color: #FFFFFF;
       text-transform: uppercase;
