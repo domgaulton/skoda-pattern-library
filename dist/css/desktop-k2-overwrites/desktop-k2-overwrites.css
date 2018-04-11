@@ -1869,3 +1869,13 @@ body .page .bMain .bmBody .cta-container a.cta-minimal {
   color: #212428 !important; }
   body .page .bMain .bmBody .cta-container a.cta-minimal--white {
     color: #FFFFFF !important; }
+
+@media (min-width: 768px) {
+  .humanise-sidebar-ctas__link {
+    margin-top: -3px; } }
+
+.humanise-sidebar-ctas__link a {
+  font-size: 0.6em !important; }
+
+.humanise-sidebar-ctas__icon {
+  margin-top: -11px !important; }
