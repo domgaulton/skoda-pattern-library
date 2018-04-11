@@ -9,6 +9,8 @@ body {
   .whisbi-oto__content p {
     margin-bottom: 0 !important;
   }
+
+  @import '_webparts/webparts/expandable-image-gallery/style-gallery.scss';
   
   .ms-core-overlay {
     margin-top: -40px !important;
