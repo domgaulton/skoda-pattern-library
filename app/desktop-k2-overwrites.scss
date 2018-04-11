@@ -1,4 +1,7 @@
 @import '_scss-global/variables.scss';
+@import '_scss-global/mixins.scss';
+@import '_scss-global/reset.scss';
+@import '_scss-global/fonts.scss';
 
 body {
 
@@ -80,4 +83,4 @@ body {
   }
 }
 
-@import '_webparts/webparts/expandable-image-gallery/style-gallery.scss';
+@import '_webparts/webparts/expandable-image-gallery/style.scss';
