@@ -1,2 +1,8 @@
+// For Development
+@import '_scss-global/variables.scss';
+@import '_webparts/desktop-cms/desktop-paragraph-repeater/style.scss';
+
 // Desktop Overwrites and Styles
-@import '_webparts/webparts/awards/k2-overwrites.scss';
+@import '_webparts/molecules/ctas/k2-overwrites.scss';
+// @import '_webparts/webparts/awards/k2-overwrites.scss';
+@import '_webparts/webparts/sidebar-ctas/k2-overwrites.scss';

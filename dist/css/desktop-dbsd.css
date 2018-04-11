@@ -3,9 +3,6 @@
    License: none (public domain)
 */
 @import 'https://unpkg.com/flickity@2/dist/flickity.min.css';
-html, body {
-  font-size: 17px !important; }
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -14,6 +11,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
   font-kerning: none; }
+
+html, body {
+  font-size: 17px !important; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1920,60 +1920,6 @@ pre {
       letter-spacing: 0.146em;
       color: #888888; }
 
-body {
-  margin: 0;
-  font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
-  body .page .bMain {
-    font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
-    margin-top: -25px !important; }
-    body .page .bMain .bmBody {
-      width: 100% !important;
-      padding: 0 !important;
-      font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
-      body .page .bMain .bmBody .ms-WPBody a {
-        color: #FFFFFF !important; }
-        body .page .bMain .bmBody .ms-WPBody a:hover {
-          text-decoration: none !important; }
-
-.content_zone {
-  width: 87.5%;
-  margin: 0 auto;
-  position: relative; }
-  @media (min-width: 768px) {
-    .content_zone {
-      width: 90%; } }
-  @media (min-width: 1200px) {
-    .content_zone {
-      width: 1100px; } }
-
-.paragraphRowLocal {
-  display: inline-block;
-  clear: both;
-  width: 100%;
-  font-size: 15px; }
-
-.paragraphContent {
-  display: block; }
-
-.whisbi-oto__content p {
-  margin-bottom: 0 !important; }
-
-.callToActionTopAllArea {
-  display: none !important; }
-
-.ms-core-overlay {
-  margin-top: -40px !important; }
-
-.ms-status-yellow {
-  height: 50px; }
-
-/* Remove top CTAs and push page up END */
-.sa-ci p {
-  padding: 0 !important; }
-
-.sa-padding-def {
-  padding: 0 !important; }
-
 .stickyMenuContainerInner {
   width: 100% !important; }
   .stickyMenuContainerInner .bmSubmenu {
@@ -2022,7 +1968,3 @@ body {
     .bmsMenu ul li.selected a, .bmsMenu ul li.selected span {
       border-bottom: 4px solid #4BA82E;
       font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
-
-.humanise-awards__list-item {
-  list-style-type: none !important;
-  margin-left: 0 !important; }
