@@ -49,12 +49,6 @@ body {
 .sa-ci p {
   padding: 0; }
 
-p {
-  line-height: 1.5 !important;
-  margin-bottom: 1em !important;
-  font-family: "SKODA Next W01 Light", arial, verdana, helvetica, sans-serif !important;
-  letter-spacing: 0.02em !important; }
-
 .caption-text {
   font-size: 0.7em !important; }
 
