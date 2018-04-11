@@ -35,13 +35,6 @@ body {
 .ms-status-yellow {
   height: 50px; }
 
-/* Remove top CTAs and push page up END */
-.sa-ci p {
-  padding: 0 !important; }
-
-.sa-padding-def {
-  padding: 0 !important; }
-
 .cta-container a {
   font-size: 0.7058823529em !important; }
 
