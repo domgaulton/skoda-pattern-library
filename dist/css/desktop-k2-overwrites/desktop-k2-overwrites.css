@@ -39,6 +39,9 @@ body {
 .ms-status-yellow {
   height: 50px; }
 
+.caption-text {
+  font-size: 0.7em !important; }
+
 body .page .bMain .bmBody .cta-container a {
   font-size: 0.7058823529em !important; }
 
