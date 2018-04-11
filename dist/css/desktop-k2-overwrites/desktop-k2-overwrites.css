@@ -69,3 +69,6 @@ body .page .bMain .bmBody .cta-container a.cta-minimal {
 
 .humanise-sidebar-ctas__link a {
   font-size: 0.6em !important; }
+
+.humanise-sidebar-ctas__icon {
+  margin-top: -11px !important; }
