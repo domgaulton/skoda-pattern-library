@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
+  font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
+  font-size: 17px !important; }
   body .page .bMain {
     font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
     margin-top: -25px !important; }
