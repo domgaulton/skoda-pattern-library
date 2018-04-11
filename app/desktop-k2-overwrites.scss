@@ -1,8 +1,8 @@
 // For Development (remove variables.scss when importing this into desktop-dbsd.scss as it's covered in main.scss)
 @import '_scss-global/variables.scss';
 
-@import '_webparts/desktop-cms/desktop-paragraph-repeater/style.scss';
-
 // Desktop Overwrites and Styles
+@import '_webparts/desktop-cms/desktop-paragraph-repeater/style.scss';
+@import '_webparts/atoms/fonts/k2-overwrites.scss';
 @import '_webparts/molecules/ctas/k2-overwrites.scss';
 @import '_webparts/webparts/sidebar-ctas/k2-overwrites.scss';

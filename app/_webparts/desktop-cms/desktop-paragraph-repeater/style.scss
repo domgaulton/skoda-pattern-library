@@ -10,7 +10,7 @@ body {
 	.page {
 		.bMain {
 			font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
-			margin-top: -25px !important;
+			margin-top: -20px !important;
 
 			.bmBody {
 			
@@ -20,10 +20,10 @@ body {
 
 				.ms-WPBody {
 					a {
-						// color: $white !important;
+						color: $white !important;
 
 						&:hover {
-							// text-decoration: none !important;
+							text-decoration: none !important;
 						}
 					}
 				}
@@ -32,24 +32,10 @@ body {
 	}
 }
 
-// .content_zone {
-// 	width: 87.5%;
-// 	margin: 0 auto;
-// 	position: relative;
-// 	@media (min-width: $screen-md) {
-// 		width: 90%;
-// 	}
-// 	@media (min-width: $screen-lg) {
-// 		width: $safe-zone;
-// 	}
-// }
-
 .paragraphRowLocal {
 	display: inline-block;
 	clear: both;
 	width: 100%;
-	// // To mirror the CMS
-	// font-size: 17px !important;
 }
 
 .paragraphContent {
@@ -76,13 +62,3 @@ body {
 .ms-status-yellow {
 	height: 50px;
 }
-
-// /* Remove top CTAs and push page up END */
-
-// .sa-ci p {
-// 	padding: 0 !important;
-// }
-
-// .sa-padding-def {
-// 	padding: 0 !important;
-// }

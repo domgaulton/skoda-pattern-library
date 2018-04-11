@@ -1,5 +1,44 @@
-.cta-container {
+body .page .bMain .bmBody .cta-container {
   a {
     font-size: 0.7058823529em !important;
+  }
+
+  a.cta-block {
+
+    &__secondary {
+
+      &--white {  
+        color: $grey-heavy !important;
+        &:hover {
+          color: $white !important;
+        }
+      }
+
+      &--no-bg {
+
+        &-white {
+
+          &:hover {
+            color: $grey-heavy !important;
+          }
+        }
+
+        &-black {
+          color: $grey-heavy !important;
+
+          &:hover {
+            color: $white !important;
+          }
+        }
+      }
+    }
+  }
+
+  a.cta-minimal {
+    color: $grey-heavy !important;
+
+    &--white {
+      color: $white !important;
+    }
   }
 }
