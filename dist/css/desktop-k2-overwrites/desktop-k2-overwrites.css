@@ -18,6 +18,9 @@ body {
 
 .paragraphContent {
   display: block; }
+  .paragraphContent li {
+    list-style-type: none !important;
+    margin-left: 0 !important; }
 
 .whisbi-oto__content p {
   margin-bottom: 0 !important; }
