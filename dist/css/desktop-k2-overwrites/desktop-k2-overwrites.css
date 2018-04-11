@@ -1,24 +1,4 @@
 @import 'https://unpkg.com/flickity@2/dist/flickity.min.css';
-.paragraphRowLocal {
-  display: inline-block;
-  clear: both;
-  width: 100%; }
-
-.paragraphContent {
-  display: block; }
-  .paragraphContent li {
-    list-style-type: none !important;
-    margin-left: 0 !important; }
-
-.whisbi-oto__content p {
-  margin-bottom: 0 !important; }
-
-.ms-status-yellow {
-  height: 50px; }
-
-.sa-ci p {
-  padding: 0; }
-
 body .ms-core-overlay {
   margin-top: -40px !important; }
   body .ms-core-overlay .page .callToActionTopAllArea {
@@ -40,6 +20,10 @@ body .ms-core-overlay {
         /* Overlay helper */
         /* Title helper */
         /*Retina graphics!*/ }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody a {
+          color: #FFFFFF !important; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody a:hover {
+            text-decoration: none !important; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody html, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody div, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody span, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody applet, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody object, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody iframe, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h1, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h2, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h3, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h4, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h5, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h6, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody p, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody blockquote, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody pre, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody a, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody abbr, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody acronym, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody address, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody big, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody cite, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody code, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody del, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody dfn, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody em, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody img, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody ins, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody kbd, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody q, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody s, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody samp, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody small, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody strike, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody strong, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody sub, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody sup, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody tt, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody var, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody b, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody u, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody i, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody center, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody dl, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody dt, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody dd, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody ol, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody ul, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody li, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody fieldset, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody form, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody label, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody legend, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody table, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody caption, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody tbody, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody tfoot, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody thead, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody tr, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody th, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody td, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody article, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody aside, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody canvas, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody details, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody embed, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody figure, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody figcaption, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody footer, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody header, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody hgroup, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody menu, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody nav, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody output, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody ruby, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody section, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody summary, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody time, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody mark, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody audio, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody video {
           margin: 0;
           padding: 0;
@@ -1845,6 +1829,75 @@ body .ms-core-overlay {
               text-transform: uppercase;
               letter-spacing: 0.146em;
               color: #888888; }
+
+.paragraphRowLocal {
+  display: inline-block;
+  clear: both;
+  width: 100%; }
+
+.paragraphContent {
+  display: block; }
+  .paragraphContent li {
+    list-style-type: none !important;
+    margin-left: 0 !important; }
+
+.whisbi-oto__content p {
+  margin-bottom: 0 !important; }
+
+.ms-status-yellow {
+  height: 50px; }
+
+.sa-ci p {
+  padding: 0; }
+
+.stickyMenuContainerInner {
+  width: 100% !important; }
+  .stickyMenuContainerInner .bmSubmenu {
+    background-color: #FFFFFF; }
+
+.bmSubmenu {
+  border: 0;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%; }
+  .bmSubmenu li {
+    padding-bottom: 0 !important; }
+
+.bmsTitle {
+  display: none; }
+
+.bmsMenu {
+  border: none;
+  border: 0;
+  top: 0 !important;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0 !important; }
+  .bmsMenu ul li {
+    background: none !important; }
+    .bmsMenu ul li a, .bmsMenu ul li span {
+      padding: 20px 25px 19px !important;
+      font-size: 1.2em !important;
+      letter-spacing: 3px;
+      background: none !important;
+      border-bottom: 4px solid transparent;
+      font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
+      margin: 0 7px; }
+      @media (min-width: 1200px) {
+        .bmsMenu ul li a, .bmsMenu ul li span {
+          margin: 0 10px; } }
+      .bmsMenu ul li a:hover, .bmsMenu ul li a.selected span, .bmsMenu ul li span:hover, .bmsMenu ul li span.selected span {
+        padding: 20px 25px 19px !important;
+        text-transform: uppercase;
+        background: none;
+        border-bottom: 4px solid transparent;
+        border-bottom: 4px solid #4BA82E !important;
+        font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+        color: #212428; }
+    .bmsMenu ul li.selected a, .bmsMenu ul li.selected span {
+      border-bottom: 4px solid #4BA82E;
+      font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
 
 body .page .bMain .bmBody .cta-container a {
   font-size: 0.7058823529em !important; }
