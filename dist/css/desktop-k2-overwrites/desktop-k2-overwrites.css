@@ -39,11 +39,6 @@ body {
 .ms-status-yellow {
   height: 50px; }
 
-p {
-  line-height: 1.5 !important;
-  font-family: "SKODA Next W01 Light", arial, verdana, helvetica, sans-serif !important;
-  letter-spacing: 0.02em !important; }
-
 .caption-text {
   font-size: 0.7em !important; }
 
