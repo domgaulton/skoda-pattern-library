@@ -48,12 +48,7 @@ body {
 .skodadefaultcss h4, .skodadefaultcss .heading-type-4,
 .skodadefaultcss h5, .skodadefaultcss .heading-type-5,
 .skodadefaultcss h6, .skodadefaultcss .heading-type-6 {
-  line-height: 1.04166666em !important;
-  margin: 1em 0 !important;
-  font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important !important;
-  color: #212428 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.12em !important; }
+  margin: 1em 0 !important; }
 
 body .page .bMain .bmBody .cta-container a {
   font-size: 0.7058823529em !important; }
