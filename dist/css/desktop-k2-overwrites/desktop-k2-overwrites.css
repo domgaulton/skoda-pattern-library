@@ -1,4 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import 'https://unpkg.com/flickity@2/dist/flickity.min.css';
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #4A4A4A;
+  font: inherit;
+  vertical-align: baseline;
+  font-kerning: none; }
+
+html, body {
+  font-size: 17px !important; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.content_zone {
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  margin: 0 auto;
+  position: relative; }
+  @media (min-width: 768px) {
+    .content_zone {
+      padding: 0 30px; } }
+  @media (min-width: 1200px) {
+    .content_zone {
+      width: 1100px;
+      padding: 0; } }
+
+.webpart-margin-bottom {
+  margin-bottom: 10vh; }
+
+.text-right {
+  text-align: right; }
+
+@font-face {
+  font-family: "SKODA Next W01 Light";
+  src: url("/dist/fonts/SKODANext-Light.ttf") format("truetype"), url("/dist/fonts/SKODANext-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: "SKODA Next W01 Light Italic";
+  src: url("/dist/fonts/SKODANext-LightItalic.ttf") format("truetype"), url("/dist/fonts/SKODANext-LightItalic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "SKODA Next W01 Regular";
+  src: url("/dist/fonts/SKODANext-Regular.ttf") format("truetype"), url("/dist/fonts/SKODANext-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: "SKODA Next W01 Italic";
+  src: url("/dist/fonts/SKODANext-RegularItalic.ttf") format("truetype"), url("/dist/fonts/SKODANext-RegularItalic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "SKODA Next W01 Bold";
+  src: url("/dist/fonts/SKODANext-Bold.ttf") format("truetype"), url("/dist/fonts/SKODANext-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "SKODA Next W01 Bold Italic";
+  src: url("/dist/fonts/SKODANext-BoldItalic.ttf") format("truetype"), url("/dist/fonts/SKODANext-BoldItalic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "SKODA Next W01 Extra Bold";
+  src: url("/dist/fonts/SKODANext-ExtraBold.ttf") format("truetype"), url("/dist/fonts/SKODANext-ExtraBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "SKODA Next W01 Extra Bold Italic";
+  src: url("/dist/fonts/SKODANext-ExtraBoldItalic.ttf") format("truetype"), url("/dist/fonts/SKODANext-ExtraBoldItalic.otf") format("opentype"); }
+
 body .ms-status-yellow {
   height: 50px; }
 
@@ -843,134 +944,6 @@ body .ms-core-overlay {
             @media (min-width: 1200px) {
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h1, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h2, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h3, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h4, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h5, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h6, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title p {
                 font-size: 2.82352941176em; } }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images {
-          margin-bottom: 10vh; }
-          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__container {
-            overflow: hidden; }
-          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image {
-            position: relative;
-            max-width: 100%;
-            height: auto;
-            width: 87.5vw;
-            height: 111vw;
-            text-align: center;
-            margin-bottom: 10vw; }
-            @media (min-width: 768px) {
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image {
-                max-width: 50%;
-                height: auto;
-                width: 42vw;
-                height: 52.2769vw;
-                margin-bottom: 8vw; } }
-            @media (min-width: 1200px) {
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image {
-                width: 500px;
-                height: 634.24945px;
-                margin-bottom: 100px; } }
-            @media (min-width: 768px) {
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image:nth-of-type(2) {
-                margin-top: 150px; } }
-            @media (min-width: 768px) {
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image:nth-of-type(odd) {
-                float: left;
-                text-align: right; } }
-            @media (min-width: 768px) {
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image:nth-of-type(even) {
-                text-align: left;
-                float: right; } }
-            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image--wrapper {
-              overflow: hidden;
-              width: 100%;
-              height: 100%;
-              background-position: center center;
-              background-repeat: no-repeat;
-              -webkit-background-size: cover;
-              -moz-background-size: cover;
-              -o-background-size: cover;
-              background-size: cover; }
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image--wrapper img {
-                width: 100%;
-                height: 100%; }
-                @media (min-width: 768px) {
-                  body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image--wrapper img {
-                    max-width: 100%;
-                    max-height: 100%; } }
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image--wrapper a::after {
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                width: 74px;
-                height: 74px;
-                content: url("http://www.skoda.co.uk/models/kodiaq/PublishingImages/expand_light_bg.svg");
-                opacity: 0.7; }
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image--wrapper a img {
-                -moz-transition: 0.8s ease-in-out;
-                -o-transition: 0.8s ease-in-out;
-                -webkit-transition: 0.8s ease-in-out;
-                transition: 0.8s ease-in-out; }
-                body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image--wrapper a img:hover {
-                  -moz-transform: scale(1.1);
-                  -webkit-transform: scale(1.1);
-                  transform: scale(1.1); }
-          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery {
-            display: none; }
-            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--image, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--info {
-              width: 100%;
-              height: 300px;
-              height: 45vh; }
-              @media (min-width: 768px) {
-                body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--image, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--info {
-                  height: 100vh;
-                  width: 50%;
-                  float: left;
-                  display: inline-block; } }
-            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--image {
-              background: no-repeat center center;
-              -webkit-background-size: cover;
-              -moz-background-size: cover;
-              -o-background-size: cover;
-              background-size: cover; }
-            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content {
-              width: 90%;
-              margin: 10% 5% 0; }
-              @media (min-width: 768px) {
-                body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content {
-                  width: 70%;
-                  margin: 30% 0 0 10%; } }
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content-main {
-                font-size: 0.8em; }
-                @media (min-width: 768px) {
-                  body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content-main {
-                    font-size: 1em; } }
-            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--nav {
-              position: absolute;
-              left: 55%;
-              bottom: 15px;
-              margin: 0 0 0 36px !important;
-              width: 71px;
-              text-align: center; }
-              @media (min-width: 768px) {
-                body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--nav {
-                  bottom: 53px; } }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image.alternative:nth-of-type(1) {
-          width: 473px;
-          height: 473px;
-          float: left;
-          top: 0px;
-          text-align: right; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image.alternative:nth-of-type(2) {
-          float: right;
-          width: 473px;
-          height: 600px;
-          top: 150px;
-          text-align: left; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__image.alternative:nth-of-type(3) {
-          margin-top: 60px;
-          width: 473px;
-          height: 473px;
-          float: left;
-          top: 30px;
-          text-align: right; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-footer-ctas {
           background-color: #F1F8F9; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-footer-ctas__intro {
@@ -1503,6 +1476,138 @@ body .ms-core-overlay {
           font-size: 0.6em !important; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__icon {
           margin-top: -11px !important; }
+
+.humanise-images {
+  margin-bottom: 10vh; }
+  .humanise-images__container {
+    overflow: hidden; }
+  .humanise-images__image {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    width: 87.5vw;
+    height: 111vw;
+    text-align: center;
+    margin-bottom: 10vw; }
+    @media (min-width: 768px) {
+      .humanise-images__image {
+        max-width: 50%;
+        height: auto;
+        width: 42vw;
+        height: 52.2769vw;
+        margin-bottom: 8vw; } }
+    @media (min-width: 1200px) {
+      .humanise-images__image {
+        width: 500px;
+        height: 634.24945px;
+        margin-bottom: 100px; } }
+    @media (min-width: 768px) {
+      .humanise-images__image:nth-of-type(2) {
+        margin-top: 150px; } }
+    @media (min-width: 768px) {
+      .humanise-images__image:nth-of-type(odd) {
+        float: left;
+        text-align: right; } }
+    @media (min-width: 768px) {
+      .humanise-images__image:nth-of-type(even) {
+        text-align: left;
+        float: right; } }
+    .humanise-images__image--wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      .humanise-images__image--wrapper img {
+        width: 100%;
+        height: 100%; }
+        @media (min-width: 768px) {
+          .humanise-images__image--wrapper img {
+            max-width: 100%;
+            max-height: 100%; } }
+      .humanise-images__image--wrapper a::after {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 74px;
+        height: 74px;
+        content: url("http://www.skoda.co.uk/models/kodiaq/PublishingImages/expand_light_bg.svg");
+        opacity: 0.7; }
+      .humanise-images__image--wrapper a img {
+        -moz-transition: 0.8s ease-in-out;
+        -o-transition: 0.8s ease-in-out;
+        -webkit-transition: 0.8s ease-in-out;
+        transition: 0.8s ease-in-out; }
+        .humanise-images__image--wrapper a img:hover {
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+  .humanise-images__gallery {
+    display: none; }
+    .humanise-images__gallery--image, .humanise-images__gallery--info {
+      width: 100%;
+      height: 300px;
+      height: 45vh; }
+      @media (min-width: 768px) {
+        .humanise-images__gallery--image, .humanise-images__gallery--info {
+          height: 100vh;
+          width: 50%;
+          float: left;
+          display: inline-block; } }
+    .humanise-images__gallery--image {
+      background: no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .humanise-images__gallery--content {
+      width: 90%;
+      margin: 10% 5% 0; }
+      @media (min-width: 768px) {
+        .humanise-images__gallery--content {
+          width: 70%;
+          margin: 30% 0 0 10%; } }
+      .humanise-images__gallery--content-main {
+        font-size: 0.8em; }
+        @media (min-width: 768px) {
+          .humanise-images__gallery--content-main {
+            font-size: 1em; } }
+    .humanise-images__gallery--nav {
+      position: absolute;
+      left: 55%;
+      bottom: 15px;
+      margin: 0 0 0 36px !important;
+      width: 71px;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .humanise-images__gallery--nav {
+          bottom: 53px; } }
+
+.humanise-images__image.alternative:nth-of-type(1) {
+  width: 473px;
+  height: 473px;
+  float: left;
+  top: 0px;
+  text-align: right; }
+
+.humanise-images__image.alternative:nth-of-type(2) {
+  float: right;
+  width: 473px;
+  height: 600px;
+  top: 150px;
+  text-align: left; }
+
+.humanise-images__image.alternative:nth-of-type(3) {
+  margin-top: 60px;
+  width: 473px;
+  height: 473px;
+  float: left;
+  top: 30px;
+  text-align: right; }
 
 /*! fancybox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
