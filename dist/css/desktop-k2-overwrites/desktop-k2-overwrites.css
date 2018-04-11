@@ -11,6 +11,10 @@ body {
       width: 100% !important;
       padding: 0 !important;
       font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
+      body .page .bMain .bmBody .ms-WPBody a {
+        color: #FFFFFF !important; }
+        body .page .bMain .bmBody .ms-WPBody a:hover {
+          text-decoration: none !important; }
 
 .paragraphRowLocal {
   display: inline-block;
