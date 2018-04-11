@@ -51,10 +51,11 @@ body {
 
 p {
   line-height: 1.5 !important;
-  margin-bottom: 1em !important; }
-
-.caption-text {
-  font-size: 0.7em !important; }
+  margin-bottom: 1em !important;
+  letter-spacing: 0.02em !important; }
+  p .caption-text {
+    font-size: 0.7em !important;
+    letter-spacing: 0.2em !important; }
 
 .skodadefaultcss h1, .skodadefaultcss .heading-type-1,
 .skodadefaultcss h2, .skodadefaultcss .heading-type-2,
