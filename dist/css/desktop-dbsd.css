@@ -554,11 +554,12 @@ ol.list {
           border-bottom: none; } }
       .flexi-grid .flexi-grid__list li p {
         margin-bottom: 20px; }
-  .flexi-grid .heading-type-4, .flexi-grid .heading-type-4:first-child, .flexi-grid h2:first-child {
-    margin-top: 0; }
-  .flexi-grid .heading-type-4 {
+  .flexi-grid__heading {
+    margin-top: 0;
     align-self: flex-start;
     flex-grow: 1; }
+    .flexi-grid__heading p {
+      font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
   .flexi-grid .cta-container {
     display: block;
     align-self: flex-end; }

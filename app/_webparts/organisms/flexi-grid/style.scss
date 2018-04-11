@@ -32,14 +32,15 @@
 			}
 		}
 	}
-	
-	.heading-type-4, .heading-type-4:first-child, h2:first-child {
+
+	&__heading {
 		margin-top: 0;
-	}
-	
-	.heading-type-4 {
 		align-self: flex-start;
 		flex-grow: 1;
+
+		p {
+			font-family: $skoda-next-bold;
+		}
 	}
 	
 	.cta-container {
