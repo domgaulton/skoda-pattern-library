@@ -51,6 +51,7 @@ body {
 
 p {
   line-height: 1.5 !important;
+  margin-bottom: 1em !important;
   font-family: "SKODA Next W01 Light", arial, verdana, helvetica, sans-serif !important;
   letter-spacing: 0.02em !important; }
 
@@ -86,8 +87,10 @@ body .page .bMain .bmBody .cta-container a.cta-minimal {
   body .page .bMain .bmBody .cta-container a.cta-minimal--white {
     color: #FFFFFF !important; }
 
-.terms-and-conditions p {
-  margin-bottom: 1em; }
+.terms-and-conditions {
+  font-size: 0.88235294117em !important; }
+  .terms-and-conditions p {
+    margin-bottom: 1em; }
 
 .humanise-awards__list-item p {
   padding: 0 !important; }
