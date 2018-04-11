@@ -39,6 +39,27 @@ body {
 .ms-status-yellow {
   height: 50px; }
 
+.cta-container a {
+  font-size: 0.7058823529em !important; }
+
+.cta-container a.cta-block__secondary--white {
+  color: #212428 !important; }
+  .cta-container a.cta-block__secondary--white:hover {
+    color: #FFFFFF !important; }
+
+.cta-container a.cta-block__secondary--no-bg-white:hover {
+  color: #212428 !important; }
+
+.cta-container a.cta-block__secondary--no-bg-black {
+  color: #212428 !important; }
+  .cta-container a.cta-block__secondary--no-bg-black:hover {
+    color: #FFFFFF !important; }
+
+.cta-container a.cta-minimal {
+  color: #212428 !important; }
+  .cta-container a.cta-minimal--white {
+    color: #FFFFFF !important; }
+
 @media (min-width: 768px) {
   .humanise-sidebar-ctas__link {
     margin-top: -3px; } }
