@@ -1860,7 +1860,8 @@ body .ms-core-overlay {
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-block__secondary--no-bg-black:hover {
             color: #FFFFFF !important; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-minimal {
-          color: #212428 !important; }
+          color: #212428 !important;
+          font-size: 0.76470588235em !important; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-minimal--white {
             color: #FFFFFF !important; }
         @media (min-width: 768px) {
