@@ -63,6 +63,9 @@ body .page .bMain .bmBody .cta-container a.cta-minimal {
   body .page .bMain .bmBody .cta-container a.cta-minimal--white {
     color: #FFFFFF !important; }
 
+.humanise-awards__list-item p {
+  padding: 0 !important; }
+
 @media (min-width: 768px) {
   .humanise-sidebar-ctas__link {
     margin-top: -3px; } }
