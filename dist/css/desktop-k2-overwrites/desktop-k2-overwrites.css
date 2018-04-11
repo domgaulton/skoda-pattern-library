@@ -55,7 +55,7 @@ body {
 .skodadefaultcss h4, .skodadefaultcss .heading-type-4,
 .skodadefaultcss h5, .skodadefaultcss .heading-type-5,
 .skodadefaultcss h6, .skodadefaultcss .heading-type-6 {
-  margin: 1em 0 !important; }
+  margin: 1em 0; }
 
 body .page .bMain .bmBody .cta-container a {
   font-size: 0.7058823529em !important; }
