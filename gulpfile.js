@@ -89,10 +89,23 @@ gulp.task('desktop', function () {
 
 // Add k2 overwrites //
 
-gulp.task('desktop-overwrites', function () {  
+gulp.task('desktop-overwrites', ['clean-k2-overwrites'], function () { 
+
+    function pad2(n) { return n < 10 ? '0' + n : n }
+    var date = new Date();
+    var random = date.getFullYear().toString() + pad2(date.getMonth() + 1) + pad2( date.getDate()) + pad2( date.getHours() ) + pad2( date.getMinutes() ) + pad2( date.getSeconds() ); 
+    
     gulp.src(config.app+'desktop-k2-overwrites.scss')
         .pipe(sass({includePaths: ['scss']}))
-        .pipe(gulp.dest(config.dist+'css'));
+        .pipe(rename('desktop-k2-overwrites.css'))
+        // .pipe(rename('desktop-k2-overwrites.css?v_'+random))
+        .pipe(gulp.dest(config.dist+'css/desktop-k2-overwrites'));
+});
+
+// Add k2 overwrites //
+gulp.task('clean-k2-overwrites', function(){
+    return gulp.src(config.dist+'/css/desktop-k2-overwrites', {read: false})
+    .pipe(clean());
 });
 
 // Browser Sync //
