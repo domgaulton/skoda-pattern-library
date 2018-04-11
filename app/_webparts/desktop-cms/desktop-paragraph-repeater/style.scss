@@ -1,47 +1,10 @@
-// html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-//   margin: 0;
-//   padding: 0;
-//   border: 0;
-//   color: $grey-dark;
-//   font: inherit;
-//   vertical-align: baseline;
-//   font-kerning: none;
-//   font-size: 17px;
-// }
-
-// body {
-// 	// margin: 0;
-// 	// font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
-// 	// font-size: 17px !important;
-// 	.page {
-		
-//     .bMain {
-// 			// font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
-// 			margin-top: -20px !important;
-
-// 			.bmBody {
-			
-// 				width: 100% !important;
-// 				padding: 0 !important;
-// 				font-family: $skoda-next;
-
-// 				// .ms-WPBody {
-// 				// 	a {
-// 				// 		color: $white !important;
-
-// 				// 		&:hover {
-// 				// 			text-decoration: none !important;
-// 				// 		}
-// 				// 	}
-// 				// }
-// 			}
-// 		}
-// 	}
-// }
-
 @import '_scss-global/variables.scss';
 
 body {
+
+  .ms-status-yellow {
+    height: 50px;
+  }
 
   .whisbi-oto__content p {
     margin-bottom: 0 !important;
@@ -75,7 +38,7 @@ body {
                 }
 
                 .ms-WPBody {
-                  font-size: 17px;
+                  font-size: 17px !important;
 
                   a {
                     color: $white !important;
@@ -99,48 +62,20 @@ body {
                     display: block;
 
                     li {
-                      list-style-type: none !important;
-                      margin-left: 0 !important;
+                      list-style-type: none;
+                      margin-left: 0;
                     }
                   }
 
                   @import 'main.scss';
                   @import '_webparts/molecules/ctas/k2-overwrites.scss';
                   @import '_webparts/webparts/sidebar-ctas/k2-overwrites.scss';
-               }
-             }
-           }
-         }
-       }
-     }
-   }
- }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
-// .paragraphRowLocal {
-// 	display: inline-block;
-// 	clear: both;
-// 	width: 100%;
-// }
-
-
-
-
-
-// .callToActionTopAllArea {
-// 	display: none !important;
-// }
-
-// .ms-core-overlay {
-//     margin-top: -40px !important;
-// }
-
-.ms-status-yellow {
-  height: 50px;
-}
-
-// .sa-ci p {
-// 	padding: 0;
-// }
-
-
