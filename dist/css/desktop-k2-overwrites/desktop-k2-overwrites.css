@@ -1829,21 +1829,21 @@ body .ms-core-overlay {
               text-transform: uppercase;
               letter-spacing: 0.146em;
               color: #888888; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a {
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a {
           font-size: 0.7058823529em !important; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--white {
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-block__secondary--white {
           color: #212428 !important; }
-          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--white:hover {
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-block__secondary--white:hover {
             color: #FFFFFF !important; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-white:hover {
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-block__secondary--no-bg-white:hover {
           color: #212428 !important; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-black {
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-block__secondary--no-bg-black {
           color: #212428 !important; }
-          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-black:hover {
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-block__secondary--no-bg-black:hover {
             color: #FFFFFF !important; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-minimal {
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-minimal {
           color: #212428 !important; }
-          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody body .page .bMain .bmBody .cta-container a.cta-minimal--white {
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-minimal--white {
             color: #FFFFFF !important; }
         @media (min-width: 768px) {
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__link {
@@ -1922,25 +1922,25 @@ body .ms-core-overlay {
       border-bottom: 4px solid #4BA82E;
       font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
 
-body .page .bMain .bmBody .cta-container a {
+.cta-container a {
   font-size: 0.7058823529em !important; }
 
-body .page .bMain .bmBody .cta-container a.cta-block__secondary--white {
+.cta-container a.cta-block__secondary--white {
   color: #212428 !important; }
-  body .page .bMain .bmBody .cta-container a.cta-block__secondary--white:hover {
+  .cta-container a.cta-block__secondary--white:hover {
     color: #FFFFFF !important; }
 
-body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-white:hover {
+.cta-container a.cta-block__secondary--no-bg-white:hover {
   color: #212428 !important; }
 
-body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-black {
+.cta-container a.cta-block__secondary--no-bg-black {
   color: #212428 !important; }
-  body .page .bMain .bmBody .cta-container a.cta-block__secondary--no-bg-black:hover {
+  .cta-container a.cta-block__secondary--no-bg-black:hover {
     color: #FFFFFF !important; }
 
-body .page .bMain .bmBody .cta-container a.cta-minimal {
+.cta-container a.cta-minimal {
   color: #212428 !important; }
-  body .page .bMain .bmBody .cta-container a.cta-minimal--white {
+  .cta-container a.cta-minimal--white {
     color: #FFFFFF !important; }
 
 @media (min-width: 768px) {
