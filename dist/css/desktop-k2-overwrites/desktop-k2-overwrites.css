@@ -38,10 +38,6 @@ body {
 .cta-container a {
   font-size: 0.7058823529em !important; }
 
-.humanise-awards__list-item {
-  list-style-type: none !important;
-  margin-left: 0 !important; }
-
 @media (min-width: 768px) {
   .humanise-sidebar-ctas__link {
     margin-top: -3px; } }
