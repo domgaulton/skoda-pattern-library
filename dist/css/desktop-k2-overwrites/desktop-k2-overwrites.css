@@ -1919,34 +1919,3 @@ body .ms-core-overlay {
     .bmsMenu ul li.selected a, .bmsMenu ul li.selected span {
       border-bottom: 4px solid #4BA82E;
       font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
-
-.cta-container a {
-  font-size: 0.7058823529em !important; }
-
-.cta-container a.cta-block__secondary--white {
-  color: #212428 !important; }
-  .cta-container a.cta-block__secondary--white:hover {
-    color: #FFFFFF !important; }
-
-.cta-container a.cta-block__secondary--no-bg-white:hover {
-  color: #212428 !important; }
-
-.cta-container a.cta-block__secondary--no-bg-black {
-  color: #212428 !important; }
-  .cta-container a.cta-block__secondary--no-bg-black:hover {
-    color: #FFFFFF !important; }
-
-.cta-container a.cta-minimal {
-  color: #212428 !important; }
-  .cta-container a.cta-minimal--white {
-    color: #FFFFFF !important; }
-
-@media (min-width: 768px) {
-  .humanise-sidebar-ctas__link {
-    margin-top: -3px; } }
-
-.humanise-sidebar-ctas__link a {
-  font-size: 0.6em !important; }
-
-.humanise-sidebar-ctas__icon {
-  margin-top: -11px !important; }
