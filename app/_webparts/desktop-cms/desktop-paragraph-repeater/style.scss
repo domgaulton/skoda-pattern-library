@@ -9,8 +9,6 @@ body {
   .whisbi-oto__content p {
     margin-bottom: 0 !important;
   }
-
-  @import '_webparts/webparts/expandable-image-gallery/style-gallery.scss';
   
   .ms-core-overlay {
     margin-top: -40px !important;
@@ -69,7 +67,7 @@ body {
                     }
                   }
 
-                  @import 'main.scss';
+                  @import 'webparts.scss';
                   @import '_webparts/molecules/ctas/k2-overwrites.scss';
                   @import '_webparts/webparts/sidebar-ctas/k2-overwrites.scss';
                 }
@@ -81,3 +79,6 @@ body {
     }
   }
 }
+
+@import '_webparts/webparts/expandable-image-gallery/style-gallery.scss';
+
