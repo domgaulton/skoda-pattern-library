@@ -1,4 +1,7 @@
 @import 'https://unpkg.com/flickity@2/dist/flickity.min.css';
+body .ms-status-yellow {
+  height: 50px; }
+
 body .whisbi-oto__content p {
   margin-bottom: 0 !important; }
 
@@ -1867,9 +1870,6 @@ body .ms-core-overlay {
           font-size: 0.6em !important; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__icon {
           margin-top: -11px !important; }
-
-.ms-status-yellow {
-  height: 50px; }
 
 .stickyMenuContainerInner {
   width: 100% !important; }
