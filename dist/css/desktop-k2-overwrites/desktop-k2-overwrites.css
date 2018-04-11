@@ -49,6 +49,9 @@ body {
 .sa-ci p {
   padding: 0; }
 
+p {
+  margin-bottom: 1em !important; }
+
 .caption-text {
   font-size: 0.7em !important; }
 
