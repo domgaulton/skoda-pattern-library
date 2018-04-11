@@ -12,7 +12,8 @@ body {
 .paragraphRowLocal {
   display: inline-block;
   clear: both;
-  width: 100%; }
+  width: 100%;
+  font-size: 17px !important; }
 
 .paragraphContent {
   display: block; }
