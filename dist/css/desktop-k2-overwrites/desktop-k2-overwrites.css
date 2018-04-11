@@ -41,3 +41,7 @@ body {
 .humanise-awards__list-item {
   list-style-type: none !important;
   margin-left: 0 !important; }
+
+@media (min-width: 768px) {
+  .humanise-sidebar-ctas__link {
+    margin-top: -3px; } }
