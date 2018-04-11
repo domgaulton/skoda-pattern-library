@@ -158,5 +158,5 @@ gulp.task('watch', function(){
 // Gulp Task - Run in Sequence //
 
 gulp.task('default', function () {  
-    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts', 'scripts-pattern-library' ], 'watch');
+    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts', 'scripts-pattern-library', 'desktop', 'desktop-overwrites' ], 'watch');
 });
