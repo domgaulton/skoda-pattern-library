@@ -1,0 +1,4 @@
+.humanise-awards__list-item {
+  list-style-type: none !important;
+  margin-left: 0 !important;
+  background-color: red; }
