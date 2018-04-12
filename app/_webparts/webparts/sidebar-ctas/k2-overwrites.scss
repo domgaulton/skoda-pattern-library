@@ -1,15 +1,11 @@
 .humanise-sidebar-ctas {
   &__link {
     @media (min-width: $screen-md) {
-      margin-top: -3px;
+      line-height: 1;
     }
 
     a {
       font-size: 0.6em !important;
     }
-  }
-
-  &__icon {
-    margin-top: -11px !important;
   }
 }

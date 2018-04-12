@@ -26,7 +26,7 @@
 
     @media (min-width: $screen-lg) {
       width: (($safe-zone / 2)-50);
-      height: (($safe-zone / 2)-50)*1.2684989;
+      height: (($safe-zone / 2)-50) * 1.2684989;
       margin-bottom: 100px;
     }
 
@@ -122,6 +122,7 @@
     &--content {
       width: 90%;
       margin: 10% 5% 0;
+      font-size: 17px;
 
       @media (min-width: $screen-md) {
         width: 70%;
@@ -132,6 +133,29 @@
         font-size: 0.8em;
         @media (min-width: $screen-md) {
           font-size: 1em;
+        }
+      }
+
+      &-group {
+        font-size: 0.70588235294em;
+        line-height: 1.04166666em;
+        margin: 1em 0;
+        font-family: $skoda-next-bold;
+        color: $grey-heavy;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      &-title {
+        line-height: 1.04166666em;
+        margin: 1em 0;
+        font-family: $skoda-next-bold;
+        color: $grey-heavy;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.94117647058em;
+        @media (min-width: $screen-md) {
+          font-size: 1.05882352941em;
         }
       }
     }

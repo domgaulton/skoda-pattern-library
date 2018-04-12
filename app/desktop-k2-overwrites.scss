@@ -1,7 +1,5 @@
 @import '_scss-global/variables.scss';
 @import '_scss-global/mixins.scss';
-@import '_scss-global/reset.scss';
-@import '_scss-global/fonts.scss';
 
 body {
 
@@ -72,6 +70,7 @@ body {
 
                   @import 'webparts.scss';
                   @import '_webparts/molecules/ctas/k2-overwrites.scss';
+                  @import '_webparts/webparts/primary-hero/k2-overwrites.scss';
                   @import '_webparts/webparts/sidebar-ctas/k2-overwrites.scss';
                 }
               }

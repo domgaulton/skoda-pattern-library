@@ -159,9 +159,9 @@ strong {
 h1, .heading-type-1,
 h2, .heading-type-2,
 h3, .heading-type-3,
-h4, .heading-type-4,
+h4, .heading-type-4, .humanise-images__gallery--content p:nth-child(2),
 h5, .heading-type-5,
-h6, .heading-type-6 {
+h6, .heading-type-6, .humanise-images__gallery--content p:nth-child(2) {
   line-height: 1.04166666em;
   margin: 1em 0;
   font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
@@ -192,16 +192,16 @@ h6, .heading-type-6 {
     .heading-type-3 {
       font-size: 1.41176470588em; } }
 
-.heading-type-4 {
+.heading-type-4, .humanise-images__gallery--content p:nth-child(2) {
   font-size: 0.94117647058em; }
   @media (min-width: 768px) {
-    .heading-type-4 {
+    .heading-type-4, .humanise-images__gallery--content p:nth-child(2) {
       font-size: 1.05882352941em; } }
 
 .heading-type-5 {
   font-size: 0.82352941176em; }
 
-.heading-type-6 {
+.heading-type-6, .humanise-images__gallery--content p:nth-child(2) {
   font-size: 0.70588235294em; }
 
 .icon {
@@ -989,6 +989,238 @@ ol.list {
   top: 30px;
   text-align: right; }
 
+/*! fancybox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top; }
+
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 8020; }
+
+.fancybox-skin {
+  position: relative;
+  background: rgba(255, 255, 255, 0.99);
+  color: #4A4A4A; }
+
+.fancybox-opened {
+  z-index: 8030; }
+
+.fancybox-outer, .fancybox-inner {
+  position: relative; }
+
+.fancybox-inner {
+  overflow: hidden; }
+
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch; }
+
+.fancybox-error {
+  color: #4A4A4A;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap; }
+
+.fancybox-image, .fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%; }
+
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8060; }
+
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url(/img/fancybox_loading.gif) center center no-repeat; }
+
+.fancybox-close {
+  background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/icon-close.svg);
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 8040; }
+  @media (min-width: 768px) {
+    .fancybox-close {
+      top: 40px;
+      right: 40px;
+      width: 72px;
+      height: 72px; } }
+
+.fancybox-nav {
+  position: absolute;
+  top: auto !important;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url(/img/blank.gif);
+  /* helps IE */
+  -webkit-tap-highlight-color: transparent;
+  z-index: 8040; }
+
+.fancybox-prev, .fancybox-next {
+  width: 36px;
+  height: 36px;
+  left: 55%;
+  bottom: 10px !important; }
+  @media (min-width: 768px) {
+    .fancybox-prev, .fancybox-next {
+      bottom: 50px !important; } }
+
+.fancybox-prev {
+  background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/icon-left.svg); }
+
+.fancybox-next {
+  background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/icon-right.svg);
+  margin-left: 107px; }
+
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  background: none !important; }
+
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important; }
+
+/* Overlay helper */
+.fancybox-lock {
+  overflow: visible !important;
+  width: auto; }
+
+.fancybox-lock body {
+  overflow: hidden !important; }
+
+.fancybox-lock-test {
+  overflow-y: hidden !important; }
+
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url(/img/fancybox_overlay.png); }
+
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll; }
+
+/* Title helper */
+.fancybox-title {
+  visibility: hidden;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050; }
+
+.fancybox-opened .fancybox-title {
+  visibility: visible; }
+
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center; }
+
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap; }
+
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff; }
+
+.fancybox-title-inside-wrap {
+  padding-top: 10px; }
+
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8); }
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/icon-close.svg);
+    background-size: 50px 50px;
+    /*The size of the normal image, half the size of the hi-res image*/ } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 1.5) and (min-width: 768px), only screen and (min-device-pixel-ratio: 1.5) and (min-width: 768px) {
+    #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+      background-size: 72px 72px;
+      /*The size of the normal image, half the size of the hi-res image*/ } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  #fancybox-loading div {
+    background-image: url(http://www.skoda.co.uk/models/kodiaq/PublishingImages/icon-close.svg);
+    background-size: 72px 72px;
+    /*The size of the normal image, half the size of the hi-res image*/ } }
+
 .humanise-footer-ctas {
   background-color: #F1F8F9; }
   .humanise-footer-ctas__intro {
@@ -1512,6 +1744,138 @@ ol.list {
 
 .mobile-tabs [aria-hidden='true'] {
   display: none; }
+
+.humanise-images {
+  margin-bottom: 10vh; }
+  .humanise-images__container {
+    overflow: hidden; }
+  .humanise-images__image {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    width: 87.5vw;
+    height: 111vw;
+    text-align: center;
+    margin-bottom: 10vw; }
+    @media (min-width: 768px) {
+      .humanise-images__image {
+        max-width: 50%;
+        height: auto;
+        width: 42vw;
+        height: 52.2769vw;
+        margin-bottom: 8vw; } }
+    @media (min-width: 1200px) {
+      .humanise-images__image {
+        width: 500px;
+        height: 634.24945px;
+        margin-bottom: 100px; } }
+    @media (min-width: 768px) {
+      .humanise-images__image:nth-of-type(2) {
+        margin-top: 150px; } }
+    @media (min-width: 768px) {
+      .humanise-images__image:nth-of-type(odd) {
+        float: left;
+        text-align: right; } }
+    @media (min-width: 768px) {
+      .humanise-images__image:nth-of-type(even) {
+        text-align: left;
+        float: right; } }
+    .humanise-images__image--wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      .humanise-images__image--wrapper img {
+        width: 100%;
+        height: 100%; }
+        @media (min-width: 768px) {
+          .humanise-images__image--wrapper img {
+            max-width: 100%;
+            max-height: 100%; } }
+      .humanise-images__image--wrapper a::after {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 74px;
+        height: 74px;
+        content: url("http://www.skoda.co.uk/models/kodiaq/PublishingImages/expand_light_bg.svg");
+        opacity: 0.7; }
+      .humanise-images__image--wrapper a img {
+        -moz-transition: 0.8s ease-in-out;
+        -o-transition: 0.8s ease-in-out;
+        -webkit-transition: 0.8s ease-in-out;
+        transition: 0.8s ease-in-out; }
+        .humanise-images__image--wrapper a img:hover {
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+  .humanise-images__gallery {
+    display: none; }
+    .humanise-images__gallery--image, .humanise-images__gallery--info {
+      width: 100%;
+      height: 300px;
+      height: 45vh; }
+      @media (min-width: 768px) {
+        .humanise-images__gallery--image, .humanise-images__gallery--info {
+          height: 100vh;
+          width: 50%;
+          float: left;
+          display: inline-block; } }
+    .humanise-images__gallery--image {
+      background: no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .humanise-images__gallery--content {
+      width: 90%;
+      margin: 10% 5% 0; }
+      @media (min-width: 768px) {
+        .humanise-images__gallery--content {
+          width: 70%;
+          margin: 30% 0 0 10%; } }
+      .humanise-images__gallery--content-main {
+        font-size: 0.8em; }
+        @media (min-width: 768px) {
+          .humanise-images__gallery--content-main {
+            font-size: 1em; } }
+    .humanise-images__gallery--nav {
+      position: absolute;
+      left: 55%;
+      bottom: 15px;
+      margin: 0 0 0 36px !important;
+      width: 71px;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .humanise-images__gallery--nav {
+          bottom: 53px; } }
+
+.humanise-images__image.alternative:nth-of-type(1) {
+  width: 473px;
+  height: 473px;
+  float: left;
+  top: 0px;
+  text-align: right; }
+
+.humanise-images__image.alternative:nth-of-type(2) {
+  float: right;
+  width: 473px;
+  height: 600px;
+  top: 150px;
+  text-align: left; }
+
+.humanise-images__image.alternative:nth-of-type(3) {
+  margin-top: 60px;
+  width: 473px;
+  height: 473px;
+  float: left;
+  top: 30px;
+  text-align: right; }
 
 /*! fancybox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,

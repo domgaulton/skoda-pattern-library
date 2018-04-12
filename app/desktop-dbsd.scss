@@ -1,5 +1,6 @@
 // Main Webparts CSS
-@import 'main.scss';
+@import 'webparts';
+@import '_webparts/webparts/expandable-image-gallery/style.scss';
 
 // Desktop CMS Paragraph Repeater and Tertiary Nav
 @import '_webparts/desktop-cms/nav-tertiary/style.scss';
