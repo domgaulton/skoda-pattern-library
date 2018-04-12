@@ -334,6 +334,13 @@ body .ms-core-overlay {
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-minimal--white {
               color: #FFFFFF;
               border-bottom: 2px solid #FFFFFF; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-scroll {
+            background-image: url("/dist/img/chevron-scroll-down.svg");
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 10px;
+            background-size: 30px 10px; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .display-text {
           font-size: 1em;
           color: #212428;
