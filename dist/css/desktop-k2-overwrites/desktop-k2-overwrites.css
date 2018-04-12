@@ -947,12 +947,24 @@ body .ms-core-overlay {
                 @media (min-width: 768px) {
                   body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content-main {
                     font-size: 1em; } }
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content p:nth-child(1) {
-                font-size: 0.70588235294em; }
-              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content p:nth-child(2) {
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content-group {
+                font-size: 0.70588235294em;
+                line-height: 1.04166666em;
+                margin: 1em 0;
+                font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+                color: #212428;
+                text-transform: uppercase;
+                letter-spacing: 0.12em; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content-title {
+                line-height: 1.04166666em;
+                margin: 1em 0;
+                font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+                color: #212428;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
                 font-size: 0.94117647058em; }
                 @media (min-width: 768px) {
-                  body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content p:nth-child(2) {
+                  body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content-title {
                     font-size: 1.05882352941em; } }
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--nav {
               position: absolute;
@@ -1810,12 +1822,24 @@ body .ms-core-overlay {
         @media (min-width: 768px) {
           .humanise-images__gallery--content-main {
             font-size: 1em; } }
-      .humanise-images__gallery--content p:nth-child(1) {
-        font-size: 0.70588235294em; }
-      .humanise-images__gallery--content p:nth-child(2) {
+      .humanise-images__gallery--content-group {
+        font-size: 0.70588235294em;
+        line-height: 1.04166666em;
+        margin: 1em 0;
+        font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+        color: #212428;
+        text-transform: uppercase;
+        letter-spacing: 0.12em; }
+      .humanise-images__gallery--content-title {
+        line-height: 1.04166666em;
+        margin: 1em 0;
+        font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+        color: #212428;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
         font-size: 0.94117647058em; }
         @media (min-width: 768px) {
-          .humanise-images__gallery--content p:nth-child(2) {
+          .humanise-images__gallery--content-title {
             font-size: 1.05882352941em; } }
     .humanise-images__gallery--nav {
       position: absolute;
