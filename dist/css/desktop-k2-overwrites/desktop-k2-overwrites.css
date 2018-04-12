@@ -1697,11 +1697,11 @@ body .ms-core-overlay {
             color: #FFFFFF !important; }
         @media (min-width: 768px) {
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__link {
-            margin-top: -3px; } }
+            margin-top: -7px; } }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__link a {
           font-size: 0.6em !important; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__icon {
-          margin-top: -11px !important; }
+          margin-top: -7px !important; }
 
 .humanise-images {
   margin-bottom: 10vh; }
