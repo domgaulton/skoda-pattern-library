@@ -1,9 +1,85 @@
-// Main Webparts CSS
-@import 'webparts';
+@import '_scss-global/variables.scss';
+@import '_scss-global/mixins.scss';
+
+body {
+
+  .ms-status-yellow {
+    height: 50px;
+  }
+
+  .whisbi-oto__content p {
+    margin-bottom: 0 !important;
+  }
+  
+  .ms-core-overlay {
+    margin-top: -40px !important;
+    
+    .page {
+      
+      .callToActionTopAllArea {
+        display: none !important;
+      }
+
+      .body {
+
+        .bMain {
+          margin-top: -20px !important;
+
+          .bmBody {
+            width: 100% !important;
+            padding: 0 !important;
+            font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
+
+            .skodadefaultcss {
+
+              .skodacss {
+
+                p {
+                  padding: 0;
+                }
+
+                .ms-WPBody {
+                  font-size: 17px !important;
+
+                  a {
+                    color: white !important;
+
+                    &:hover {
+                      text-decoration: none !important;
+                    }
+                  }
+
+                  p {
+                    a {
+                      color: $skoda-green !important;
+
+                      &:hover {
+                        text-decoration: underline !important;
+                      }
+                    }
+                  }
+
+                  .paragraphContent {
+                    display: block;
+
+                    li {
+                      list-style-type: none;
+                      margin-left: 0;
+                    }
+                  }
+
+                  @import 'webparts.scss';
+                  @import '_webparts/molecules/ctas/k2-overwrites.scss';
+                  @import '_webparts/webparts/sidebar-ctas/k2-overwrites.scss';
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @import '_webparts/webparts/expandable-image-gallery/style.scss';
-
-// Desktop CMS Paragraph Repeater and Tertiary Nav
 @import '_webparts/desktop-cms/nav-tertiary/style.scss';
-
-// Desktop Overwrites and Styles
-// @import 'desktop-k2-overwrites.scss';

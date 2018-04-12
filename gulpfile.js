@@ -84,7 +84,7 @@ gulp.task('desktop-nav', function () {
 gulp.task('desktop', function () {  
     gulp.src(config.app+'desktop-dbsd.scss')
         .pipe(sass({includePaths: ['scss']}))
-        .pipe(gulp.dest(config.dist+'css'));
+        .pipe(gulp.dest(config.dist+'css/desktop'));
 });
 
 // Add k2 overwrites //

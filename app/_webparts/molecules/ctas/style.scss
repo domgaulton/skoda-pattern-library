@@ -118,8 +118,14 @@
 			border-bottom: 2px solid $white;
 		}
 	}
+
+	a.cta-scroll {
+		background-image: url('/dist/img/chevron-scroll-down.svg');
+		cursor: pointer;
+		padding: 0;
+		width: 30px;
+    height: 10px;
+		background-size: 30px 10px;
+	}
+
 }
-
-
-	
-

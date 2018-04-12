@@ -123,6 +123,10 @@
       width: 90%;
       margin: 10% 5% 0;
       font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 2em;
+      font-family: $skoda-next-light;
+      letter-spacing: 0.02em;
 
       @media (min-width: $screen-md) {
         width: 70%;
@@ -167,6 +171,9 @@
       margin: 0 0 0 36px !important;
       width: 71px;
       text-align: center;
+      line-height: 1.5;
+      font-family: $skoda-next-light;
+      letter-spacing: 0.02em;
       @media (min-width: $screen-md) {
         bottom: 53px;
       }
