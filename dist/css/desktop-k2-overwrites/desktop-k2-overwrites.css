@@ -177,9 +177,9 @@ body .ms-core-overlay {
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h1, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-1,
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h2, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-2,
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h3, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-3,
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h4, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-4,
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h4, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-4, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content p:nth-child(2), .humanise-images__gallery--content body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody p:nth-child(2),
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h5, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-5,
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h6, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-6 {
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody h6, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-6, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content p:nth-child(1), .humanise-images__gallery--content body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody p:nth-child(1) {
           line-height: 1.04166666em;
           margin: 1em 0;
           font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
@@ -206,14 +206,14 @@ body .ms-core-overlay {
           @media (min-width: 768px) {
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-3 {
               font-size: 1.41176470588em; } }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-4 {
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-4, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content p:nth-child(2), .humanise-images__gallery--content body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody p:nth-child(2) {
           font-size: 0.94117647058em; }
           @media (min-width: 768px) {
-            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-4 {
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-4, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content p:nth-child(2), .humanise-images__gallery--content body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody p:nth-child(2) {
               font-size: 1.05882352941em; } }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-5 {
           font-size: 0.82352941176em; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-6 {
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .heading-type-6, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content p:nth-child(1), .humanise-images__gallery--content body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody p:nth-child(1) {
           font-size: 0.70588235294em; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .icon {
           background-repeat: no-repeat;
@@ -936,7 +936,8 @@ body .ms-core-overlay {
               background-size: cover; }
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content {
               width: 90%;
-              margin: 10% 5% 0; }
+              margin: 10% 5% 0;
+              font-size: 17px; }
               @media (min-width: 768px) {
                 body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content {
                   width: 70%;
@@ -1791,7 +1792,8 @@ body .ms-core-overlay {
       background-size: cover; }
     .humanise-images__gallery--content {
       width: 90%;
-      margin: 10% 5% 0; }
+      margin: 10% 5% 0;
+      font-size: 17px; }
       @media (min-width: 768px) {
         .humanise-images__gallery--content {
           width: 70%;
