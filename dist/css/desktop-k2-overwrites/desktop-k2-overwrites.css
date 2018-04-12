@@ -937,7 +937,11 @@ body .ms-core-overlay {
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content {
               width: 90%;
               margin: 10% 5% 0;
-              font-size: 17px; }
+              font-size: 17px;
+              line-height: 1.5;
+              margin-bottom: 2em;
+              font-family: "SKODA Next W01 Light", arial, verdana, helvetica, sans-serif !important;
+              letter-spacing: 0.02em; }
               @media (min-width: 768px) {
                 body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__gallery--content {
                   width: 70%;
@@ -1813,7 +1817,11 @@ body .ms-core-overlay {
     .humanise-images__gallery--content {
       width: 90%;
       margin: 10% 5% 0;
-      font-size: 17px; }
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 2em;
+      font-family: "SKODA Next W01 Light", arial, verdana, helvetica, sans-serif !important;
+      letter-spacing: 0.02em; }
       @media (min-width: 768px) {
         .humanise-images__gallery--content {
           width: 70%;
