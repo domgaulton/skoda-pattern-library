@@ -1255,6 +1255,8 @@ body .ms-core-overlay {
           max-height: 100vh;
           margin-bottom: 10vh;
           overflow: hidden; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero.k2-cms {
+            max-height: calc(100vh - 102px); }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero__background {
             background-position: center center;
             background-repeat: no-repeat;
@@ -1722,8 +1724,6 @@ body .ms-core-overlay {
           font-size: 0.76470588235em !important; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-minimal--white {
             color: #FFFFFF !important; }
-        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero {
-          max-height: calc(100vh - 102px); }
         @media (min-width: 768px) {
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__link {
             line-height: 1; } }
