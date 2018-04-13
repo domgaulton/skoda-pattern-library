@@ -854,6 +854,40 @@ body .ms-core-overlay {
             @media (min-width: 1200px) {
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h1, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h2, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h3, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h4, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h5, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title h6, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-chapter-section__title p {
                 font-size: 2.82352941176em; } }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-deeplink-nav {
+          width: 100%;
+          margin-top: -6px;
+          background: rgba(74, 74, 74, 0.9);
+          z-index: 99;
+          position: relative;
+          top: -10vh; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-deeplink-nav ul {
+            text-align: center; }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-deeplink-nav ul li {
+              position: relative;
+              font-size: 1.2em;
+              display: inline-block;
+              font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
+              text-transform: uppercase;
+              letter-spacing: 3px; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-deeplink-nav ul li a {
+                display: inline-block;
+                padding: 20px 30px;
+                text-decoration: none;
+                color: #FFFFFF;
+                font-size: 0.75em; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-deeplink-nav ul li:after {
+                content: '';
+                position: absolute;
+                right: 0px;
+                top: 35%;
+                height: 30%;
+                border-right: 1px solid #E2DFDE; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-deeplink-nav ul li:last-of-type:after {
+                border-right: none; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-deeplink-nav.sticky {
+            position: fixed;
+            top: 61px; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images {
           margin-bottom: 10vh; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__container {
