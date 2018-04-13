@@ -1731,6 +1731,8 @@ body .ms-core-overlay {
           font-size: 0.76470588235em !important; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-minimal--white {
             color: #FFFFFF !important; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .flickity-page-dots .dot {
+          margin: 0 8px !important; }
         @media (min-width: 768px) {
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-sidebar-ctas__link {
             line-height: 1; } }
