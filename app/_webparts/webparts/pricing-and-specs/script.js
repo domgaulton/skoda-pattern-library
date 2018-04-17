@@ -1,19 +1,20 @@
-function initDBSDSpecs(e){
+function initDBSDSpecs($stats){
     
     // Spec selector toggle
     
-    var toggleButtons = document.getElementsByClassName('humanise-stats__spec-details__toggle-button');
+    var toggleButtons = $stats.find('.humanise-stats__spec-details__toggle-button');
     var itemHeightsArray = [];
     var item;
     var apiUrl = 'https://tools.skoda.co.uk/';
     var modelKey;
 
     function getModelKey() {
-			modelKey = $('.humanise-stats').attr('data-model-key');
+		modelKey = $stats.attr('data-model-key');
     }
     
     function setUpHeight() {
         itemHeightsArray = [];
+        $('.humanise-tabs__tab-content').css('display', 'block'); //show all tabs so we can calculate the height
         for (var i = 0; i < toggleButtons.length; i++) {
             var toggleContent =  toggleButtons[i].parentNode.querySelector('.humanise-stats__spec-details__toggle-content');
             itemHeightsArray[i] = toggleContent.querySelector('table').offsetHeight;
@@ -24,6 +25,7 @@ function initDBSDSpecs(e){
                 toggleContent.style.maxHeight = '0px';
             }
         }
+        $('.humanise-tabs__tab-content').css('display', '');    //remove added display so it reverts to CSS styling
     }
     
     function setUpToggle() {
@@ -39,8 +41,8 @@ function initDBSDSpecs(e){
     
     window.addEventListener('resize', setUpHeight);
     
-    function toggleCopy(item) {
-        var itemParent = item.parentNode;
+    function toggleCopy(thisItem) {
+        var itemParent = thisItem.parentNode;
         var index = itemParent.querySelector('.humanise-stats__spec-details__toggle-content').getAttribute("data-item");
         if (itemParent.classList.contains('open')) {
             itemParent.classList.remove('open');
@@ -53,7 +55,7 @@ function initDBSDSpecs(e){
 
     // get data and display
     
-    var toggleSection = document.getElementsByClassName('humanise-stats__spec-details');
+    var toggleSection = $stats.find('.humanise-stats__spec-details');
     var dropdownValues = null;
     
     // Headless API Client
@@ -104,12 +106,11 @@ function initDBSDSpecs(e){
         for (var i = 0; i < toggleSection.length; i++) {
             toggleSection[i].classList.remove('loaded');
         }
-        var elements = $(".humanise-stats");
         getData(modelKey,
             getSelectedTrimId(),
             getSelectedEngineId(),
             function (status, response) { 
-                apply(response, elements);  
+                apply(response, $stats);  
                 setTimeout(function(){
                     setUpHeight();
                     for (var i = 0; i < toggleSection.length; i++) {
@@ -121,22 +122,22 @@ function initDBSDSpecs(e){
     }
 
     function getSelectedTrimId() {
-        return $($("#trim-selector").find(":selected")[0]).val();
+        return $($stats.find(".trim-selector").find(":selected")[0]).val();
     }
 
     function getSelectedEngineId() {
-        return $($("#engine-selector").find(":selected")[0]).val();
+        return $($stats.find(".engine-selector").find(":selected")[0]).val();
     }
 
     function updateAvailableEngineSelections(callback) {
-        var engineDropdownJRef = $("#engine-selector");
+        var engineDropdownJRef = $stats.find(".engine-selector");
         engineDropdownJRef.empty();
-        var engineDropdown = $("#engine-selector")[0];
+        var engineDropdown = $stats.find(".engine-selector")[0];
 
         var selectedOptionVal = getSelectedTrimId();
         var selectedTrim = dropdownValues.trims.find(function (value) { return value.id == selectedOptionVal; });
         
-        var trimImage = document.getElementById('trim-image');
+        var trimImage = $stats.find('.trim-image')[0];
         trimImage.classList.remove('loaded');
         trimImage.src = apiUrl + selectedTrim.imagePath;
         trimImage.classList.add('loaded');
@@ -161,7 +162,7 @@ function initDBSDSpecs(e){
     }
     
     function mapTrimDropdown(trimsEngines) {
-        var trimDropdown = $("#trim-selector")[0];
+        var trimDropdown = $stats.find(".trim-selector")[0];
         if (trimsEngines && trimsEngines.trims && trimsEngines.trims.length){
             for (var i = 0; i < trimsEngines.trims.length; i++) {
                 var item = trimsEngines.trims[i];
@@ -190,8 +191,8 @@ function initDBSDSpecs(e){
     loadDropDownValues(function(){
         mapTrimDropdown(dropdownValues);
         updateAvailableEngineSelectionsAndUpdateData(); // updates main feature tables data
-        $("#trim-selector").change(updateAvailableEngineSelectionsAndUpdateData);
-        $("#engine-selector").change(getDataAndApply); // TODO: may clash with updating options
+        $stats.find(".trim-selector").change(updateAvailableEngineSelectionsAndUpdateData);
+        $stats.find(".engine-selector").change(getDataAndApply); // TODO: may clash with updating options
     });
     
 
@@ -200,7 +201,7 @@ function initDBSDSpecs(e){
 $(document).ready(function(){
     if ($('.humanise-stats').length) {
     	$('.humanise-stats').each(function(){
-    		initDBSDSpecs();
+    		initDBSDSpecs($(this));
     	});
     }
 })
