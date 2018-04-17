@@ -1,0 +1,136 @@
+/** Pricing and specs page **/
+
+.humanise-stats {
+	font-family: $skoda-next;
+
+	&__spec-selector {
+		background: linear-gradient(180deg,#f3f9fa 0,#eff7f7 100%);
+		padding: 40px;
+		margin-bottom: 1em;
+		
+		img {
+			width: 550px;
+			margin: 0 auto;
+			display: block;
+		}
+				
+		// @include tablet {
+		// 	margin: 0 -40px;
+		// }
+		
+		&-row  {
+			margin: 0 auto 30px;
+			max-width: 500px;
+		}
+		
+		label {
+			display: block;
+			color: #9b9b9b;
+			text-transform: uppercase;
+			text-align: left;
+			margin-top: 10px;
+			font-size: 11px;
+			letter-spacing: 0.1em;
+			width: 100%;
+			max-width: 500px;
+		}
+		
+		select {
+			cursor: pointer;
+			border: 0;
+			border-bottom: 2px solid #4a4a4a;
+			font-size: 19px;
+			background: transparent;
+			padding: 15px 30px 15px 0;
+			font-family: $skoda-next-bold;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background: transparent url("/en-gb/models/kodiaq/PublishingImages/arrow_down_dark.svg") no-repeat right center;
+			background-size: 20px;
+			width: 100%;
+			max-width: 500px;
+			border-radius: 0;
+			
+			&:focus {
+				outline: 0;
+			}
+		}
+	}
+
+	&__spec-details {
+		opacity: 0;
+		@include transition(0.5s cubic-bezier(0, 1.18, 0.43, 0.85));
+		
+		&.loaded {
+			opacity: 1;
+		}
+		
+		h2 {
+			background: #4a4a4a;
+			color: #fff;
+			cursor: pointer;
+			margin: 0.2em 0 !important;
+			padding: 1.5em 2em;
+			font-size: 1.4em !important;
+			font-family: $skoda-next-bold;
+			text-transform: uppercase;
+
+			
+			&:after { 
+				content: url("/en-gb/models/kodiaq/PublishingImages/arrow_down_light.svg");
+				display: inline-block;
+				position: absolute;
+				right: 1.5em;
+				width: 1em;
+				height: 1em;
+			}
+		}
+		
+		&.open { 
+			h2 {
+				&:after {
+					content: url("/en-gb/models/kodiaq/PublishingImages/arrow_up_light.svg");
+				}
+			}
+
+			.toggle-content {
+					max-height: 1000px;
+			}
+		}
+		
+		&__toggle-content {
+			max-height: 0;
+			overflow: hidden;
+			@include transition(max-height 0.8s ease-in-out);
+			
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				
+				tr:first-child {
+					padding-top: 20px;
+				}
+				
+				tr:last-child {
+					padding-bottom: 20px;
+				}
+			}
+			
+			th, td {
+				border-bottom: 1px solid #dbdbdb;
+				text-transform: uppercase;
+				color: #39393a;
+				padding: 25px 20px;
+				vertical-align: top;
+				text-align: left;
+			}
+			
+			th {
+				width: 50%;
+			}
+		}
+	}
+}

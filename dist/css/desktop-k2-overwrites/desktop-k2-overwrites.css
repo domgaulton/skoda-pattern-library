@@ -28,7 +28,8 @@ body .ms-core-overlay {
         /*! fancybox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
         /* Overlay helper */
         /* Title helper */
-        /*Retina graphics!*/ }
+        /*Retina graphics!*/
+        /** Pricing and specs page **/ }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody a {
           color: #FFFFFF !important; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody a:hover {
@@ -1405,6 +1406,100 @@ body .ms-core-overlay {
             -o-transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats {
+          font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-selector {
+            background: linear-gradient(180deg, #f3f9fa 0, #eff7f7 100%);
+            padding: 40px;
+            margin-bottom: 1em; }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-selector img {
+              width: 550px;
+              margin: 0 auto;
+              display: block; }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-selector-row {
+              margin: 0 auto 30px;
+              max-width: 500px; }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-selector label {
+              display: block;
+              color: #9b9b9b;
+              text-transform: uppercase;
+              text-align: left;
+              margin-top: 10px;
+              font-size: 11px;
+              letter-spacing: 0.1em;
+              width: 100%;
+              max-width: 500px; }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-selector select {
+              cursor: pointer;
+              border: 0;
+              border-bottom: 2px solid #4a4a4a;
+              font-size: 19px;
+              background: transparent;
+              padding: 15px 30px 15px 0;
+              font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              background: transparent url("/en-gb/models/kodiaq/PublishingImages/arrow_down_dark.svg") no-repeat right center;
+              background-size: 20px;
+              width: 100%;
+              max-width: 500px;
+              border-radius: 0; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-selector select:focus {
+                outline: 0; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details {
+            opacity: 0;
+            -moz-transition: 0.5s cubic-bezier(0, 1.18, 0.43, 0.85);
+            -o-transition: 0.5s cubic-bezier(0, 1.18, 0.43, 0.85);
+            -webkit-transition: 0.5s cubic-bezier(0, 1.18, 0.43, 0.85);
+            transition: 0.5s cubic-bezier(0, 1.18, 0.43, 0.85); }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details.loaded {
+              opacity: 1; }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details h2 {
+              background: #4a4a4a;
+              color: #fff;
+              cursor: pointer;
+              margin: 0.2em 0 !important;
+              padding: 1.5em 2em;
+              font-size: 1.4em !important;
+              font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
+              text-transform: uppercase; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details h2:after {
+                content: url("/en-gb/models/kodiaq/PublishingImages/arrow_down_light.svg");
+                display: inline-block;
+                position: absolute;
+                right: 1.5em;
+                width: 1em;
+                height: 1em; }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details.open h2:after {
+              content: url("/en-gb/models/kodiaq/PublishingImages/arrow_up_light.svg"); }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details.open .toggle-content {
+              max-height: 1000px; }
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details__toggle-content {
+              max-height: 0;
+              overflow: hidden;
+              -moz-transition: max-height 0.8s ease-in-out;
+              -o-transition: max-height 0.8s ease-in-out;
+              -webkit-transition: max-height 0.8s ease-in-out;
+              transition: max-height 0.8s ease-in-out; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details__toggle-content table {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 0;
+                padding: 0; }
+                body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details__toggle-content table tr:first-child {
+                  padding-top: 20px; }
+                body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details__toggle-content table tr:last-child {
+                  padding-bottom: 20px; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details__toggle-content th, body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details__toggle-content td {
+                border-bottom: 1px solid #dbdbdb;
+                text-transform: uppercase;
+                color: #39393a;
+                padding: 25px 20px;
+                vertical-align: top;
+                text-align: left; }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-stats__spec-details__toggle-content th {
+                width: 50%; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-secondary-hero {
           display: block;
           position: relative;
