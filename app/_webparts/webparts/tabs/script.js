@@ -6,7 +6,6 @@ if ( $(".humanise-tabs__tab-select--tab").length ){
 		$("li[role='tab']").attr("aria-selected","false"); //deselect all the tabs 
 		$(this).attr("aria-selected","true");  // select this tab
 		var posLeft = $(this).position().left;
-		console.log(posLeft);
 		$('.humanise-tabs__nav-wrapper--nav').css('left',posLeft+'px');
 		var tabpanid= $(this).attr("aria-controls"); //find out what tab panel this tab controls  
 		var tabpan = $("#"+tabpanid);  

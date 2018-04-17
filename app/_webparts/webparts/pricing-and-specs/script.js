@@ -199,6 +199,8 @@ function initDBSDSpecs(e){
 
 $(document).ready(function(){
     if ($('.humanise-stats').length) {
-        initDBSDSpecs();
+    	$('.humanise-stats').each(function(){
+    		initDBSDSpecs();
+    	});
     }
 })
