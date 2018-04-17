@@ -34,12 +34,16 @@
 	}
 	
 	&__image {
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 		
 		@media (min-width: $screen-md) {
 			float: right;
 			width: 50%;				
 		}
+	}
+
+	.cta-container {
+		justify-content: center;
 	}
 
 }
