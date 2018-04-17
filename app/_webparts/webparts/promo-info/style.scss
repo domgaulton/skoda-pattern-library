@@ -27,17 +27,18 @@
 	}
 
 	&__copy {
-    padding: 3% 5% 1%;
+    padding: 3% 5% 0;
 
     @media (min-width: $screen-md) {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
       background-color: $white;
       width: 60%;
-      margin: -150px 5% 0 5%;
     }
 
     @media (min-width: $screen-lg) {
       width: 500px;
-      margin: -250px 10% 0 10%;
     }
 
     &--right-aligned {
@@ -45,11 +46,13 @@
       left: 0%;
 
       @media (min-width: $screen-md) {
+        position: absolute;
+        bottom: 0;
         left: 20%;
       }
 
       @media (min-width: $screen-lg) {
-        left: 40%;
+        left: 48%;
       }
     }
 	}

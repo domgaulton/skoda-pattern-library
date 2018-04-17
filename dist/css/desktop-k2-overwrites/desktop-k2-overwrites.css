@@ -803,6 +803,8 @@ body .ms-core-overlay {
               max-width: 160px;
               max-height: 160px;
               height: auto; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-awards .cta-container {
+            justify-content: center; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-background-fixed {
           margin-bottom: 10vh; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-background-fixed__background {
@@ -1284,11 +1286,13 @@ body .ms-core-overlay {
             float: left;
             width: 50%; } }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-model-listing__image {
-          margin-bottom: 1em; }
+          margin-bottom: 2em; }
           @media (min-width: 768px) {
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-model-listing__image {
               float: right;
               width: 50%; } }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-model-listing .cta-container {
+          justify-content: center; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero {
           display: block;
           position: relative;
@@ -1584,25 +1588,28 @@ body .ms-core-overlay {
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-promo-rich-copy__background--parallax {
                 background-attachment: fixed; } }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-promo-rich-copy__copy {
-            padding: 3% 5% 1%; }
+            padding: 3% 5% 0; }
             @media (min-width: 768px) {
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-promo-rich-copy__copy {
+                position: absolute;
+                bottom: 0;
+                left: 10%;
                 background-color: #FFFFFF;
-                width: 60%;
-                margin: -150px 5% 0 5%; } }
+                width: 60%; } }
             @media (min-width: 1200px) {
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-promo-rich-copy__copy {
-                width: 500px;
-                margin: -250px 10% 0 10%; } }
+                width: 500px; } }
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-promo-rich-copy__copy--right-aligned {
               position: relative;
               left: 0%; }
               @media (min-width: 768px) {
                 body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-promo-rich-copy__copy--right-aligned {
+                  position: absolute;
+                  bottom: 0;
                   left: 20%; } }
               @media (min-width: 1200px) {
                 body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-promo-rich-copy__copy--right-aligned {
-                  left: 40%; } }
+                  left: 48%; } }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-parallax {
           text-align: center;
           display: flex;

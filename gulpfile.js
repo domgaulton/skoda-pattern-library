@@ -127,7 +127,7 @@ gulp.task('scripts', function(){
         ])
         .pipe(concat('script.js'))
         .pipe(gulp.dest(config.dist+'js'))
-        .pipe(rename('script.js'))        
+        .pipe(rename('desktop-script.js'))        
         .pipe(gulpif(!config.dev, uglify()))                        //minify JS when not in dev mode
         .pipe(gulp.dest(config.dist+'js'));
 });
