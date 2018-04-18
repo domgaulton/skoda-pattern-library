@@ -6,12 +6,6 @@
 	margin-bottom: $webpart-margin-bottom;
 	overflow: hidden;
 
-	&.k2-cms {
-		$white-nav: 60px;
-		$green-nav: 42px;
-		max-height: calc(100vh - #{$white-nav + $green-nav});
-	}
-
 	&__background {
 		background-position: center center;
 		background-repeat: no-repeat;
