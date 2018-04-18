@@ -87,25 +87,25 @@ gulp.task('desktop', function () {
         .pipe(gulp.dest(config.dist+'css/desktop'));
 });
 
-// Add k2 overwrites //
+// // Add k2 overwrites //
 
-gulp.task('desktop-overwrites', ['clean-k2-overwrites'], function () { 
+// gulp.task('desktop-overwrites', ['clean-k2-overwrites'], function () { 
 
-    function pad2(n) { return n < 10 ? '0' + n : n }
-    var date = new Date();
-    var random = date.getFullYear().toString() + pad2(date.getMonth() + 1) + pad2( date.getDate()) + pad2( date.getHours() ) + pad2( date.getMinutes() ) + pad2( date.getSeconds() ); 
+//     function pad2(n) { return n < 10 ? '0' + n : n }
+//     var date = new Date();
+//     var random = date.getFullYear().toString() + pad2(date.getMonth() + 1) + pad2( date.getDate()) + pad2( date.getHours() ) + pad2( date.getMinutes() ) + pad2( date.getSeconds() ); 
     
-    gulp.src(config.app+'desktop-k2-overwrites.scss')
-        .pipe(sass({includePaths: ['scss']}))
-        // .pipe(rename('desktop-k2-overwrites.css?v_'+random))
-        .pipe(gulp.dest(config.dist+'css/desktop-k2-overwrites'));
-});
+//     gulp.src(config.app+'desktop-k2-overwrites.scss')
+//         .pipe(sass({includePaths: ['scss']}))
+//         // .pipe(rename('desktop-k2-overwrites.css?v_'+random))
+//         .pipe(gulp.dest(config.dist+'css/desktop-k2-overwrites'));
+// });
 
-// Add k2 overwrites //
-gulp.task('clean-k2-overwrites', function(){
-    return gulp.src(config.dist+'/css/desktop-k2-overwrites', {read: false})
-    .pipe(clean());
-});
+// // Add k2 overwrites //
+// gulp.task('clean-k2-overwrites', function(){
+//     return gulp.src(config.dist+'/css/desktop-k2-overwrites', {read: false})
+//     .pipe(clean());
+// });
 
 // Browser Sync //
 
@@ -158,5 +158,5 @@ gulp.task('watch', function(){
 // Gulp Task - Run in Sequence //
 
 gulp.task('default', function () {  
-    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts', 'scripts-pattern-library', 'desktop', 'desktop-overwrites' ], 'watch');
+    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts', 'scripts-pattern-library', 'desktop'], 'watch');
 });
