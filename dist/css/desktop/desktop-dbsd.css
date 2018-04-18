@@ -1300,8 +1300,6 @@ body .ms-core-overlay {
           max-height: 100vh;
           margin-bottom: 10vh;
           overflow: hidden; }
-          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero.k2-cms {
-            max-height: calc(100vh - 102px); }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero__background {
             background-position: center center;
             background-repeat: no-repeat;
