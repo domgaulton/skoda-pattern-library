@@ -139,7 +139,7 @@ function initDBSDSpecs($stats){
         
         var trimImage = $stats.find('.trim-image')[0];
         trimImage.classList.remove('loaded');
-        trimImage.src = apiUrl + selectedTrim.imagePath;
+        trimImage.src = selectedTrim.imagePath;
         trimImage.classList.add('loaded');
 
         var engines = selectedTrim.motors;

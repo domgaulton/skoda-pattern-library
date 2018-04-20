@@ -536,7 +536,8 @@ body .ms-core-overlay {
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid .flexi-grid__list {
             display: flex;
             flex-wrap: wrap;
-            text-align: center; }
+            text-align: center;
+            justify-content: center; }
             @media (min-width: 768px) {
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid .flexi-grid__list {
                 margin: 0 -20px; } }
