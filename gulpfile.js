@@ -80,11 +80,17 @@ gulp.task('desktop-nav', function () {
 });
 
 // Add desktop //
-
 gulp.task('desktop', function () {  
     gulp.src(config.app+'desktop-dbsd.scss')
         .pipe(sass({includePaths: ['scss']}))
         .pipe(gulp.dest(config.dist+'css/desktop'));
+});
+
+// Add mobile
+gulp.task('mobile', function () {  
+    gulp.src(config.app+'mobile-dbsd.scss')
+        .pipe(sass({includePaths: ['scss']}))
+        .pipe(gulp.dest(config.dist+'css/mobile'));
 });
 
 // // Add k2 overwrites //
@@ -158,5 +164,5 @@ gulp.task('watch', function(){
 // Gulp Task - Run in Sequence //
 
 gulp.task('default', function () {  
-    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts', 'scripts-pattern-library', 'desktop'], 'watch');
+    runSequence('clean', ['nunjucks', 'sass', 'copy-files' , 'browser-sync', 'scripts', 'scripts-pattern-library', 'desktop', 'mobile'], 'watch');
 });
