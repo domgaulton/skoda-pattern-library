@@ -557,6 +557,9 @@ body .ms-core-overlay {
                   float: left;
                   padding: 0 20px;
                   border-bottom: none; } }
+              body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid .flexi-grid__list li img {
+                width: 87%;
+                margin-bottom: 1.9em; }
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid .flexi-grid__list li p {
                 margin-bottom: 20px; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid__heading {
@@ -669,14 +672,14 @@ body .ms-core-overlay {
                 body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .flickity-prev-next-button.next {
                   right: 10px; } }
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .flickity-prev-next-button.next:after {
-                background: url("/dist/img/chevron-right.svg") center center no-repeat; }
+                background: url("/en-GB/SiteCollectionImages/Models/DBSD/UI/chevron-right.svg") center center no-repeat; }
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .flickity-prev-next-button.previous {
               left: 0px; }
               @media (min-width: 768px) {
                 body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .flickity-prev-next-button.previous {
                   left: 10px; } }
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .flickity-prev-next-button.previous:after {
-                background: url("/dist/img/chevron-left.svg") center center no-repeat; }
+                background: url("/en-GB/SiteCollectionImages/Models/DBSD/UI/chevron-left.svg") center center no-repeat; }
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .flickity-prev-next-button.hide {
               opacity: 0; }
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .flickity-prev-next-button.show {
@@ -1290,7 +1293,7 @@ body .ms-core-overlay {
           @media (min-width: 768px) {
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-model-listing__image {
               float: right;
-              width: 50%; } }
+              width: 45%; } }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-model-listing .cta-container {
           justify-content: center; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero {
@@ -1864,6 +1867,8 @@ body .ms-core-overlay {
           font-size: 0.76470588235em !important; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-minimal--white {
             color: #FFFFFF !important; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .cta-container a.cta-scroll {
+          background-image: url("/en-GB/SiteCollectionImages/Models/DBSD/UI/chevron-scroll-down.svg"); }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero {
           max-height: calc(100vh - 102px); }
         @media (min-width: 768px) {
