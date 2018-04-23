@@ -4689,7 +4689,6 @@ return Flickity;
 
 
 
-
 $('.cta-scroll').click(function(){
   event.preventDefault();
   var offset = $(this).offset().top;
@@ -4728,6 +4727,9 @@ $('.cta-scroll').click(function(){
 // 		element.removeClass('error');
 // 	}
 // })
+
+
+
 
 
 
@@ -4772,7 +4774,6 @@ $(document).ready(function(){
 	}
 	
 });
-
 
 
 
@@ -4824,7 +4825,6 @@ if ( $('[data-ytID]').length ) {
 		}
 	}
 }
-
 
 
 $(document).ready(function(){
@@ -7196,7 +7196,6 @@ $(document).ready(function(){
 })
 
 
-
 $(document).ready(function(){
 	
 	if ($('.humanise-quote-slider__list').length) {
@@ -7216,6 +7215,7 @@ $(document).ready(function(){
 	}
 	
 });
+
 $(document).ready(function () {
 	
 	if($('.humanise-sidebar-ctas').length){
