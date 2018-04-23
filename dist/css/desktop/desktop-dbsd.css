@@ -1331,7 +1331,7 @@ body .ms-core-overlay {
             -o-transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-            width: 100%; }
+            width: 90%; }
             @media (min-width: 1200px) {
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-primary-hero__title {
                 margin: 0 auto;
