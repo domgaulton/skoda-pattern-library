@@ -2,6 +2,19 @@ if ( $(".humanise-tabs__tab-select--tab").length ){
 	var startLeft = $(".humanise-tabs__tab-select--tab").first().position().left;
 	$('.humanise-tabs__nav-wrapper--nav').css('left',startLeft+'px');
 
+	if(!($(".humanise-tabs__tab-select--tab").attr("role"))){
+		//no role attribute is set, Umbraco strips them out so fix to add them back
+		$('.humanise-tabs__tab-select--tab').each(function (i) {
+		    $(this).attr("aria-controls","panel"+(i+1));
+		    var thisSelected = "false";
+		    if (i==0){
+		    	thisSelected = "true";
+		    }
+		    $(this).attr("aria-selected",thisSelected);
+		    $(this).attr("role","tab");
+		});		
+	}
+
 	$(".humanise-tabs__tab-select--tab").click(function(){
 		$("li[role='tab']").attr("aria-selected","false"); //deselect all the tabs 
 		$(this).attr("aria-selected","true");  // select this tab
