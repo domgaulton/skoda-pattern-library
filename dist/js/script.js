@@ -4689,6 +4689,7 @@ return Flickity;
 
 
 
+
 $('.cta-scroll').click(function(){
   event.preventDefault();
   var offset = $(this).offset().top;
@@ -4727,10 +4728,6 @@ $('.cta-scroll').click(function(){
 // 		element.removeClass('error');
 // 	}
 // })
-
-
-
-
 
 
 $(document).ready(function(){
@@ -4774,6 +4771,9 @@ $(document).ready(function(){
 	}
 	
 });
+
+
+
 
 
 
@@ -4826,7 +4826,6 @@ if ( $('[data-ytID]').length ) {
 	}
 }
 
-
 $(document).ready(function(){
 	
 	if ($('.humanise-slider__list--one-item').length) {
@@ -4868,6 +4867,7 @@ $(document).ready(function(){
 	}
 	
 });
+
 
 
 
@@ -4931,6 +4931,32 @@ if ( $('.humanise-deeplink-nav__item').length ){
 	});
 
 }
+
+
+if ( $('.humanise-parallax__item').length ) {
+	$(window).scroll(function(){
+		// This is then function used to detect if the element is scrolled into view
+		function elementScrolled(elem) {
+			if ($('.humanise-parallax__item').length) {
+				var docViewTop = $(window).scrollTop();
+				var docViewTop = docViewTop + 1800;
+
+				var elemTop = $(elem).offset().top;
+
+				return ( (elemTop <= docViewTop) );
+			}
+		}
+
+		if (elementScrolled('.humanise-parallax') ) {
+			var x = $(window).scrollTop() + $('.humanise-parallax__item').outerHeight() - $('.humanise-parallax').offset().top + 200;
+
+			var x = x+200;
+			$('.itemA').css('top', -(x*.3)+'px');
+			$('.itemB').css('top', (x*0.3)+'px');
+		}
+	});
+}
+
 
 if ( $('.fancybox-thumb').length ) {
 	;(function (window, document, $, undefined) {
@@ -6961,32 +6987,6 @@ if ( $('.fancybox-thumb').length ) {
 // 		// }
 // 	});
 // });
-
-if ( $('.humanise-parallax__item').length ) {
-	$(window).scroll(function(){
-		// This is then function used to detect if the element is scrolled into view
-		function elementScrolled(elem) {
-			if ($('.humanise-parallax__item').length) {
-				var docViewTop = $(window).scrollTop();
-				var docViewTop = docViewTop + 1800;
-
-				var elemTop = $(elem).offset().top;
-
-				return ( (elemTop <= docViewTop) );
-			}
-		}
-
-		if (elementScrolled('.humanise-parallax') ) {
-			var x = $(window).scrollTop() + $('.humanise-parallax__item').outerHeight() - $('.humanise-parallax').offset().top + 200;
-
-			var x = x+200;
-			$('.itemA').css('top', -(x*.3)+'px');
-			$('.itemB').css('top', (x*0.3)+'px');
-		}
-	});
-}
-
-
 function initDBSDSpecs($stats){
     
     // Spec selector toggle
@@ -7251,6 +7251,19 @@ $(document).ready(function () {
 if ( $(".humanise-tabs__tab-select--tab").length ){
 	var startLeft = $(".humanise-tabs__tab-select--tab").first().position().left;
 	$('.humanise-tabs__nav-wrapper--nav').css('left',startLeft+'px');
+
+	if(!($(".humanise-tabs__tab-select--tab").attr("role"))){
+		//no role attribute is set, Umbraco strips them out so fix to add them back
+		$('.humanise-tabs__tab-select--tab').each(function (i) {
+		    $(this).attr("aria-controls","panel"+(i+1));
+		    var thisSelected = "false";
+		    if (i==0){
+		    	thisSelected = "true";
+		    }
+		    $(this).attr("aria-selected",thisSelected);
+		    $(this).attr("role","tab");
+		});		
+	}
 
 	$(".humanise-tabs__tab-select--tab").click(function(){
 		$("li[role='tab']").attr("aria-selected","false"); //deselect all the tabs 
