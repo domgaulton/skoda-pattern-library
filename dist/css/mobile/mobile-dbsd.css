@@ -1369,7 +1369,7 @@ body .wrapper-dbsd2018 {
         font-size: 2em; } }
       body .wrapper-dbsd2018 .humanise-primary-hero__title--tag h1, body .wrapper-dbsd2018 .humanise-primary-hero__title--tag h2, body .wrapper-dbsd2018 .humanise-primary-hero__title--tag h3, body .wrapper-dbsd2018 .humanise-primary-hero__title--tag h4, body .wrapper-dbsd2018 .humanise-primary-hero__title--tag h5, body .wrapper-dbsd2018 .humanise-primary-hero__title--tag h6, body .wrapper-dbsd2018 .humanise-primary-hero__title--tag p {
         letter-spacing: 5px;
-        font-size: 0.76470588235em;
+        font-size: 1em;
         font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
         margin-bottom: 20px;
         display: block; }
