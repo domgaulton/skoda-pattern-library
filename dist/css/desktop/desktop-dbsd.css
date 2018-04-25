@@ -563,15 +563,16 @@ body .ms-core-overlay {
                 margin-bottom: 1.9em; }
               body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid .flexi-grid__list li p {
                 margin-bottom: 20px; }
+                @media (min-width: 768px) {
+                  body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid .flexi-grid__list li p {
+                    min-height: 80px; } }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid__heading {
             margin-top: 0;
             align-self: flex-start;
-            flex-grow: 1; }
+            flex-grow: 1;
+            max-height: 20px; }
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid__heading p {
               font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
-              @media (min-width: 768px) {
-                body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid__heading p {
-                  min-height: 80px; } }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid .cta-container {
             display: block;
             align-self: flex-end; }
