@@ -35,6 +35,9 @@
 			
 			p {
 				margin-bottom: 20px;
+				@media (min-width: $screen-md) {	
+					min-height: 80px;
+				}
 			}
 		}
 	}
@@ -43,14 +46,13 @@
 		margin-top: 0;
 		align-self: flex-start;
 		flex-grow: 1;
-
+		max-height: 20px;
 		p {
 			font-family: $skoda-next-bold;
-			@media (min-width: $screen-md) {
-				min-height: 80px;
-			}
 		}
 	}
+
+
 	
 	.cta-container {
 		display: block;
