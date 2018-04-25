@@ -46,6 +46,9 @@
 
 		p {
 			font-family: $skoda-next-bold;
+			@media (min-width: $screen-md) {
+				min-height: 80px;
+			}
 		}
 	}
 	
