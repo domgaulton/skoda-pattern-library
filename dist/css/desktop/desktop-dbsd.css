@@ -582,6 +582,11 @@ body .ms-core-overlay {
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .flexi-grid .responsive-img {
             margin: 0 auto;
             margin-bottom: 1em; }
+        body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-iframe {
+          margin-bottom: 10vh; }
+          body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-iframe iframe {
+            margin: 0 auto;
+            display: block; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider {
           margin-bottom: 10vh; }
           @media (min-width: 768px) {
@@ -626,6 +631,9 @@ body .ms-core-overlay {
           @media (min-width: 768px) {
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .humanise-slider__list--one-item .humanise-slider__content {
               padding: 10px; } }
+          @media (min-width: 768px) {
+            body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .humanise-slider__list--one-item .humanise-slider__content .cta-container {
+              margin-top: 30px; } }
           @media (min-width: 768px) {
             body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-slider .humanise-slider__list--one-item .cta-container {
               width: 40%;

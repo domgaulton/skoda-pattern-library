@@ -531,10 +531,14 @@ body .wrapper-dbsd2018 {
           margin-bottom: 1.9em; }
         body .wrapper-dbsd2018 .flexi-grid .flexi-grid__list li p {
           margin-bottom: 20px; }
+          @media (min-width: 768px) {
+            body .wrapper-dbsd2018 .flexi-grid .flexi-grid__list li p {
+              min-height: 80px; } }
     body .wrapper-dbsd2018 .flexi-grid__heading {
       margin-top: 0;
       align-self: flex-start;
-      flex-grow: 1; }
+      flex-grow: 1;
+      max-height: 20px; }
       body .wrapper-dbsd2018 .flexi-grid__heading p {
         font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important; }
     body .wrapper-dbsd2018 .flexi-grid .cta-container {
@@ -546,6 +550,11 @@ body .wrapper-dbsd2018 {
     body .wrapper-dbsd2018 .flexi-grid .responsive-img {
       margin: 0 auto;
       margin-bottom: 1em; }
+  body .wrapper-dbsd2018 .humanise-iframe {
+    margin-bottom: 10vh; }
+    body .wrapper-dbsd2018 .humanise-iframe iframe {
+      margin: 0 auto;
+      display: block; }
   body .wrapper-dbsd2018 .humanise-slider {
     margin-bottom: 10vh; }
     @media (min-width: 768px) {
@@ -590,6 +599,9 @@ body .wrapper-dbsd2018 {
     @media (min-width: 768px) {
       body .wrapper-dbsd2018 .humanise-slider .humanise-slider__list--one-item .humanise-slider__content {
         padding: 10px; } }
+    @media (min-width: 768px) {
+      body .wrapper-dbsd2018 .humanise-slider .humanise-slider__list--one-item .humanise-slider__content .cta-container {
+        margin-top: 30px; } }
     @media (min-width: 768px) {
       body .wrapper-dbsd2018 .humanise-slider .humanise-slider__list--one-item .cta-container {
         width: 40%;
@@ -1529,7 +1541,7 @@ body .wrapper-dbsd2018 {
             font-size: 2em; } }
       body .wrapper-dbsd2018 .humanise-secondary-hero__title--tag h1, body .wrapper-dbsd2018 .humanise-secondary-hero__title--tag h2, body .wrapper-dbsd2018 .humanise-secondary-hero__title--tag h3, body .wrapper-dbsd2018 .humanise-secondary-hero__title--tag h4, body .wrapper-dbsd2018 .humanise-secondary-hero__title--tag h5, body .wrapper-dbsd2018 .humanise-secondary-hero__title--tag h6, body .wrapper-dbsd2018 .humanise-secondary-hero__title--tag p {
         letter-spacing: 5px;
-        font-size: 0.76470588235em;
+        font-size: 1em;
         font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
         margin-bottom: 20px;
         display: block; }
