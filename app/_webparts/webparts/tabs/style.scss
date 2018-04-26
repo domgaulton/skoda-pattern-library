@@ -36,14 +36,25 @@
 	}
 
 	&__nav-wrapper {
+		margin-left: -30px;
+		max-width: 100%;
+
+		@media (min-width: $screen-md) {
+			margin-left: auto;
+			max-width: none;
+		}
 
 		&--nav {
 			height: 4px;
-			width: 200px;
+			width: 50%;
 			margin: 0 3%;
 			background-color: $skoda-green;
 			position: relative;
 			@include transition(1s ease-in-out);
+
+			@media (min-width: $screen-md) {
+				width: 200px;
+			}			
 		}
 	}
 

@@ -12,6 +12,7 @@
 			width: 550px;
 			margin: 0 auto;
 			display: block;
+			max-width: 100%;
 		}
 				
 		// @include tablet {
@@ -55,6 +56,10 @@
 			&:focus {
 				outline: 0;
 			}
+		}
+
+		& + .content_zone {
+			padding: 0;
 		}
 	}
 

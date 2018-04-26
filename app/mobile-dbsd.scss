@@ -4,6 +4,8 @@
 body {
   .wrapper-dbsd2018 {
     @import 'webparts.scss';
+	@import '_webparts/molecules/ctas/mobile-overwrites.scss';
+	@import '_webparts/webparts/deeplink-nav/mobile-overwrites.scss';
   }
 }
 
