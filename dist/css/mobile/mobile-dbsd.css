@@ -552,9 +552,8 @@ body .wrapper-dbsd2018 {
       margin-bottom: 1em; }
   body .wrapper-dbsd2018 .humanise-iframe {
     margin-bottom: 10vh; }
-    body .wrapper-dbsd2018 .humanise-iframe iframe {
-      margin: 0 auto;
-      display: block; }
+    body .wrapper-dbsd2018 .humanise-iframe .content_zone {
+      text-align: center; }
   body .wrapper-dbsd2018 .humanise-slider {
     margin-bottom: 10vh; }
     @media (min-width: 768px) {
@@ -713,7 +712,15 @@ body .wrapper-dbsd2018 {
       body .wrapper-dbsd2018 .split-2__col * {
         margin: 0; }
       body .wrapper-dbsd2018 .split-2__col > p {
-        margin: 0 20px; }
+        margin: 0 0 20px 0; }
+        @media (min-width: 768px) {
+          body .wrapper-dbsd2018 .split-2__col > p {
+            margin: 0 20px; } }
+        body .wrapper-dbsd2018 .split-2__col > p.display-text {
+          text-align: left; }
+          @media (min-width: 768px) {
+            body .wrapper-dbsd2018 .split-2__col > p.display-text {
+              text-align: right; } }
       body .wrapper-dbsd2018 .split-2__col [class*='humanise'] {
         margin-bottom: 0 !important; }
       body .wrapper-dbsd2018 .split-2__col .content_zone {
@@ -851,17 +858,24 @@ body .wrapper-dbsd2018 {
       text-align: center; }
       body .wrapper-dbsd2018 .humanise-deeplink-nav ul li {
         position: relative;
-        font-size: 1.2em;
+        font-size: 0.9em;
         display: inline-block;
         font-family: "SKODA Next W01 Regular", arial, verdana, helvetica, sans-serif !important;
         text-transform: uppercase;
-        letter-spacing: 3px; }
+        letter-spacing: 2px; }
+        @media (min-width: 768px) {
+          body .wrapper-dbsd2018 .humanise-deeplink-nav ul li {
+            font-size: 1.2em;
+            letter-spacing: 3px; } }
         body .wrapper-dbsd2018 .humanise-deeplink-nav ul li a {
           display: inline-block;
-          padding: 20px 30px;
+          padding: 6px 7px;
           text-decoration: none;
           color: #FFFFFF;
           font-size: 0.75em; }
+          @media (min-width: 768px) {
+            body .wrapper-dbsd2018 .humanise-deeplink-nav ul li a {
+              padding: 20px 30px; } }
         body .wrapper-dbsd2018 .humanise-deeplink-nav ul li:after {
           content: '';
           position: absolute;
@@ -1402,7 +1416,8 @@ body .wrapper-dbsd2018 {
       body .wrapper-dbsd2018 .humanise-stats__spec-selector img {
         width: 550px;
         margin: 0 auto;
-        display: block; }
+        display: block;
+        max-width: 100%; }
       body .wrapper-dbsd2018 .humanise-stats__spec-selector-row {
         margin: 0 auto 30px;
         max-width: 500px; }
@@ -1434,6 +1449,8 @@ body .wrapper-dbsd2018 {
         border-radius: 0; }
         body .wrapper-dbsd2018 .humanise-stats__spec-selector select:focus {
           outline: 0; }
+      body .wrapper-dbsd2018 .humanise-stats__spec-selector + .content_zone {
+        padding: 0; }
     body .wrapper-dbsd2018 .humanise-stats__spec-details {
       opacity: 0;
       -moz-transition: 0.5s cubic-bezier(0, 1.18, 0.43, 0.85);
@@ -1809,16 +1826,26 @@ body .wrapper-dbsd2018 {
           outline: none; }
       body .wrapper-dbsd2018 .humanise-tabs__tab-select li[aria-selected='true'] {
         color: #212428; }
-    body .wrapper-dbsd2018 .humanise-tabs__nav-wrapper--nav {
-      height: 4px;
-      width: 200px;
-      margin: 0 3%;
-      background-color: #4BA82E;
-      position: relative;
-      -moz-transition: 1s ease-in-out;
-      -o-transition: 1s ease-in-out;
-      -webkit-transition: 1s ease-in-out;
-      transition: 1s ease-in-out; }
+    body .wrapper-dbsd2018 .humanise-tabs__nav-wrapper {
+      margin-left: -30px;
+      max-width: 100%; }
+      @media (min-width: 768px) {
+        body .wrapper-dbsd2018 .humanise-tabs__nav-wrapper {
+          margin-left: auto;
+          max-width: none; } }
+      body .wrapper-dbsd2018 .humanise-tabs__nav-wrapper--nav {
+        height: 4px;
+        width: 50%;
+        margin: 0 3%;
+        background-color: #4BA82E;
+        position: relative;
+        -moz-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+        -webkit-transition: 1s ease-in-out;
+        transition: 1s ease-in-out; }
+        @media (min-width: 768px) {
+          body .wrapper-dbsd2018 .humanise-tabs__nav-wrapper--nav {
+            width: 200px; } }
     body .wrapper-dbsd2018 .humanise-tabs__tab-content {
       clear: both;
       display: block; }
@@ -1831,6 +1858,10 @@ body .wrapper-dbsd2018 {
     display: block; }
   body .wrapper-dbsd2018 .mobile-tabs [aria-hidden='true'] {
     display: none; }
+  body .wrapper-dbsd2018 .cta-container a.cta-scroll {
+    background-image: url("http://www.skoda.co.uk/SiteCollectionImages/Models/DBSD/UI/chevron-scroll-down.svg"); }
+  body .wrapper-dbsd2018 .humanise-deeplink-nav.sticky {
+    top: 53px; }
 
 .humanise-images {
   margin-bottom: 10vh; }
