@@ -7197,7 +7197,6 @@ $(document).ready(function(){
 })
 
 
-
 $(document).ready(function(){
 	
 	if ($('.humanise-quote-slider__list').length) {
@@ -7228,8 +7227,11 @@ $(document).ready(function () {
 			var td = '/en-gb/models/kodiaq/test-drive-offer';
 			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=67518';
 		} else if ( url.indexOf("karoq") > -1 ) {
-			var td = 'http://www.skoda.co.uk/tools/book-a-test-drive/?source=karoq';
+			var td = '/en-GB/tools/book-a-test-drive/?source=karoq';
 			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=66328';
+		} else if ( url.indexOf("octavia") > -1 ) {
+			var td = '/en-GB/tools/book-a-test-drive/?source=octaviahatch';
+			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=68308';
 		}
 
 		$('.humanise-sidebar-ctas__icon--test-drive').next().attr('href', td);
