@@ -4690,47 +4690,6 @@ return Flickity;
 
 
 
-$('.cta-scroll').click(function(){
-  event.preventDefault();
-  var offset = $(this).offset().top;
-  window.scrollBy({ 
-    top: offset + 100, // could be negative value
-    left: 0, 
-    behavior: 'smooth' 
-  });
-})
-// $('.field-element input, .field-element textarea').keyup(function(){
-// 	var element = $(this);
-// 	var input = element.val();
-// 	if (input.length > 1) {
-// 		element.addClass('complete');
-// 		element.removeClass('error');
-// 	} else if ( input.length == 0 ) {
-// 		element.removeClass('complete')
-// 		element.addClass('error');
-// 	} else {
-// 		element.addClass('complete');
-// 		element.removeClass('error');
-// 	}
-// })
-
-
-
-
-
-// $('.field-element').children(function(){
-// 	var element = $(this);
-// 	var input = element.val();
-// 	if (input.length > 1) {
-		
-// 	} else {
-// 		element.addClass('complete');
-// 		element.removeClass('error');
-// 	}
-// })
-
-
-
 $(document).ready(function(){
 	
 	if ($('.humanise-slider__list--one-item').length) {
@@ -4774,101 +4733,6 @@ $(document).ready(function(){
 });
 
 
-
-
-if ( $('[data-ytID]').length ) {
-	var tag = document.createElement('script');
-
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	var players = [];
-	var videoIds = [];
-
-	function onYouTubeIframeAPIReady() {
-	$('[data-ytID]').each(function(index) {
-		videoIds[index] = $(this).attr('id');
-		var ytID = $('#' + videoIds[index] + '[data-ytID]').attr('data-ytID');
-			players[index] = new YT.Player(videoIds[index], {
-				height: '100%',
-				width: '100%',
-				videoId: ytID,
-				playerVars: { 
-					'showinfo':0,
-					'controls':0, 
-					'rel':0,
-					'fs':0,
-					'modestbranding':1,
-				},
-				events: {
-					'onReady': function(event) {
-						// console.log(event);
-						var autoplay = $('#' + videoIds[index]).attr('data-video-autoplay');
-						if (autoplay == 1) {
-							event.target.mute();
-							event.target.playVideo();
-						}
-					},
-					onStateChange: function(event) {
-						loopVideo(event, videoIds[index], players[index]);
-					}
-				}
-			});
-		});
-	}
-	function loopVideo(event, videoIdsIndex, playersIndex){
-		var loop = $('#' + videoIdsIndex).attr('data-video-loop')
-		if (event.data === YT.PlayerState.ENDED && loop == 1 ) {
-			playersIndex.playVideo(); 
-		}
-	}
-}
-
-
-
-
-$(document).ready(function(){
-	
-	if ($('.humanise-slider__list--one-item').length) {
-		
-		var sliderItem = document.querySelectorAll('.humanise-slider__list--one-item');
-		for (var i=0, numberOfItems = sliderItem.length; i < numberOfItems; i++) {
-			var currentSliderItem = sliderItem[i];
-			new Flickity(currentSliderItem, {
-				resize: true,
-				contain: false,
-				groupCells: 1,
-				prevNextButtons: true,
-				pageDots: false,
-				wrapAround: true,
-				draggable: true,
-				autoPlay: false,
-				on: {
-					ready: function() {
-						$(".humanise-slider__list--one-item .flickity-button").wrapAll("<div class='flickity-buttons'></div>");
-						var imageHeight = $(".humanise-slider__list--one-item .humanise-slide__img").height();
-						$(".humanise-slider__list--one-item .flickity-buttons").height(imageHeight);
-											
-						$(window).resize(function() {
-						  imageHeight = $(".humanise-slider__list--one-item .humanise-slide__img").height();
-						  $(".humanise-slider__list--one-item .flickity-buttons").height(imageHeight);
-						});
-											
-					},
-					change: function() {
-						$(".humanise-slider__list--one-item .flickity-button").removeClass('show').addClass('hide');
-					},
-					settle: function() {
-						$(".humanise-slider__list--one-item .flickity-button").removeClass('hide').addClass('show');
-					}
-				}
-			});
-		}
-	
-	}
-	
-});
 
 
 
@@ -4911,6 +4775,28 @@ $(document).ready(function(){
 		});
 	}
 });
+if ( $('.humanise-deeplink-nav__item').length ){
+	
+	// Deep link buttons set up
+	$('.humanise-deeplink-nav__item a').click(function() {
+		event.preventDefault();
+		var scrollID = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(scrollID).offset().top -100
+		}, 500);
+		
+	});
+
+	// Cache selectors outside callback for performance. 
+	var item 	= $('.humanise-deeplink-nav');
+	var itemTop = item.offset().top -10;
+
+	$(window).scroll(function() {
+		item.toggleClass('sticky', $(window).scrollTop() > itemTop);
+	});
+
+}
+
 if ( $('.fancybox-thumb').length ) {
 	;(function (window, document, $, undefined) {
 		"use strict";
@@ -6940,52 +6826,8 @@ if ( $('.fancybox-thumb').length ) {
 // 		// }
 // 	});
 // });
-if ( $('.humanise-deeplink-nav__item').length ){
-	
-	// Deep link buttons set up
-	$('.humanise-deeplink-nav__item a').click(function() {
-		event.preventDefault();
-		var scrollID = $(this).attr('href');
-		$('html, body').animate({
-			scrollTop: $(scrollID).offset().top -100
-		}, 500);
-		
-	});
-
-	// Cache selectors outside callback for performance. 
-	var item 	= $('.humanise-deeplink-nav');
-	var itemTop = item.offset().top -10;
-
-	$(window).scroll(function() {
-		item.toggleClass('sticky', $(window).scrollTop() > itemTop);
-	});
-
-}
 
 
-if ( $('.humanise-parallax__item').length ) {
-	$(window).scroll(function(){
-		// This is then function used to detect if the element is scrolled into view
-		function elementScrolled(elem) {
-			if ($('.humanise-parallax__item').length) {
-				var docViewTop = $(window).scrollTop();
-				var docViewTop = docViewTop + 1800;
-
-				var elemTop = $(elem).offset().top;
-
-				return ( (elemTop <= docViewTop) );
-			}
-		}
-
-		if (elementScrolled('.humanise-parallax') ) {
-			var x = $(window).scrollTop() + $('.humanise-parallax__item').outerHeight() - $('.humanise-parallax').offset().top + 200;
-
-			var x = x+200;
-			$('.itemA').css('top', -(x*.3)+'px');
-			$('.itemB').css('top', (x*0.3)+'px');
-		}
-	});
-}
 
 
 function initDBSDSpecs($stats){
@@ -7195,9 +7037,6 @@ $(document).ready(function(){
     	});
     }
 })
-
-
-
 $(document).ready(function(){
 	
 	if ($('.humanise-quote-slider__list').length) {
@@ -7216,41 +7055,6 @@ $(document).ready(function(){
 		}
 	}
 	
-});
-$(document).ready(function () {
-	
-	if($('.humanise-sidebar-ctas').length){
-		var td;
-		var cc;
-
-		var url = window.location.href;
-		if ( url.indexOf("kodiaq") > -1 ) {
-			var td = '/en-gb/models/kodiaq/test-drive-offer';
-			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=67518';
-		} else if ( url.indexOf("karoq") > -1 ) {
-			var td = '/en-GB/tools/book-a-test-drive/?source=karoq';
-			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=66328';
-		} else if ( url.indexOf("octavia") > -1 ) {
-			var td = '/en-GB/tools/book-a-test-drive/?source=octaviahatch';
-			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=68308';
-		}
-
-		$('.humanise-sidebar-ctas__icon--test-drive').next().attr('href', td);
-		$('.humanise-sidebar-ctas__icon--car-configutator').next().attr('href', cc);
-
-		$('.humanise-sidebar-ctas__icon').mouseenter(function(){
-			$('.humanise-sidebar-ctas__link').addClass('active');
-		});
-
-		$('.humanise-sidebar-ctas__icon').click(function(){
-			$('.humanise-sidebar-ctas__link').toggleClass('active');
-		});
-
-		$(window).scroll(function(){
-			$('.humanise-sidebar-ctas__link').removeClass('active');
-		});
-
-	}
 });
 if ( $(".humanise-tabs__tab-select--tab").length ){
 	var startLeft = $(".humanise-tabs__tab-select--tab").first().position().left;
@@ -7300,4 +7104,200 @@ if ( $(".humanise-tabs__tab-select--tab").length ){
 			}
 		}
 	});
+}
+$(document).ready(function () {
+	
+	if($('.humanise-sidebar-ctas').length){
+		var td;
+		var cc;
+
+		var url = window.location.href;
+		if ( url.indexOf("kodiaq") > -1 ) {
+			var td = '/en-gb/models/kodiaq/test-drive-offer';
+			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=67518';
+		} else if ( url.indexOf("karoq") > -1 ) {
+			var td = '/en-GB/tools/book-a-test-drive/?source=karoq';
+			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=66328';
+		} else if ( url.indexOf("octavia") > -1 ) {
+			var td = '/en-GB/tools/book-a-test-drive/?source=octaviahatch';
+			var cc = 'http://cc-cloud.skoda-auto.com/gbr/gbr/en-gb?carline=68308';
+		}
+
+		$('.humanise-sidebar-ctas__icon--test-drive').next().attr('href', td);
+		$('.humanise-sidebar-ctas__icon--car-configutator').next().attr('href', cc);
+
+		$('.humanise-sidebar-ctas__icon').mouseenter(function(){
+			$('.humanise-sidebar-ctas__link').addClass('active');
+		});
+
+		$('.humanise-sidebar-ctas__icon').click(function(){
+			$('.humanise-sidebar-ctas__link').toggleClass('active');
+		});
+
+		$(window).scroll(function(){
+			$('.humanise-sidebar-ctas__link').removeClass('active');
+		});
+
+	}
+});
+
+$('.cta-scroll').click(function(){
+  event.preventDefault();
+  var offset = $(this).offset().top;
+  window.scrollBy({ 
+    top: offset + 100, // could be negative value
+    left: 0, 
+    behavior: 'smooth' 
+  });
+})
+// $('.field-element input, .field-element textarea').keyup(function(){
+// 	var element = $(this);
+// 	var input = element.val();
+// 	if (input.length > 1) {
+// 		element.addClass('complete');
+// 		element.removeClass('error');
+// 	} else if ( input.length == 0 ) {
+// 		element.removeClass('complete')
+// 		element.addClass('error');
+// 	} else {
+// 		element.addClass('complete');
+// 		element.removeClass('error');
+// 	}
+// })
+
+
+
+
+
+// $('.field-element').children(function(){
+// 	var element = $(this);
+// 	var input = element.val();
+// 	if (input.length > 1) {
+		
+// 	} else {
+// 		element.addClass('complete');
+// 		element.removeClass('error');
+// 	}
+// })
+if ( $('.humanise-parallax__item').length ) {
+	$(window).scroll(function(){
+		// This is then function used to detect if the element is scrolled into view
+		function elementScrolled(elem) {
+			if ($('.humanise-parallax__item').length) {
+				var docViewTop = $(window).scrollTop();
+				var docViewTop = docViewTop + 1800;
+
+				var elemTop = $(elem).offset().top;
+
+				return ( (elemTop <= docViewTop) );
+			}
+		}
+
+		if (elementScrolled('.humanise-parallax') ) {
+			var x = $(window).scrollTop() + $('.humanise-parallax__item').outerHeight() - $('.humanise-parallax').offset().top + 200;
+
+			var x = x+200;
+			$('.itemA').css('top', -(x*.3)+'px');
+			$('.itemB').css('top', (x*0.3)+'px');
+		}
+	});
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+	
+	if ($('.humanise-slider__list--one-item').length) {
+		
+		var sliderItem = document.querySelectorAll('.humanise-slider__list--one-item');
+		for (var i=0, numberOfItems = sliderItem.length; i < numberOfItems; i++) {
+			var currentSliderItem = sliderItem[i];
+			new Flickity(currentSliderItem, {
+				resize: true,
+				contain: false,
+				groupCells: 1,
+				prevNextButtons: true,
+				pageDots: false,
+				wrapAround: true,
+				draggable: true,
+				autoPlay: false,
+				on: {
+					ready: function() {
+						$(".humanise-slider__list--one-item .flickity-button").wrapAll("<div class='flickity-buttons'></div>");
+						var imageHeight = $(".humanise-slider__list--one-item .humanise-slide__img").height();
+						$(".humanise-slider__list--one-item .flickity-buttons").height(imageHeight);
+											
+						$(window).resize(function() {
+						  imageHeight = $(".humanise-slider__list--one-item .humanise-slide__img").height();
+						  $(".humanise-slider__list--one-item .flickity-buttons").height(imageHeight);
+						});
+											
+					},
+					change: function() {
+						$(".humanise-slider__list--one-item .flickity-button").removeClass('show').addClass('hide');
+					},
+					settle: function() {
+						$(".humanise-slider__list--one-item .flickity-button").removeClass('hide').addClass('show');
+					}
+				}
+			});
+		}
+	
+	}
+	
+});
+
+
+
+if ( $('[data-ytID]').length ) {
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	var players = [];
+	var videoIds = [];
+
+	function onYouTubeIframeAPIReady() {
+	$('[data-ytID]').each(function(index) {
+		videoIds[index] = $(this).attr('id');
+		var ytID = $('#' + videoIds[index] + '[data-ytID]').attr('data-ytID');
+			players[index] = new YT.Player(videoIds[index], {
+				height: '100%',
+				width: '100%',
+				videoId: ytID,
+				playerVars: { 
+					'showinfo':0,
+					'controls':0, 
+					'rel':0,
+					'fs':0,
+					'modestbranding':1,
+				},
+				events: {
+					'onReady': function(event) {
+						// console.log(event);
+						var autoplay = $('#' + videoIds[index]).attr('data-video-autoplay');
+						if (autoplay == 1) {
+							event.target.mute();
+							event.target.playVideo();
+						}
+					},
+					onStateChange: function(event) {
+						loopVideo(event, videoIds[index], players[index]);
+					}
+				}
+			});
+		});
+	}
+	function loopVideo(event, videoIdsIndex, playersIndex){
+		var loop = $('#' + videoIdsIndex).attr('data-video-loop')
+		if (event.data === YT.PlayerState.ENDED && loop == 1 ) {
+			playersIndex.playVideo(); 
+		}
+	}
 }
