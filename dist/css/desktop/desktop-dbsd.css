@@ -919,7 +919,7 @@ body .ms-core-overlay {
                 border-right: none; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-deeplink-nav.sticky {
             position: fixed;
-            top: 61px; }
+            top: 60px; }
         body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images {
           margin-bottom: 10vh; }
           body .ms-core-overlay .page .body .bMain .bmBody .skodadefaultcss .skodacss .ms-WPBody .humanise-images__container {
@@ -2352,7 +2352,6 @@ body .ms-core-overlay {
         background: none;
         border-bottom: 4px solid transparent;
         border-bottom: 4px solid #4BA82E !important;
-        font-family: "SKODA Next W01 Bold", arial, verdana, helvetica, sans-serif !important;
         color: #212428; }
     .bmsMenu ul li.selected a, .bmsMenu ul li.selected span {
       border-bottom: 4px solid #4BA82E;
